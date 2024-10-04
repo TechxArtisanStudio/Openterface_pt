@@ -1,12 +1,12 @@
-# Open Software
+# Software Aberto
 
-## Host Apps
+## Aplicativos para Host
 
 <div class="container">
-    <img src="/images/product/win_qt_app.jpg" alt="Poster Image" class="poster-image-shadow">
+    <img src="/images/product/win_qt_app.jpg" alt="Imagem do Poster" class="poster-image-shadow">
 </div>
 
-To use this mini-KVM, the host computer must install one of the below host applications. 
+Para usar este mini-KVM, o computador host deve instalar um dos aplicativos abaixo.
 
 <div class="grid cards" markdown>
 
@@ -14,52 +14,52 @@ To use this mini-KVM, the host computer must install one of the below host appli
 
     ---
 
-    Download the Openterface QT app for Windows
+    Baixe o aplicativo Openterface QT para Windows
 
-    [:octicons-download-24: Download v0.0.3](https://github.com/TechxArtisanStudio/Openterface_QT/releases/download/v0.0.3/openterfaceQT.windows.amd64.exe)  <br>
+    [:octicons-download-24: Baixar v0.0.3](https://github.com/TechxArtisanStudio/Openterface_QT/releases/download/v0.0.3/openterfaceQT.windows.amd64.exe)  <br>
     [:octicons-mark-github-16: Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT)  <br>
-    [:octicons-play-24: Watch Demo](https://youtu.be/ERzpGtRvP2o?si=e9k402f0nxsD8o2j)
+    [:octicons-play-24: Assista ao Demo](https://youtu.be/ERzpGtRvP2o?si=e9k402f0nxsD8o2j)
 
 -   :fontawesome-brands-apple:{ .lg .middle } __macOS__
 
     ---
 
-    Get Openterface for macOS from the App Store
+    Obtenha o Openterface para macOS na App Store
 
     [:octicons-arrow-right-24: App Store](http://appstore.com/mac/openterface) <br>
     [:octicons-mark-github-16: Openterface_MacOS](https://github.com/TechxArtisanStudio/Openterface_MacOS)  <br>
-    [:octicons-play-24: Watch Demo](https://youtu.be/m7OpUem0zqY?si=tclfl0Jl77tmE6_e)
+    [:octicons-play-24: Assista ao Demo](https://youtu.be/m7OpUem0zqY?si=tclfl0Jl77tmE6_e)
 
 -   :fontawesome-brands-linux:{ .lg .middle } __Linux__
 
     ---
 
-    Build from source for Linux QT app
+    Compile a partir do código-fonte para o aplicativo QT no Linux
 
     [:octicons-mark-github-16: Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT)  <br>
-    [:octicons-play-24: Watch Demo](https://youtu.be/_ScpI6TC0Pk?si=FSg7A2zmST8QbFec)
+    [:octicons-play-24: Assista ao Demo](https://youtu.be/_ScpI6TC0Pk?si=FSg7A2zmST8QbFec)
 
 -   :fontawesome-brands-android:{ .lg .middle } __Android__
 
     ---
 
-    Android version is currently in development
+    Versão para Android está em desenvolvimento
 
-    [:octicons-clock-24: Coming Soon](https://github.com/TechxArtisanStudio/Openterface_Android)  <br>
-    [:octicons-play-24: Watch Demo](https://x.com/TechxArtisan/status/1825460088922071398)
+    [:octicons-clock-24: Em Breve](https://github.com/TechxArtisanStudio/Openterface_Android)  <br>
+    [:octicons-play-24: Assista ao Demo](https://x.com/TechxArtisan/status/1825460088922071398)
 
 </div>
 
-Check out [Basic Control](/basic) and [How it Works](/how-it-works) for more.
+Confira [Controle Básico](/basic) e [Como Funciona](/how-it-works) para mais informações.
 
-## OSI Compliance
+## Conformidade com OSI
 
 ![Open Source Initiative®](images/trademark/open-source-initiative.svg){:style="height:120px"}
 
-Our apps for the Openterface Mini-KVM are licensed under the **AGPL-3.0**, an **Open Source Initiative®** approved license. The **OSI logo®** is the trademark of the Open Source Initiative, and we proudly comply with the Open Source Definition. For more information, visit the Open Source Initiative at http://opensource.org and our Openterface's Github repositories.
+Nossos aplicativos para o Openterface Mini-KVM são licenciados sob a **AGPL-3.0**, uma licença aprovada pela **Open Source Initiative®**. O **logo OSI®** é uma marca registrada da Open Source Initiative, e nós orgulhosamente cumprimos a Definição de Código Aberto. Para mais informações, visite a Open Source Initiative em http://opensource.org e nossos repositórios no Github do Openterface.
 
-## Join Our Development
+## Junte-se ao Nosso Desenvolvimento
 
-The above host applications are **currently under development**. We are actively coding 🛠️ and enhancing them as we go! 💪 If you're interested in contributing and want to be part of an innovative development team, [join us now!](mailto:info@techxartisan.com) 🚀
+Os aplicativos acima estão **atualmente em desenvolvimento**. Estamos ativamente codificando 🛠️ e aprimorando-os conforme avançamos! 💪 Se você está interessado em contribuir e quer fazer parte de uma equipe de desenvolvimento inovadora, [junte-se a nós agora!](mailto:info@techxartisan.com) 🚀
 
-Interested in the hardware side? Check out our [Open Hardware](/open-hardware) page to explore the device's schematics, components, and even contribute to its physical design! 🔧🖥️
+Interessado na parte de hardware? Confira nossa página de [Hardware Aberto](/open-hardware) para explorar os esquemas do dispositivo, componentes e até mesmo contribuir para o design físico! 🔧🖥️

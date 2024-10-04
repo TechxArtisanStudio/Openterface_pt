@@ -1,8 +1,8 @@
 # Project information
-site_name: Openterface | Bridging Interfaces to Open Possibilities
+site_name: Openterface | Conectando Interfaces a Novas Possibilidades
 site_url: https://pt.openterface.com/
 site_author: Billy Wang
-site_description: A Feature-rich, Open-source and Community-driven KVM-over-USB Solution
+site_description: Uma solução KVM-over-USB rica em recursos, de código aberto e impulsionada pela comunidade
 
 # Repository
 repo_name: Openterface
@@ -10,12 +10,12 @@ repo_url: https://github.com/TechxArtisanStudio/Openterface
 
 # Copyright
 copyright: >-
-  Copyright &copy; All rights reserved. 2023 <a href="https://www.openterface.com">Openterface</a> | <a href="https://www.techxartisan.com">TechxArtisan</a> | Guangzhou Billio Tech. Co., Ltd. <br>
-  <a href="">Home</a> |
-  <a href="/terms-of-service">Terms of Service</a> |
-  <a href="/privacy-policy">Privacy Policy</a> | 
-  <a href="#__consent">Cookie Settings</a> | 
-  <a href="/contact">Contact Us</a>
+  Direitos autorais &copy; Todos os direitos reservados. 2023 <a href="https://www.openterface.com">Openterface</a> | <a href="https://www.techxartisan.com">TechxArtisan</a> | Guangzhou Billio Tech. Co., Ltd. <br>
+  <a href="">Início</a> |
+  <a href="/terms-of-service">Termos de Serviço</a> |
+  <a href="/privacy-policy">Política de Privacidade</a> | 
+  <a href="#__consent">Configurações de Cookies</a> | 
+  <a href="/contact">Fale Conosco</a>
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -120,15 +120,15 @@ extra:
     - name: Español
       link: https://es.openterface.com/
       lang: es
-    # - name: 简体中文
-    #   link: https://cn.openterface.com/
-    #   lang: zh
-    # - name: Português
-    #   link: https://pt.openterface.com/
-    #   lang: pt
-    # - name: Română
-    #   link: https://ro.openterface.com/
-    #   lang: ro
+    - name: Português
+      link: https://pt.openterface.com/
+      lang: pt
+    - name: Română
+      link: https://ro.openterface.com/
+      lang: ro
+    - name: 简体中文
+      link: https://cn.openterface.com/
+      lang: zh
     # - name: Svenska
     #   link: https://sv.openterface.com/
     #   lang: sv
@@ -140,10 +140,10 @@ extra:
     #   lang: nl
     
   consent:
-    title: Cookie Consent
+    title: Consentimento de Cookies
     description: >- 
-      We use cookies to enhance quality of docs content, analyse site effectiveness and needs. 
-      By consenting, you help us improve our website. Thanks!
+      Utilizamos cookies para melhorar a qualidade do conteúdo da documentação, analisar a eficácia do site e entender suas necessidades. 
+      Ao consentir, você nos ajuda a aprimorar nosso site. Obrigado!
     actions:
       - accept
       - reject
@@ -211,37 +211,37 @@ plugins:
       archive: false
 
 nav:
-  - Home: index.md
-  - Doc:
-    - Quick Start: quick-start.md
-    - Features: features.md
-    - How to Connect: how-to-connect.md
-    - Open Software: app.md
-    - Open Hardware: open-hardware.md
-    - Basic Control: basic.md
-    - Switchable USB Port: usb-switch.md
-    - Extension Pins: pin.md
-    - Use Cases: use-cases.md
-    - Specifications: specifications.md
-    - What's in the Box: whats-in-the-box.md
-    - Accessories: accessories.md
-    - How It Works: how-it-works.md
-    - Why Openterface: why-openterface.md
-    - Comparison: comparison.md
-    - FAQs: faq.md
-    - Development:
-      - Test & Dev: test.md
-      - Roadmap: roadmap.md
-      - Contributing: contributing.md
-  - FAQs: /faq
-  - Use Cases: /use-cases
+  - Início: index.md
+  - Documentação:
+    - Início Rápido: quick-start.md
+    - Funcionalidades: features.md
+    - Como Conectar: how-to-connect.md
+    - Software Aberto: app.md
+    - Hardware Aberto: open-hardware.md
+    - Controle Básico: basic.md
+    - Porta USB Comutável: usb-switch.md
+    - Pinos de Extensão: pin.md
+    - Casos de Uso: use-cases.md
+    - Especificações: specifications.md
+    - O Que Vem na Caixa: whats-in-the-box.md
+    - Acessórios: accessories.md
+    - Como Funciona: how-it-works.md
+    - Por Que Openterface: why-openterface.md
+    - Comparação: comparison.md
+    - Perguntas Frequentes: faq.md
+    - Desenvolvimento:
+      - Teste e Desenvolvimento: test.md
+      - Roteiro: roadmap.md
+      - Contribuindo: contributing.md
+  - Perguntas Frequentes: /faq
+  - Casos de Uso: /use-cases
   - Blog:
     - blog/index.md
   - Reddit: /reddit
   - Discord: /discord
-  - About:
-    - Contact: contact.md
-    - Policies:
-      - Privacy Policy: privacy-policy.md
-      - Terms of Service: terms-of-service.md
-      - Return, Refunds & Warranty: return-refunds-warranty.md
+  - Sobre:
+    - Contato: contact.md
+    - Políticas:
+      - Política de Privacidade: privacy-policy.md
+      - Termos de Serviço: terms-of-service.md
+      - Devoluções, Reembolsos e Garantia: return-refunds-warranty.md

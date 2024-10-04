@@ -1,91 +1,91 @@
-# Accessories
+# Acessórios
 
-Here, you'll find various products that complement and enhance the functionality of the Openterface Mini-KVM. We aim to provide a range of accessories that make your experience with our Mini-KVM even more versatile and convenient.
+Aqui, você encontrará diversos produtos que complementam e aprimoram a funcionalidade do Openterface Mini-KVM. Nosso objetivo é oferecer uma variedade de acessórios que tornem sua experiência com o Mini-KVM ainda mais versátil e conveniente.
 
-## VGA to HDMI Converter Cable
+## Cabo Conversor VGA para HDMI
 
 ![CABLE100-VGA2HDMI](images/product/part/CABLE100-VGA2HDMI-1.jpg){:style="height:360px"}
 
-This product converts VGA video and integrates audio into HDMI, enabling easy connection of VGA devices to HDMI displays.
+Este produto converte vídeo VGA e integra áudio em HDMI, permitindo a fácil conexão de dispositivos VGA a monitores HDMI.
 
-- **Model**: CABLE100-VGA2HDMI
-- **Length**: 1M
-- **Output Video Resolution**: 1920x1080P Full HD
-- **Input Audio**: 3.5mm audio jack
-- **Audio Out**: via HDMI
-- **Power Supply**: Powered via USB
+- **Modelo**: CABLE100-VGA2HDMI
+- **Comprimento**: 1M
+- **Resolução de Vídeo de Saída**: 1920x1080P Full HD
+- **Entrada de Áudio**: Conector de áudio de 3,5mm
+- **Saída de Áudio**: via HDMI
+- **Fonte de Alimentação**: Alimentado via USB
 
-### Use Case
-For a detailed use case of this cable, please visit [Streamlined Server Management](/use-cases/#streamlined-server-management).
+### Caso de Uso
+Para um caso de uso detalhado deste cabo, visite [Gerenciamento de Servidor Simplificado](/use-cases/#streamlined-server-management).
 
-### Demo Video
-Watch the demo video by Tech influencer **Cameron Gray** on how to use this cable with the Mini-KVM: [This USB KVM Console is Awesome!](https://youtu.be/xAEQpWyfY-c?si=auB5NtqHVw2C7iIK&t=1693)
+### Vídeo Demonstrativo
+Assista ao vídeo demonstrativo do influenciador de tecnologia **Cameron Gray** sobre como usar este cabo com o Mini-KVM: [Este Console USB KVM é Incrível!](https://youtu.be/xAEQpWyfY-c?si=auB5NtqHVw2C7iIK&t=1693)
 
-<button class="md-button" onclick="window.location.href='https://www.crowdsupply.com/techxartisan/openterface-mini-kvm#products'">Place Order</button>
+<button class="md-button" onclick="window.location.href='https://www.crowdsupply.com/techxartisan/openterface-mini-kvm#products'">Fazer Pedido</button>
 
 ---
 
-## Type-C to USB-A Cable with Adapter
+## Cabo Tipo-C para USB-A com Adaptador
 
 ![C2A-30-Cable](images/product/part/OP-04-CABLE30-C2A.jpg){:style="height:360px"}
 
-This versatile Type-C Male to USB-A Male cable, paired with a USB-A Female to USB-C Male adapter, offers flexible connectivity to target devices. It allows for data transfer and transmission of keyboard and mouse control signals, regardless of whether the target device uses a USB-A or Type-C port.
+Este versátil cabo Tipo-C Macho para USB-A Macho, acompanhado de um adaptador USB-A Fêmea para USB-C Macho, oferece conectividade flexível para dispositivos alvo. Ele permite a transferência de dados e a transmissão de sinais de controle de teclado e mouse, independentemente de o dispositivo alvo usar uma porta USB-A ou Tipo-C.
 
-- **Length**: 0.3m
-- **Colour**: Black
-- **Adapter**: USB-A Female to USB-C Male
-- **Use**: Facilitates easy control and data transfer to the target device.
+- **Comprimento**: 0,3m
+- **Cor**: Preto
+- **Adaptador**: USB-A Fêmea para USB-C Macho
+- **Uso**: Facilita o controle e a transferência de dados para o dispositivo alvo.
 
 ---
 
-## Type-C to Type-C Cable with Adapter
+## Cabo Tipo-C para Tipo-C com Adaptador
 
 ![C2C-150-Cable](images/product/part/OP-05-CABLE150-C2C.jpg){:style="height:360px"}
 
-This stylish and soft-feel Type-C Male-to-Male cable in vibrant orange is designed for host computer connections. It comes with a USB-C Female to USB-A Male adapter for enhanced compatibility, ensuring you can connect to host computers using either Type-C or USB-A ports. Additionally, this cable supports **240W fast charging** (Voltage DC50V, Current 5A, Power 240W), making it perfect not only for our Mini-KVMs but also for charging your mobile phone or laptop.
+Este elegante cabo Tipo-C Macho para Macho, com toque suave e na cor laranja vibrante, é projetado para conexões com computadores host. Ele vem com um adaptador USB-C Fêmea para USB-A Macho para maior compatibilidade, garantindo que você possa se conectar a computadores host usando portas Tipo-C ou USB-A. Além disso, este cabo suporta **carregamento rápido de 240W** (Tensão DC50V, Corrente 5A, Potência 240W), sendo perfeito não apenas para nossos Mini-KVMs, mas também para carregar seu celular ou laptop.
 
-- **Length**: 1.5m
-- **Colour**: Orange
-- **Adapter**: USB-C Female to USB-A Male
-- **Use**: For high-speed data transfer between the host computer and the Mini-KVM, and for fast charging mobile phones or laptops.
+- **Comprimento**: 1,5m
+- **Cor**: Laranja
+- **Adaptador**: USB-C Fêmea para USB-A Macho
+- **Uso**: Para transferência de dados em alta velocidade entre o computador host e o Mini-KVM, e para carregamento rápido de celulares ou laptops.
 
 ---
 
-## HDMI Male-to-Male Cable
+## Cabo HDMI Macho para Macho
 
 ![HDMI-Cable](images/product/part/OP-03-CABLE30-HDMI.jpg){:style="height:360px"}
 
-This compact HDMI cable is perfect for connecting your target device to capture video output, ensuring seamless integration with your Openterface Mini-KVM.
+Este cabo HDMI compacto é perfeito para conectar seu dispositivo alvo e capturar a saída de vídeo, garantindo uma integração perfeita com seu Openterface Mini-KVM.
 
-- **Length**: 0.3m
-- **Colour**: Black
-- **Use**: Ideal for high-definition video transmission from the target device to the Mini-KVM.
+- **Comprimento**: 0,3m
+- **Cor**: Preto
+- **Uso**: Ideal para transmissão de vídeo em alta definição do dispositivo alvo para o Mini-KVM.
 
 ---
 
-## Openterface Toolkit Bag
+## Bolsa de Ferramentas Openterface
 
 ![Toolkit-bag](images/product/part/OP-06-BAG-TOOLKIT.jpg){:style="height:360px"}
 
-Keep your Openterface Mini-KVM and its accessories organised and portable with this compact toolkit bag. Featuring a stylish orange zipper and stretchy mesh pockets, this bag ensures excellent cable management and ease of transport, perfect for IT professionals on the go.
+Mantenha seu Openterface Mini-KVM e seus acessórios organizados e portáteis com esta bolsa de ferramentas compacta. Com um zíper laranja estiloso e bolsos de malha elástica, esta bolsa garante excelente gerenciamento de cabos e facilidade de transporte, perfeita para profissionais de TI em movimento.
 
-- **Dimensions**: 180 x 115 x 50mm
-- **Colour**: Black with orange zipper
-- **Use**: Ideal for storing and organising your Mini-KVM and its cables.
+- **Dimensões**: 180 x 115 x 50mm
+- **Cor**: Preto com zíper laranja
+- **Uso**: Ideal para armazenar e organizar seu Mini-KVM e seus cabos.
 
 ---
 
-## Extension Pin Cap
+## Tampa de Pino de Extensão
 
 ![pin-cap](images/product/part/pin-cap.jpg){:style="height:360px"}
 
-This 3D-printed Extension Pin Cap replaces the original cap on the Openterface Mini-KVM, allowing advanced users to expose and access extension pins for custom development. You can download the 3D model files from our GitHub repository and print the cap yourself.
+Esta Tampa de Pino de Extensão impressa em 3D substitui a tampa original do Openterface Mini-KVM, permitindo que usuários avançados exponham e acessem pinos de extensão para desenvolvimento personalizado. Você pode baixar os arquivos do modelo 3D do nosso repositório GitHub e imprimir a tampa você mesmo.
 
-- **Use**: Provides access to extension pins for advanced hardware development.
-- **Download**: [3D Model Files](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/models)
+- **Uso**: Fornece acesso aos pinos de extensão para desenvolvimento avançado de hardware.
+- **Download**: [Arquivos do Modelo 3D](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/models)
 
 ---
 
-## More Coming Soon
+## Mais em Breve
 
-Stay tuned for more accessories that will be added to this section, designed to enhance your Openterface Mini-KVM experience.
+Fique atento para mais acessórios que serão adicionados a esta seção, projetados para aprimorar sua experiência com o Openterface Mini-KVM.
