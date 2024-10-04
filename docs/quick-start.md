@@ -1,61 +1,61 @@
-# Quick Start
+# Início Rápido
 
 ![basic-two-angled](images/product/basic-two-angled.jpg){:style="max-height:420px"}
 
-Our **Openterface™ Mini-KVM** enables you to control a nearby headless computer directly from your own laptop or desktop using USB and HDMI connections, eliminating the need for additional peripherals or network connectivity. Throughout this documentation, we refer to your controlling laptop or desktop as the **Host** ( ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![Host](images/shell-icons/host.svg#only-light){:style="height:15px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"} ![Host](images/shell-icons/host_1.svg#only-dark){:style="height:15px"} ) and the device being controlled as the **Target** ( ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![Target](images/shell-icons/target.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"} ![Target](images/shell-icons/target_1.svg#only-dark){:style="height:18px"}).
+Nosso **Openterface™ Mini-KVM** permite que você controle um computador sem monitor diretamente do seu próprio laptop ou desktop usando conexões USB e HDMI, eliminando a necessidade de periféricos adicionais ou conectividade de rede. Ao longo desta documentação, nos referimos ao seu laptop ou desktop controlador como **Host** ( ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![Host](images/shell-icons/host.svg#only-light){:style="height:15px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"} ![Host](images/shell-icons/host_1.svg#only-dark){:style="height:15px"} ) e ao dispositivo sendo controlado como **Target** ( ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![Target](images/shell-icons/target.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"} ![Target](images/shell-icons/target_1.svg#only-dark){:style="height:18px"}).
 
 <div class="grid cards" markdown>
 
--   :material-feature-search-outline:{ .lg .middle } __Features__
+-   :material-feature-search-outline:{ .lg .middle } __Recursos__
 
     ---
 
-    Explore the powerful features of Openterface™ Mini-KVM
+    Explore os recursos poderosos do Openterface™ Mini-KVM
 
-    [:octicons-arrow-right-24: View Features](/features)
+    [:octicons-arrow-right-24: Ver Recursos](/features)
 
--   :material-power-plug:{ .lg .middle } __How to Connect__
-
-    ---
-
-    Set up your Openterface™ Mini-KVM and start controlling your Target device
-
-    [:octicons-arrow-right-24: Connection Guide](/how-to-connect)
-
--   :material-open-source-initiative:{ .lg .middle } __Host Apps__
+-   :material-power-plug:{ .lg .middle } __Como Conectar__
 
     ---
 
-    Control your Target device seamlessly with our user-friendly Host applications
+    Configure seu Openterface™ Mini-KVM e comece a controlar seu dispositivo Target
 
-    [:octicons-arrow-right-24: Download Host App](/app)
+    [:octicons-arrow-right-24: Guia de Conexão](/how-to-connect)
 
--   :material-chip:{ .lg .middle } __Open Hardware__
-
-    ---
-
-    Explore our commitment to open-source hardware and transparency
-
-    [:octicons-arrow-right-24: Open Hardware Details](/open-hardware)
-
--   :material-frequently-asked-questions:{ .lg .middle } __Use Cases & FAQs__
+-   :material-open-source-initiative:{ .lg .middle } __Aplicativos para Host__
 
     ---
 
-    Explore ideal scenarios for Openterface™ Mini-KVM and find answers to common questions
+    Controle seu dispositivo Target de forma simples com nossos aplicativos amigáveis para Host
 
-    [:octicons-arrow-right-24: Explore Use Cases](/use-cases)
+    [:octicons-arrow-right-24: Baixar App para Host](/app)
+
+-   :material-chip:{ .lg .middle } __Hardware Aberto__
+
+    ---
+
+    Descubra nosso compromisso com hardware de código aberto e transparência
+
+    [:octicons-arrow-right-24: Detalhes do Hardware Aberto](/open-hardware)
+
+-   :material-frequently-asked-questions:{ .lg .middle } __Casos de Uso & FAQs__
+
+    ---
+
+    Explore cenários ideais para o Openterface™ Mini-KVM e encontre respostas para perguntas comuns
+
+    [:octicons-arrow-right-24: Explorar Casos de Uso](/use-cases)
     
-    [:octicons-arrow-right-24: View FAQs](/faq)
+    [:octicons-arrow-right-24: Ver FAQs](/faq)
 
--   :material-compare:{ .lg .middle } __Comparison__
+-   :material-compare:{ .lg .middle } __Comparação__
 
     ---
 
-    See how Openterface™ Mini-KVM stacks up against other KVM solutions
+    Veja como o Openterface™ Mini-KVM se compara a outras soluções KVM
 
-    [:octicons-arrow-right-24: Why Openterface?](/why-openterface)
+    [:octicons-arrow-right-24: Por que Openterface?](/why-openterface)
 
-    [:octicons-arrow-right-24: View Comparison](/comparison)
+    [:octicons-arrow-right-24: Ver Comparação](/comparison)
 
 </div>

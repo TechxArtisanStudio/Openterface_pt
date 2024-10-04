@@ -6,128 +6,128 @@ categories:
   - Updates
 ---
 
-# From Development to Your Hands: Behind the Scenes
+# Do Desenvolvimento às Suas Mãos: Por Trás das Cenas
 
-Hi everyone!
+Olá a todos!
 
-We’re back with another update on our crowdfunding journey, and we've got some exciting news to share!
+Estamos de volta com mais uma atualização sobre nossa jornada de crowdfunding, e temos algumas notícias emocionantes para compartilhar!
 
-### Hitting a Major Milestone
+### Atingindo um Marco Importante
 
-First things first, we’re absolutely over the moon to announce that we’ve hit an astonishing [**1100% of our original funding goal**](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)! A massive thank you to each and every one of you. Your support has been nothing short of phenomenal!
+Primeiro de tudo, estamos absolutamente nas nuvens ao anunciar que atingimos impressionantes [**1100% do nosso objetivo original de financiamento**](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm)! Um enorme obrigado a cada um de vocês. Seu apoio tem sido nada menos que fenomenal!
 
-### Production Planning
+### Planejamento de Produção
 
-We’ve been super busy on the production front already! This week, we visited the tech-forward city of Shenzhen and had the chance to tour one of the top tech manufacturers. These folks work with big names like Meta, ABB, and Blaupunkt, and it was incredible to see their advanced production lines and quality control machinery in action. I wish I could share more photos, but here’s one with a bit of digital mosaic for confidentiality.
+Já estamos super ocupados na frente de produção! Esta semana, visitamos a cidade tecnológica de Shenzhen e tivemos a chance de fazer um tour em uma das principais fabricantes de tecnologia. Essas pessoas trabalham com grandes nomes como Meta, ABB e Blaupunkt, e foi incrível ver suas linhas de produção avançadas e máquinas de controle de qualidade em ação. Gostaríamos de compartilhar mais fotos, mas aqui está uma com um pouco de mosaico digital para confidencialidade.
 
 ![txa-team-visit-sz-factory-1](https://www.crowdsupply.com/img/3007/e8391f0f-7d97-4236-9199-35c1157a3007/txa-team-visit-sz-factory-1_jpg_gallery-lg.jpg)
 
-(We were discussing QC with the production line manager.)
+(Estávamos discutindo QC com o gerente da linha de produção.)
 
-We’re feeling very positive about this partnership and their enthusiasm to support a tech startup like ours. We’re committed to ensuring the manufacturing phase is handled with the utmost dedication and quality so we can get our product into your hands soon! Here’s a snapshot of our core team members at the factory entrance:
+Estamos muito positivos sobre essa parceria e o entusiasmo deles em apoiar uma startup de tecnologia como a nossa. Estamos comprometidos em garantir que a fase de fabricação seja tratada com a máxima dedicação e qualidade para que possamos colocar nosso produto em suas mãos em breve! Aqui está uma foto dos membros principais da nossa equipe na entrada da fábrica:
   
 ![txa-team-visit-sz-factory-2](https://www.crowdsupply.com/img/0842/ab0ded56-7b84-4961-a19e-f30510d30842/txa-team-visit-sz-factory-2_jpg_gallery-lg.jpg)
 
-(From left to right: Shawn, Billy, Kevin, Vileer.)
+(Da esquerda para a direita: Shawn, Billy, Kevin, Vileer.)
 
-### Upgrading Toolkit Accessories
+### Atualizando Acessórios do Kit de Ferramentas
 
-We’re always looking for ways to improve, and our add-on **VGA-to-HDMI cable** has now been upgraded to 1 meter long with enhanced quality, as you can see from our previous [Week 2 update](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm/updates/our-vga-to-hdmi-cable-is-now-available-to-european-backers-and-its-a-full-meter-long).
+Estamos sempre procurando maneiras de melhorar, e nosso cabo **VGA-para-HDMI** agora foi atualizado para 1 metro de comprimento com qualidade aprimorada, como você pode ver em nossa [atualização da Semana 2](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm/updates/our-vga-to-hdmi-cable-is-now-available-to-european-backers-and-its-a-full-meter-long).
 
-Next up, we’re also looking into our **1.5 meter long Type-C cable** for connecting to the host computer. Type-C is becoming increasingly common across new computers, laptops, and even servers. After testing many manufacturers, we found one that could produce this stylish orange Type-C cable with a lovely silicone feel that meets our quality standards.
+Em seguida, também estamos analisando nosso cabo **Type-C de 1,5 metros** para conectar ao computador host. O Type-C está se tornando cada vez mais comum em novos computadores, laptops e até servidores. Depois de testar muitos fabricantes, encontramos um que poderia produzir este elegante cabo Type-C laranja com uma sensação de silicone adorável que atende aos nossos padrões de qualidade.
 
-Currently, **an extra Type-C-to-USB-A adapter is required** if our Mini-KVM works with a host computer that only has USB-A ports.
+Atualmente, **é necessário um adaptador extra de Type-C-para-USB-A** se nosso Mini-KVM funcionar com um computador host que tenha apenas portas USB-A.
 
 ![typec-cable-need-adapter| link](https://www.crowdsupply.com/img/36a3/64ccc024-68b8-4d04-9ea9-ae21223136a3/typec-cable-need-adapter_jpg_gallery-lg.jpg)
 
-We know it’s a bit of a hassle, so we’re working closely with our manufacturer to improve it by **integrating an attached Type-C-to-USB-A adapter**. Here’s a mock-up of what it might look like.
+Sabemos que é um pouco incômodo, então estamos trabalhando de perto com nosso fabricante para melhorá-lo integrando um **adaptador Type-C-para-USB-A acoplado**. Aqui está um mock-up de como pode parecer.
 
 ![upgrade-for-typ-c-cable-with-adapter](https://www.crowdsupply.com/img/6863/e9fba3f2-004f-465b-afde-29bacc236863/upgrade-for-typ-c-cable-with-adapter_png_md-xl.jpg)
 
-This stylish orange cable, with a good silicone feel and 1.5 metres long, features Type-C connectors on both ends and includes an adapter to convert one end from Type-C to USB-A. It doesn’t exist on the market and requires our custom OEM production. We’re aiming to include this solution in our final toolkit package for backers, but I'm still crunching the numbers and giving my calculator a workout! To make this happen, **we need more support to reduce the overall cost of production** for our mini-KVM toolkit. Given the current crowdfunding numbers and production costs, making this custom Type-C cable is becoming more feasible, as it is approaching the break-even point. I’ll keep everyone updated in the Openterface community on any progress!
+Este elegante cabo laranja, com uma boa sensação de silicone e 1,5 metros de comprimento, possui conectores Type-C em ambas as extremidades e inclui um adaptador para converter uma extremidade de Type-C para USB-A. Ele não existe no mercado e requer nossa produção OEM personalizada. Estamos visando incluir esta solução em nosso pacote final de ferramentas para os apoiadores, mas ainda estou fazendo as contas e dando um bom uso à minha calculadora! Para que isso aconteça, **precisamos de mais apoio para reduzir o custo total de produção** do nosso kit de ferramentas mini-KVM. Dado os números atuais de crowdfunding e os custos de produção, fazer este cabo Type-C personalizado está se tornando mais viável, pois está se aproximando do ponto de equilíbrio. Manterei todos atualizados na comunidade Openterface sobre qualquer progresso!
 
-For your part, if you find our project promising and believe the Mini-KVM can make your tech life easier, please consider backing us and spreading the word to your friends. Let's ensure we can enhance the product even further while keeping it wallet-friendly for everyone in this crowdfunding campaign! Thanks a bunch!
+Da sua parte, se você achar nosso projeto promissor e acreditar que o Mini-KVM pode facilitar sua vida tecnológica, considere nos apoiar e espalhar a palavra para seus amigos. Vamos garantir que possamos melhorar ainda mais o produto enquanto o mantemos acessível para todos nesta campanha de crowdfunding! Muito obrigado!
 
-### Open Source Updates and Global Teamwork!
+### Atualizações de Código Aberto e Colaboração Global!
 
-Please bear with us during this early stage of development, as there are still bugs and changes happening in our host applications. That’s where our beta team comes in! We’ve already organized **two rounds of beta testing**. Check out our posts here to learn more:
+Por favor, tenham paciência conosco durante esta fase inicial de desenvolvimento, pois ainda há bugs e mudanças acontecendo em nossos aplicativos host. É aí que entra nossa equipe beta! Já organizamos **duas rodadas de testes beta**. Confira nossos posts aqui para saber mais:
 
-- [Update on Applications for Beta Team Round 1](https://www.reddit.com/r/Openterface_miniKVM/comments/1bszggn/update_for_our_beta_test_applicants_round_1/) on Apr 1, 2024
-- [Shipment to Beta Team Round 1](https://www.reddit.com/r/Openterface_miniKVM/comments/1cayi8v/meet_your_new_tech_allies_soon_beta_team/) on Apr 23, 2024
-- [Application for Joining Beta Team Round 2](https://www.reddit.com/r/Openterface_miniKVM/comments/1cpcowl/make_your_mark_join_our_round_2_beta_testing_crew/) on May 11, 2024
-- [Update on Applications for Beta Team Round 2](https://www.reddit.com/r/Openterface_miniKVM/comments/1cxr3zp/update_for_our_beta_test_applicants_round_2/) on May 22, 2024
+- [Atualização sobre Aplicações para a Equipe Beta Rodada 1](https://www.reddit.com/r/Openterface_miniKVM/comments/1bszggn/update_for_our_beta_test_applicants_round_1/) em 1 de abril de 2024
+- [Envio para a Equipe Beta Rodada 1](https://www.reddit.com/r/Openterface_miniKVM/comments/1cayi8v/meet_your_new_tech_allies_soon_beta_team/) em 23 de abril de 2024
+- [Aplicação para Participar da Equipe Beta Rodada 2](https://www.reddit.com/r/Openterface_miniKVM/comments/1cpcowl/make_your_mark_join_our_round_2_beta_testing_crew/) em 11 de maio de 2024
+- [Atualização sobre Aplicações para a Equipe Beta Rodada 2](https://www.reddit.com/r/Openterface_miniKVM/comments/1cxr3zp/update_for_our_beta_test_applicants_round_2/) em 22 de maio de 2024
 
-As you can see from the above posts, we received an overwhelming number of fantastic applications in Rounds 1 and 2, and it was a real challenge to narrow down the candidates from such a brilliant pool. We had to make some tough decisions due to the limited spots available at this exclusive phase!
+Como você pode ver nos posts acima, recebemos um número esmagador de aplicações fantásticas nas Rodadas 1 e 2, e foi um verdadeiro desafio reduzir os candidatos de um grupo tão brilhante. Tivemos que tomar algumas decisões difíceis devido ao número limitado de vagas disponíveis nesta fase exclusiva!
 
-Our beta team is an exceptional, truly global collaboration, with members from the US 🇺🇸, UK 🇬🇧, Japan 🇯🇵, Germany 🇩🇪, Czech Republic 🇨🇿, Norway 🇳🇴, Belgium 🇧🇪, France 🇫🇷, Austria 🇦🇹, Australia 🇦🇺, Poland 🇵🇱, Netherlands 🇳🇱, China 🇨🇳, and more joining soon. These testers bring development experience, real-world use cases for the Openterface Mini-KVM, and a passion for supporting open-source projects like ours. Our beta team is already using this handy gadget in their daily tasks, raising issues, and suggesting features for us to improve further.
+Nossa equipe beta é uma colaboração excepcional e verdadeiramente global, com membros dos EUA 🇺🇸, Reino Unido 🇬🇧, Japão 🇯🇵, Alemanha 🇩🇪, República Tcheca 🇨🇿, Noruega 🇳🇴, Bélgica 🇧🇪, França 🇫🇷, Áustria 🇦🇹, Austrália 🇦🇺, Polônia 🇵🇱, Países Baixos 🇳🇱, China 🇨🇳, e mais se juntando em breve. Esses testadores trazem experiência em desenvolvimento, casos de uso reais para o Openterface Mini-KVM e uma paixão por apoiar projetos de código aberto como o nosso. Nossa equipe beta já está usando este gadget prático em suas tarefas diárias, levantando questões e sugerindo recursos para melhorarmos ainda mais.
 
-Although most of you don’t have this early version of mini-KVM, you can still review our code on GitHub and join the conversation with our beta and dev teams in [our community](/community/)! Let us know what you find so we can make this device awesome together!
+Embora a maioria de vocês não tenha esta versão inicial do mini-KVM, você ainda pode revisar nosso código no GitHub e participar da conversa com nossas equipes beta e de desenvolvimento em [nossa comunidade](/community/)! Deixe-nos saber o que você encontra para que possamos tornar este dispositivo incrível juntos!
 
-Here are updates on our open-source Github repo:
+Aqui estão as atualizações sobre nosso repositório de código aberto no Github:
 
 #### [**Openterface_MacOS**](https://github.com/TechxArtisanStudio/Openterface_MacOS)
 
-Our Openterface MacOS host app is already officially live on the **Apple App Store**. Just search for 'Openterface' or 'mini-KVM' to find our app page. Even better, we’ve uploaded the full code to our GitHub repo: Openterface_MacOS for the Mini-KVM. You can check out this [basic operation demo](/basic-testing/) on **MacOS**.
+Nosso aplicativo host Openterface MacOS já está oficialmente disponível na **Apple App Store**. Basta procurar por 'Openterface' ou 'mini-KVM' para encontrar nossa página de aplicativo. Melhor ainda, carregamos o código completo em nosso repositório GitHub: Openterface_MacOS para o Mini-KVM. Você pode conferir este [demo de operação básica](/basic-testing/) no **MacOS**.
 
 ![openterface-macos-app-store](https://www.crowdsupply.com/img/1c9c/f855deb7-a88e-415b-a826-f360e6d41c9c/openterface-macos-app-store_png_md-xl.jpg)
 
 #### [**Openterface_QT**](https://github.com/TechxArtisanStudio/Openterface_QT)
 
-QT is a versatile framework that we love, so we built our mini-KVM based on it. For the **Windows version**, check out our early demo video [here](/basic-testing/). You can see from the demo that it works great with low latency and a stable connection! You can find and download the early beta app from the github repo there.
+QT é uma estrutura versátil que adoramos, então construímos nosso mini-KVM com base nela. Para a **versão Windows**, confira nosso vídeo demo inicial [aqui](/basic-testing/). Você pode ver no demo que funciona muito bem com baixa latência e uma conexão estável! Você pode encontrar e baixar o aplicativo beta inicial no repositório do github lá.
 
 ![openterface-win-app-demo-1](https://www.crowdsupply.com/img/fff1/6900b965-207d-4d91-8816-9ab73489fff1/openterface-win-app-demo-1_jpg_gallery-lg.jpg)
   
 ![openterface-win-app-demo-2](https://www.crowdsupply.com/img/373b/48737a7e-7793-49c1-9efc-a284d1ae373b/openterface-win-app-demo-2_jpg_gallery-lg.jpg)
 
-As for Linux-based systems, packaging for different architectures like ARM32, ARM64, ARMv7, and ARMv8, especially for the **Raspberry Pi**, is quite a challenge (with hours and hours of waiting for packaging), but we’re working on it. Expect a Linux demo soon, hopefully within a week.
+Quanto aos sistemas baseados em Linux, empacotar para diferentes arquiteturas como ARM32, ARM64, ARMv7 e ARMv8, especialmente para o **Raspberry Pi**, é um grande desafio (com horas e horas de espera para empacotamento), mas estamos trabalhando nisso. Espere um demo para Linux em breve, espero que dentro de uma semana.
 
-Now, we have just uploaded all our fresh code for Openterface_QT on GitHub! Dive in and have a look, but brace yourselves – it’s still in the early development stages, so there are still quite a few inevitable quirks and some work for us to improve it. We wouldn’t mind a hand. If you are a developer, please join us. Happy coding!
+Agora, acabamos de carregar todo o nosso código fresco para Openterface_QT no GitHub! Mergulhe e dê uma olhada, mas prepare-se – ainda está nos estágios iniciais de desenvolvimento, então ainda há algumas inevitáveis peculiaridades e algum trabalho para melhorarmos. Não nos importamos de receber uma ajuda. Se você é um desenvolvedor, junte-se a nós. Feliz codificação!
 
-####  **[Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android) and [Openterface_WebExtension](https://github.com/TechxArtisanStudio/Openterface_WebExtension)**
+####  **[Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android) e [Openterface_WebExtension](https://github.com/TechxArtisanStudio/Openterface_WebExtension)**
 
-We’ve completed the **proof of concept** for both Android and WebExtension. While these are lower priorities compared to macOS, Windows, and Linux, rest assured they’re in the pipeline. Based on our preliminary research, the Openterface_Android project might also support **ChromeOS**. If you have any insights, please join the discussion!
+Completamos o **prova de conceito** tanto para Android quanto para WebExtension. Embora estas sejam prioridades mais baixas em comparação com macOS, Windows e Linux, fique tranquilo que estão no pipeline. Com base em nossa pesquisa preliminar, o projeto Openterface_Android também pode suportar **ChromeOS**. Se você tiver alguma visão, por favor, junte-se à discussão!
 
-####  **Even for iPadOS?**
+####  **Até para iPadOS?**
 
-We’re also exploring compatibility with Apple’s mobile systems, like iPadOS. Due to Apple’s stringent controls, these platforms might not support wired connections with third-party devices. However, we’re investigating potential workarounds, especially for iPads with M series chips. Our beta mate **Seb** has already made [some interesting findings](https://discord.com/channels/1199611503469408276/1221755356896825424/1238070985794781265) and this is worth exploring further, though nothing is confirmed yet. If you have any insights or suggestions, join our community and let’s discuss!
+Também estamos explorando a compatibilidade com os sistemas móveis da Apple, como o iPadOS. Devido aos controles rigorosos da Apple, essas plataformas podem não suportar conexões com fio com dispositivos de terceiros. No entanto, estamos investigando possíveis soluções alternativas, especialmente para iPads com chips da série M. Nosso colega beta **Seb** já fez [algumas descobertas interessantes](https://discord.com/channels/1199611503469408276/1221755356896825424/1238070985794781265) e isso vale a pena explorar mais, embora nada esteja confirmado ainda. Se você tiver alguma visão ou sugestão, junte-se à nossa comunidade e vamos discutir!
 
 ![seb-explore-minikvm-for-ipados](https://www.crowdsupply.com/img/cf00/534f1b87-fcf9-4588-a207-d7a305aacf00/seb-explore-minikvm-for-ipados_jpg_gallery-lg.jpg)
 
 #### [**Openterface_Mini-KVM_Hardware**](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware)
 
-We will start releasing the hardware details incrementally over the next two to three weeks. Additionally, to maintain a high standard of open source, we plan to adhere to the Open Source Hardware Association (**OSHWA**) certification requirements.
+Começaremos a liberar os detalhes do hardware de forma incremental nas próximas duas a três semanas. Além disso, para manter um alto padrão de código aberto, planejamos aderir aos requisitos de certificação da Open Source Hardware Association (**OSHWA**).
 
-In the meantime, you can learn more about our hardware here: [datasheet](https://docs.google.com/document/d/1UPw5RwGTp0AjKL3wOvQZUS1hp3IPMxkCujtqy5haeP0/edit?usp=sharing) and [How It Works](/how-it-works/) for now. This page explains our USB-HDMI capture integration, featuring the **CH9329** chip for keyboard and mouse control. Technical enthusiasts may find the details on this chip particularly interesting. Additionally, our mini-KVM utilises the **CH340** chip, supporting two built-in USB hubs for both the host and target sides. Our mini-KVM is comparable to many video capture cards currently on the market.
+Enquanto isso, você pode aprender mais sobre nosso hardware aqui: [datasheet](https://docs.google.com/document/d/1UPw5RwGTp0AjKL3wOvQZUS1hp3IPMxkCujtqy5haeP0/edit?usp=sharing) e [Como Funciona](/how-it-works/) por enquanto. Esta página explica nossa integração de captura USB-HDMI, apresentando o chip **CH9329** para controle de teclado e mouse. Os entusiastas técnicos podem achar os detalhes sobre este chip particularmente interessantes. Além disso, nosso mini-KVM utiliza o chip **CH340**, suportando dois hubs USB integrados para os lados host e alvo. Nosso mini-KVM é comparável a muitas placas de captura de vídeo atualmente no mercado.
 
-#### Please hang tight!
+#### Por favor, aguente firme!
 
-We're hard working here and in the process of **open-sourcing both our software and hardware**. Good things take time to cook!  We will keep you updated on this progress within our community. Thanks for your patience and understanding! Stay tuned and cheers!
+Estamos trabalhando duro aqui e no processo de **abrir o código tanto do nosso software quanto do hardware**. Coisas boas levam tempo para cozinhar! Manteremos você atualizado sobre este progresso dentro da nossa comunidade. Obrigado pela paciência e compreensão! Fique ligado e até mais!
 
-### Addressing Concerns
+### Abordando Preocupações
 
-We understand that some people may be *sceptical*, given the number of scam crowdfunding projects out there. Here are a few points that might reassure you about our crowdfunding project:
+Entendemos que algumas pessoas podem estar *céticas*, dado o número de projetos de crowdfunding fraudulentos por aí. Aqui estão alguns pontos que podem tranquilizá-lo sobre nosso projeto de crowdfunding:
 
-1. **Trust the Crowd Supply Platform:** This is *one of the top crowdfunding platforms for electronic products* in the US **since 2012**. The Crowd Supply team has been closely overseeing our development progress of the Openterface Mini-KVM and offering us professional advice to ensure that what we have been creating is just right for you. A shout of thanks to the Crowd Supply team here too! Moreover, You can read more about how your rights as a backer are protected on the Crowd Supply platform, including for our project: [Crowd Supply Guide: How are Backers Protected?](https://www.crowdsupply.com/guide/backer-protection)
-    > "Every project that has ever received funds through Crowd Supply has delivered to their backers (or is on track to do so). You are not funding someone’s pipe-dream; at Crowd Supply, you are purchasing an actual product."
+1. **Confie na Plataforma Crowd Supply:** Esta é *uma das principais plataformas de crowdfunding para produtos eletrônicos* nos EUA **desde 2012**. A equipe do Crowd Supply tem acompanhado de perto nosso progresso de desenvolvimento do Openterface Mini-KVM e nos oferecido conselhos profissionais para garantir que o que estamos criando seja perfeito para você. Um agradecimento à equipe do Crowd Supply aqui também! Além disso, você pode ler mais sobre como seus direitos como apoiador são protegidos na plataforma Crowd Supply, incluindo para o nosso projeto: [Guia Crowd Supply: Como os Apoiadores são Protegidos?](https://www.crowdsupply.com/guide/backer-protection)
+    > "Todo projeto que já recebeu fundos através do Crowd Supply entregou aos seus apoiadores (ou está no caminho para fazê-lo). Você não está financiando o sonho de alguém; no Crowd Supply, você está comprando um produto real."
 
-2. **Trust the Experience of Our Team:** We are a group of versatile developers, skilful makers, and experienced project and production managers, especially in work that involves a blend of both hardware and software development. We are an innovative tech creative studio with *over six years of experience in advanced tech projects* in fields such as IoT, AI, edge computing, and tech art. To learn more about us, check out our [TechxArtisan Studio](https://techxartisan.com/en/) website.
+2. **Confie na Experiência da Nossa Equipe:** Somos um grupo de desenvolvedores versáteis, criadores habilidosos e gerentes de projeto e produção experientes, especialmente em trabalhos que envolvem uma mistura de desenvolvimento de hardware e software. Somos um estúdio criativo de tecnologia inovadora com *mais de seis anos de experiência em projetos tecnológicos avançados* em áreas como IoT, IA, computação de borda e arte tecnológica. Para saber mais sobre nós, confira nosso site [TechxArtisan Studio](https://techxartisan.com/en/).
 
-3. **Trust the Culture of Our Team:** Our team is dedicated not only to technical excellence but also to the overall user experience. This includes everything from user and developer documentation to design aesthetics. We are passionate about cutting-edge technology and frequently engage in spirited discussions about new advancements from various perspectives. These debates help us define what makes an outstanding electronic product and how to bring it to life through our teamwork. This collaborative approach ensures our products enhance user experience and demonstrate our dedication to quality and detail. Furthermore, we embrace a culture of open source and community collaboration.
+3. **Confie na Cultura da Nossa Equipe:** Nossa equipe é dedicada não apenas à excelência técnica, mas também à experiência geral do usuário. Isso inclui tudo, desde a documentação do usuário e do desenvolvedor até a estética do design. Somos apaixonados por tecnologia de ponta e frequentemente nos envolvemos em discussões animadas sobre novos avanços de várias perspectivas. Esses debates nos ajudam a definir o que faz um produto eletrônico excepcional e como trazê-lo à vida através do nosso trabalho em equipe. Essa abordagem colaborativa garante que nossos produtos melhorem a experiência do usuário e demonstrem nossa dedicação à qualidade e aos detalhes. Além disso, abraçamos uma cultura de código aberto e colaboração comunitária.
 
-4. **Observe What We Have Achieved and Are Doing:** We’ve been working very hard on this project. You can join our community on [Reddit](https://www.reddit.com/r/Openterface_miniKVM/) and [Discord](/discord), see what we have been crafting from the very early prototype to the current pre-production version, and stay informed about our up-to-date progress. We would love to see you in our community and engage with us!
+4. **Observe o que Realizamos e Estamos Fazendo:** Temos trabalhado muito neste projeto. Você pode se juntar à nossa comunidade no [Reddit](https://www.reddit.com/r/Openterface_miniKVM/) e [Discord](/discord), ver o que temos criado desde o protótipo inicial até a versão atual de pré-produção, e ficar informado sobre nosso progresso atualizado. Adoraríamos vê-lo em nossa comunidade e interagir conosco!
 
-5. **Chat with Us Directly:** If you have any questions or concerns about our Mini-KVM, please don't hesitate to email me at info@techxartisan.com. Additionally, we are planning a livestream, hosted by [**David Groom from MAKE: Magazine**](https://www.youtube.com/@MAKE/streams) on Wednesday, the 29th. We'll be discussing our Openterface Mini-KVM and the story behind it. I will post the video later on our community page.
+5. **Converse Conosco Diretamente:** Se você tiver alguma dúvida ou preocupação sobre nosso Mini-KVM, por favor, não hesite em me enviar um e-mail para info@techxartisan.com. Além disso, estamos planejando uma transmissão ao vivo, apresentada por [**David Groom da MAKE: Magazine**](https://www.youtube.com/@MAKE/streams) na quarta-feira, dia 29. Estaremos discutindo nosso Openterface Mini-KVM e a história por trás dele. Postarei o vídeo mais tarde em nossa página da comunidade.
 
-Finally, we totally understand if you’re still unsure. That’s OK! If your work involves managing headless devices, we’re confident our efforts in crafting the Openterface Mini-KVM will eventually win you over. Wait and see! 😄
+Finalmente, entendemos totalmente se você ainda estiver em dúvida. Tudo bem! Se o seu trabalho envolve gerenciar dispositivos sem cabeça, estamos confiantes de que nossos esforços em criar o Openterface Mini-KVM eventualmente irão conquistá-lo. Espere e veja! 😄
 
-### What’s Next?
+### O que Vem a Seguir?
 
-Stay tuned for next week’s update, where we’ll dive into more details about our host application functions, its roadmap, production progress, real use cases shared by our beta team, and more! In the meantime, check out our website [Openterface](/) and [FAQs](/faq/), consider [backing us on Crowd Supply](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm), and help spread the word!
+Fique ligado para a atualização da próxima semana, onde mergulharemos em mais detalhes sobre as funções do nosso aplicativo host, seu roadmap, progresso de produção, casos de uso reais compartilhados por nossa equipe beta e mais! Enquanto isso, confira nosso site [Openterface](/) e [FAQs](/faq/), considere [nos apoiar no Crowd Supply](https://www.crowdsupply.com/techxartisan/openterface-mini-kvm), e ajude a espalhar a palavra!
 
-Thank you for reading and being part of this journey with us! Peace!
+Obrigado por ler e fazer parte desta jornada conosco! Paz!
 
-Best,
+Melhores cumprimentos,
 
-Billy Wang, Project Manager
+Billy Wang, Gerente de Projeto
 
-Openterface Team | TechxArtisan Studio
+Equipe Openterface | TechxArtisan Studio

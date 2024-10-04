@@ -1,43 +1,43 @@
-# Features
+# Funcionalidades
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r3HNUflWGOY?si=84Ek6F9ocHmmGTqW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-- **Host App Compatibility**:
-  Supports macOS, Windows, and Linux, with Android support in development.
+- **Compatibilidade com Aplicativos Host**:
+  Suporta macOS, Windows e Linux, com suporte para Android em desenvolvimento.
 
-- **Plug-and-Play Convenience**:
-  Instant control upon connection, with no software installation or configuration on the target device. Leaves no software traces on the target computer.
+- **Conveniência Plug-and-Play**:
+  Controle instantâneo ao conectar, sem necessidade de instalação de software ou configuração no dispositivo alvo. Não deixa rastros de software no computador alvo.
 
-- **Network Independence**:
-  Stable and fast headless control via HDMI and emulated keyboard/mouse (HID) input.
+- **Independência de Rede**:
+  Controle estável e rápido sem cabeça via HDMI e entrada de teclado/mouse emulado (HID).
 
-- **Ultra-Portable Design**:
-  Its compact and lightweight design makes it the perfect tool for professionals on the go.
+- **Design Ultra-Portátil**:
+  Seu design compacto e leve o torna a ferramenta perfeita para profissionais em movimento.
 
-- **Full HD with Low Latency**:
-  Supported output video up to 1920x1080@30Hz with under 140 milliseconds of latency. Adaptable to VGA, Micro HDMI, DVI, and other inputs with a video adapter.
+- **Full HD com Baixa Latência**:
+  Suporta saída de vídeo até 1920x1080@30Hz com menos de 140 milissegundos de latência. Adaptável a VGA, Micro HDMI, DVI e outras entradas com um adaptador de vídeo.
 
-- **Audio Integration**:
-  Captures and plays the target device's audio directly on the host computer.
+- **Integração de Áudio**:
+  Captura e reproduz o áudio do dispositivo alvo diretamente no computador host.
 
-- **BIOS-Level Access**:
-  Provides direct access to the target device's BIOS, firmware, or startup management.
+- **Acesso ao Nível do BIOS**:
+  Fornece acesso direto ao BIOS, firmware ou gerenciamento de inicialização do dispositivo alvo.
 
-- **Switchable USB Type-A Port**:
-  This allows you to toggle USB access between the host and the target, ideal for sharing a USB drive without replugging. Check out our [Switchable USB Port](/usb-switch) page for more information.
+- **Porta USB Tipo-A Comutável**:
+  Permite alternar o acesso USB entre o host e o alvo, ideal para compartilhar um drive USB sem precisar reconectar. Confira nossa página de [Porta USB Comutável](/usb-switch) para mais informações.
 
-- **Text Transfer**:
-  The text transfer functionality allows you to send text from the host computer to the target device. This feature emulates typing behaviour to reproduce text content on the target computer, ideal for copying usernames, passwords, or code snippets.
+- **Transferência de Texto**:
+  A funcionalidade de transferência de texto permite enviar texto do computador host para o dispositivo alvo. Esta função emula o comportamento de digitação para reproduzir o conteúdo do texto no computador alvo, ideal para copiar nomes de usuário, senhas ou trechos de código.
   
-    - **Special Characters**: The text transfer feature supports various ASCII characters, including symbols, punctuation marks, and non-alphanumeric characters.
+    - **Caracteres Especiais**: A função de transferência de texto suporta vários caracteres ASCII, incluindo símbolos, sinais de pontuação e caracteres não alfanuméricos.
 
-    - **Limited Text**: It is ideal to transfer a short test like username, long password, code snippets from the host to the target. You can transfer text of varying lengths, but it is not recommended to transfer too much text at one time to avoid potential issues.
+    - **Texto Limitado**: É ideal para transferir um texto curto como nome de usuário, senha longa, trechos de código do host para o alvo. Você pode transferir textos de vários comprimentos, mas não é recomendado transferir muito texto de uma vez para evitar possíveis problemas.
 
-!!! warning "Limitations of Text Transfer Feature"
+!!! aviso "Limitações da Função de Transferência de Texto"
 
-    - **No Clipboard Integration**: The text transfer feature is designed to emulate typing behaviour and cannot transfer non-textual content, such as images or formatted text.
-    - **Language Limitations**: This feature exclusively supports transferring text based on ASCII codes and does not support languages that are not ASCII-based, such as Chinese, Japanese, or Korean characters.
+    - **Sem Integração com a Área de Transferência**: A função de transferência de texto é projetada para emular o comportamento de digitação e não pode transferir conteúdo não textual, como imagens ou texto formatado.
+    - **Limitações de Idioma**: Esta função suporta exclusivamente a transferência de texto baseado em códigos ASCII e não suporta idiomas que não são baseados em ASCII, como caracteres chineses, japoneses ou coreanos.
 
-## More to Come
+## Mais por Vir
 
-We have a [roadmap](/roadmap) page detailing our plans for developing more advanced features. Check it out to stay updated on what's coming next. We also welcome developers to join us and hang out in our [community](/community)!
+Temos uma página de [roteiro](/roadmap) detalhando nossos planos para desenvolver funcionalidades mais avançadas. Confira para se manter atualizado sobre o que está por vir. Também convidamos desenvolvedores a se juntarem a nós e participarem da nossa [comunidade](/community)!

@@ -5,102 +5,101 @@ authors:
 categories:
   - Updates
 ---
+# Superando Obstáculos: Atualização de Progresso e Novo Cronograma
 
-# Overcoming Hurdles: Progress Update & New Timeline
+Olá pessoal,
 
-Hey everyone,
+Espero que todos estejam bem. Faz um tempo desde nossa última atualização. Gostaria de dizer que tudo está indo perfeitamente para a Openterface, mas encontramos alguns obstáculos que atrasarão nosso cronograma de entrega. Embora isso não fosse o esperado, estamos enfrentando esses desafios de frente e fazendo progressos constantes com muitas boas notícias para compartilhar. Este post é uma leitura de aproximadamente **7 minutos**, então vamos aos detalhes para que você saiba exatamente onde estamos e o que vem a seguir.
 
-I hope you’re all doing well. It’s been a while since our last update. I wish I could say everything’s been smooth sailing for Openterface, but we’ve hit a couple of speed bumps that will delay our delivery timeline. While this wasn’t what we expected, we’re tackling these challenges head-on and making steady progress with plenty of good news to share. This post is about **a 7-minute read**, so let’s dive into the details so you know exactly where things stand and what’s coming next.
+## Regulamentação, Produção e Qualidade
 
-## Regulation, Production, and Quality
-
-Before we could kick off production, we had to pass necessary quality tests according to regulations, particularly CE certification. Since our toolkit version includes not just the Mini-KVM but also several accessories, each part needed to undergo CE testing. These tests took longer than expected (turns out cables can be quite picky), but the great news is that **we’ve passed CE for our Mini-KVM and all its components!** Below is an overview of the certifications for all our parts: Mini-KVM, HDMI cable, orange Type-C cable, black short Type-C cable, and VGA2HDMI cable. With certification in hand, our production timeline is now certain, and our manufacturers are **currently producing all parts** as I speak.
+Antes de iniciarmos a produção, tivemos que passar por testes de qualidade necessários de acordo com as regulamentações, especialmente a certificação CE. Como nossa versão do kit inclui não apenas o Mini-KVM, mas também vários acessórios, cada parte precisou passar pelos testes CE. Esses testes demoraram mais do que esperávamos (descobrimos que cabos podem ser bem exigentes), mas a boa notícia é que **passamos na certificação CE para nosso Mini-KVM e todos os seus componentes!** Abaixo está uma visão geral das certificações de todas as nossas partes: Mini-KVM, cabo HDMI, cabo Type-C laranja, cabo Type-C preto curto e cabo VGA2HDMI. Com a certificação em mãos, nosso cronograma de produção agora está certo, e nossos fabricantes estão **produzindo todas as partes** enquanto falo.
 
 ![240823-0](pic/240823-0.jpg)
-*UKCA and CE requirements are the same for our electronic products, with CE also covering RoHS compliance.*
+*Os requisitos do UKCA e CE são os mesmos para nossos produtos eletrônicos, com o CE também cobrindo a conformidade RoHS.*
 
-Two weeks ago, we visited one of our manufacturers to train their line managers on quality control for the orange cables before they shipped them to us. Now, ALL the orange cables have been produced and are sitting in a corner of our studio.
+Duas semanas atrás, visitamos um de nossos fabricantes para treinar seus gerentes de linha sobre controle de qualidade para os cabos laranja antes de enviá-los para nós. Agora, TODOS os cabos laranja foram produzidos e estão em um canto do nosso estúdio.
 ![240823-1](pic/240823-1.jpg)
-*Kevin and Shawn were explaining the testing methods to ensure the orange cable works properly with our Openterface Mini-KVM.*
+*Kevin e Shawn estavam explicando os métodos de teste para garantir que o cabo laranja funcione corretamente com nosso Openterface Mini-KVM.*
 
-We will do the same task in this week to train QA at the production frontline for other parts as well. Here are samples of additional cables.
+Faremos a mesma tarefa esta semana para treinar a equipe de QA na linha de produção para outras partes também. Aqui estão amostras de cabos adicionais.
 ![240823-2](pic/240823-2.jpg)
-*Proudly marked with our TechxArtisan logo, these are samples of the HDMI cable, the short Type-C cable, and the VGA-to-HDMI cable.*
+*Orgulhosamente marcados com nosso logotipo TechxArtisan, estas são amostras do cabo HDMI, do cabo Type-C curto e do cabo VGA-para-HDMI.*
 
-We’re expecting the other parts and Mini-KVMs to arrive soon from our manufacturers, at which point we’ll double-check the quality of every component and pack them properly at our studio before shipment. In other words, **our team will personally ensure the quality** before it reaches your hands.
+Estamos esperando que as outras partes e Mini-KVMs cheguem em breve de nossos fabricantes, momento em que verificaremos a qualidade de cada componente e os embalaremos adequadamente em nosso estúdio antes do envio. Em outras palavras, **nossa equipe garantirá pessoalmente a qualidade** antes de chegar às suas mãos.
 
-## Shipment, Potential Delays, and New ETA
+## Envio, Possíveis Atrasos e Novo ETA
 
-**The current uncertainty lies in the shipment process**. After investigating several shipping companies, we found that shipping will take extra time as we will likely transfer parcels through a warehouse before reaching Crowd Supply’s warehouse. We’re still debating whether to choose sea or air freight—please bear with us for a few more days while we sort out the arrangements.
+**A incerteza atual está no processo de envio**. Após investigar várias empresas de transporte, descobrimos que o envio levará mais tempo, pois provavelmente transferiremos os pacotes por um armazém antes de chegar ao armazém da Crowd Supply. Ainda estamos debatendo se escolhemos transporte marítimo ou aéreo—por favor, tenham paciência conosco por mais alguns dias enquanto resolvemos os arranjos.
 
-Customs clearance is another potential hurdle that might cause unexpected delays. Once our products arrive at Crowd Supply's warehouse in the US, they’ll take one to two weeks to ship out globally based on each order. For backers outside the US, individual parcels will still need to go through global shipping and customs clearance in the destination country.
+A liberação alfandegária é outro obstáculo potencial que pode causar atrasos inesperados. Uma vez que nossos produtos cheguem ao armazém da Crowd Supply nos EUA, levará de uma a duas semanas para serem enviados globalmente com base em cada pedido. Para apoiadores fora dos EUA, os pacotes individuais ainda precisarão passar pelo envio global e pela liberação alfandegária no país de destino.
 
-Accounting for the current situation and adding some buffer time, I remain cautiously optimistic that we’ll complete delivery before the end of this year, with **a new ETA of mid-January**. I’m truly sorry for the inconvenience and appreciate your support and patience during this change.
+Levando em conta a situação atual e adicionando algum tempo de buffer, permaneço cautelosamente otimista de que completaremos a entrega antes do final deste ano, com **um novo ETA para meados de janeiro**. Sinto muito pelo inconveniente e agradeço seu apoio e paciência durante essa mudança.
 
-## Finalised Hardware V1.9
+## Hardware V1.9 Finalizado
 
-As you may know from our previous [Reddit post](https://www.reddit.com/r/Openterface_miniKVM/comments/1e25pco/openterface_minikvm_v19_with_pins_for_more/), we decided to **upgrade our hardware to V1.9**, including a set of hackable expansion pins. This wasn’t part of the original plan for the crowdfunding campaign, but we believe it significantly enhances the hardware’s **potential for broader use**.
+Como você deve saber do nosso [post no Reddit](https://www.reddit.com/r/Openterface_miniKVM/comments/1e25pco/openterface_minikvm_v19_with_pins_for_more/), decidimos **atualizar nosso hardware para V1.9**, incluindo um conjunto de pinos de expansão hackeáveis. Isso não fazia parte do plano original para a campanha de financiamento coletivo, mas acreditamos que melhora significativamente o **potencial de uso mais amplo** do hardware.
 
 ![240823-3](pic/240823-3.jpg)
-*The VCC, GND, Target D+, Target D-, Host D+, and Host D- pins—where ‘D’ stands for USB data.*
+*Os pinos VCC, GND, Target D+, Target D-, Host D+ e Host D-—onde ‘D’ significa dados USB.*
 
-One key motivation was to enable **the USB switch to be toggled at the software level**. Why is this important? On our roadmap, we **aim to support a KVM-over-IP solution**, such as VNC, in the future. The idea is to match local KVM control with the VNC protocol, allowing users to remotely control the target computer via the host computer. In such a remote scenario, the ability for users to switch the USB port is essential, especially when file transfers between the host and target are required.
+Uma motivação chave foi permitir que **a chave USB fosse alternada no nível do software**. Por que isso é importante? Em nosso roadmap, **pretendemos suportar uma solução KVM-over-IP**, como VNC, no futuro. A ideia é combinar o controle KVM local com o protocolo VNC, permitindo que os usuários controlem remotamente o computador alvo via computador host. Em um cenário remoto como esse, a capacidade dos usuários de alternar a porta USB é essencial, especialmente quando transferências de arquivos entre o host e o alvo são necessárias.
 
-**The expansion pins also open up possibilities for more**, like integrating with iPadOS, ATX control, network bridging, and audio bypass. While I won’t dive into all the details here, I encourage you to join our Openterface community to discuss with us further.
+**Os pinos de expansão também abrem possibilidades para mais**, como integração com iPadOS, controle ATX, ponte de rede e bypass de áudio. Embora eu não vá entrar em todos os detalhes aqui, encorajo você a se juntar à nossa comunidade Openterface para discutir mais conosco.
 
-This hardware upgrade could potentially extend our Openterface solution to operate over IP and include more advanced features while still maintaining its core strength as a plug-and-play KVM-over-USB tool—perfect for IT pros navigating uncertain IT environments, like unfamiliar data centres.
+Esta atualização de hardware pode potencialmente estender nossa solução Openterface para operar via IP e incluir mais recursos avançados, mantendo sua força principal como uma ferramenta KVM-over-USB plug-and-play—perfeita para profissionais de TI navegando em ambientes de TI incertos, como data centers desconhecidos.
 
-I’m happy to report that V1.9 has passed our internal basic tests and will be finalised as the official version for all our backers. However, this hardware upgrade will require further testing, and any development based on these expansion pins will be experimental and likely to have bugs. This is where you can contribute. We’re counting on the open-source community to help us improve Openterface together.
+Estou feliz em informar que o V1.9 passou em nossos testes básicos internos e será finalizado como a versão oficial para todos os nossos apoiadores. No entanto, essa atualização de hardware exigirá mais testes, e qualquer desenvolvimento baseado nesses pinos de expansão será experimental e provavelmente terá bugs. É aqui que você pode contribuir. Contamos com a comunidade open-source para nos ajudar a melhorar o Openterface juntos.
 
-## More Software Updates
+## Mais Atualizações de Software
 
-On the software front, we’re making exciting strides. We’re diving into the **Openterface Android app** now! Check out this [tweet](https://x.com/TechxArtisan/status/1825460088922071398) for an early demo showing smooth KVM control, mouse movement, and clicks in action. More features are on the way, and as always, once we’ve polished the code a bit more, **this app will also be open-sourced** on our GitHub repo [Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android).
+No front do software, estamos fazendo avanços empolgantes. Estamos mergulhando no **aplicativo Openterface para Android** agora! Confira este [tweet](https://x.com/TechxArtisan/status/1825460088922071398) para um demo inicial mostrando controle KVM suave, movimento do mouse e cliques em ação. Mais recursos estão a caminho e, como sempre, assim que polirmos um pouco mais o código, **este aplicativo também será open-source** em nosso repositório GitHub [Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android).
 ![240823-4](pic/240823-4.jpg)
-*Using just our fingertips to KVM control a Linux computer from an Android tablet. Nice!*
+*Usando apenas nossos dedos para controlar um computador Linux a partir de um tablet Android. Legal!*
 
-Our QT version just got a handy update—you can now [transfer text from the host to the target](https://x.com/TechxArtisan/status/1825919721960780131)! So now this feature is supported on macOS, Windows, and Linux host apps.
+Nossa versão QT acabou de receber uma atualização útil—você pode agora [transferir texto do host para o alvo](https://x.com/TechxArtisan/status/1825919721960780131)! Então agora esse recurso é suportado nos aplicativos host para macOS, Windows e Linux.
 
-Moreover, We’re also planning to add a fun feature — [an auto mouse movement to prevent your target computer from sleeping](https://x.com/TechxArtisan/status/1825471186668847241). Should we go with the ping-pong ball bouncing around the screen or the classic DVD screensaver effect? Vote and comment the [tweet](https://x.com/TechxArtisan/status/1825470086800691459) 😃
+Além disso, estamos planejando adicionar um recurso divertido — [um movimento automático do mouse para evitar que seu computador alvo durma](https://x.com/TechxArtisan/status/1825471186668847241). Devemos ir com a bola de ping-pong quicando pela tela ou o clássico efeito de protetor de tela do DVD? Vote e comente no [tweet](https://x.com/TechxArtisan/status/1825470086800691459) 😃
 
-## Package Design, Labelling, and Manual
+## Design de Embalagem, Rotulagem e Manual
 
-We’ve been [experimenting with various mock-ups and packaging designs](https://www.reddit.com/r/Openterface_miniKVM/comments/1elm4vq/almost_ready_to_finalize_our_package_design/) to find the perfect balance among several key factors:
+Estamos [experimentando com vários mock-ups e designs de embalagem](https://www.reddit.com/r/Openterface_miniKVM/comments/1elm4vq/almost_ready_to_finalize_our_package_design/) para encontrar o equilíbrio perfeito entre vários fatores chave:
 
-- Selecting materials sturdy enough to protect the product and its parts during shipment,
-- Creating informative labelling that helps users understand the product at a glance,
-- Ensuring compliance with regulations,
-- Making the packaging visually appealing,
-- And being eco-friendly by minimising plastic use wherever possible.
+- Selecionar materiais resistentes o suficiente para proteger o produto e suas partes durante o envio,
+- Criar rótulos informativos que ajudem os usuários a entender o produto de relance,
+- Garantir conformidade com as regulamentações,
+- Tornar a embalagem visualmente atraente,
+- E ser ecologicamente correto, minimizando o uso de plástico sempre que possível.
 
-Additionally, we’ve made several improvements to the old toolkit bag, including:
+Além disso, fizemos várias melhorias na antiga bolsa do kit, incluindo:
 
-- Larger storage space,
-- A stylish orange zipper,
-- Upgraded exterior and interior materials,
-- And a super stretchy mesh pocket.
+- Maior espaço de armazenamento,
+- Um zíper laranja estiloso,
+- Materiais externos e internos atualizados,
+- E um bolso de malha super elástico.
 
-We chose this material because it strikes the ideal balance between being budget-friendly, pleasant to the touch, and durable enough to protect the items inside. **We’re confident you’ll love it**.
+Escolhemos este material porque atinge o equilíbrio ideal entre ser econômico, agradável ao toque e durável o suficiente para proteger os itens dentro. **Estamos confiantes de que você vai adorar**.
 
 ![240823-5](pic/240823-5.jpg)
 
-We’re also updating the labels on the aluminium casing to make them as informative and visually appealing as possible. We hope these enhancements will improve your user experience and make it easier to get started with Openterface.
+Também estamos atualizando os rótulos no estojo de alumínio para torná-los o mais informativos e visualmente atraentes possível. Esperamos que essas melhorias melhorem sua experiência de usuário e tornem mais fácil começar a usar o Openterface.
 
 ![240823-6](pic/240823-6.jpg)
 
-We’re finalising the Openterface manual, which will be available in English, German, French, Japanese, and Chinese. Apologies if we missed your language—our box isn’t TARDIS-sized (Doctor Who’s police box)! But we’ll do our best to add more translations on our website.
+Estamos finalizando o manual do Openterface, que estará disponível em inglês, alemão, francês, japonês e chinês. Pedimos desculpas se não incluímos seu idioma—nossa caixa não é do tamanho de uma TARDIS (a cabine policial do Doctor Who)! Mas faremos o nosso melhor para adicionar mais traduções em nosso site.
 
 ![240823-7](pic/240823-7.jpg)
 
-## Community Language Review
+## Revisão de Idiomas pela Comunidade
 
-I’ve been using ChatGPT to assist with translations, but it can sometimes miss the mark with phrasing and wording. If it’s not too much trouble, I’d greatly appreciate any help in reviewing the content in other languages, especially for the printed materials we’re about to finalise. I’ve updated all the text content for the packaging in our GitHub folder [product-printed-materials](https://github.com/TechxArtisanStudio/Openterface/tree/main/product-printed-materials), where you can review and submit any improvements. You can also DM me directly. Thanks!
+Tenho usado o ChatGPT para ajudar com as traduções, mas às vezes ele pode errar na formulação e na escolha das palavras. Se não for muito incômodo, eu agradeceria muito qualquer ajuda na revisão do conteúdo em outros idiomas, especialmente para os materiais impressos que estamos prestes a finalizar. Atualizei todo o conteúdo de texto para a embalagem em nossa pasta GitHub [product-printed-materials](https://github.com/TechxArtisanStudio/Openterface/tree/main/product-printed-materials), onde você pode revisar e enviar quaisquer melhorias. Você também pode me enviar uma mensagem diretamente. Obrigado!
 
-## Final Remarks and Ongoing Progress
+## Considerações Finais e Progresso Contínuo
 
-We apologise again for the delays and the change in our product’s ETA. Thank you for your patience and for sticking with us—we’re working hard to get this to you as soon as possible! I’ll update you immediately once our shipment is arranged. More updates are on the way, so please join our Openterface community and stay tuned!
+Pedimos desculpas novamente pelos atrasos e pela mudança no ETA do nosso produto. Obrigado por sua paciência e por estar conosco—estamos trabalhando duro para entregar isso a você o mais rápido possível! Atualizarei você imediatamente assim que nosso envio for arranjado. Mais atualizações estão a caminho, então por favor, junte-se à nossa comunidade Openterface e fique ligado!
 
-Cheers,
+Saudações,
 
 Billy Wang  
-Product Manager  
-Openterface Team | TechxArtisan
+Gerente de Produto  
+Equipe Openterface | TechxArtisan

@@ -1,4 +1,4 @@
-# How to Connect
+# Como Conectar
 
 ## Interfaces
 
@@ -10,43 +10,43 @@
 
 ![target-side](images/product/target-htc_1.svg#only-dark){:style="width:360px"}
 
-① ![Type-C to Host](images/shell-icons/host.svg#only-light){:style="height:15px"} ![Type-C to Host](images/shell-icons/host_1.svg#only-dark){:style="height:15px"} - **Host USB-C Port** (Female): As a USB device port, connecting to the Host computer for data transfer via built-in USB hub
+① ![Type-C to Host](images/shell-icons/host.svg#only-light){:style="height:15px"} ![Type-C to Host](images/shell-icons/host_1.svg#only-dark){:style="height:15px"} - **Porta USB-C do Host** (Fêmea): Porta de dispositivo USB, conectando ao computador Host para transferência de dados via hub USB integrado.
 
-② ![Type-C to Target](images/shell-icons/target.svg#only-light){:style="height:18px"} ![Type-C to Target](images/shell-icons/target_1.svg#only-dark){:style="height:18px"} - **Target USB-C Port** (Female): As a USB device port, connecting to the Host computer for emulating keyboard and mouse HID output via built-in USB hub
+② ![Type-C to Target](images/shell-icons/target.svg#only-light){:style="height:18px"} ![Type-C to Target](images/shell-icons/target_1.svg#only-dark){:style="height:18px"} - **Porta USB-C do Alvo** (Fêmea): Porta de dispositivo USB, conectando ao computador Host para emular saída de teclado e mouse HID via hub USB integrado.
 
-③ ![HDMI Input](images/shell-icons/input.svg#only-light){:style="height:18px"} ![HDMI Input](images/shell-icons/input_1.svg#only-dark){:style="height:18px"} - **HDMI Input Port** (Female): HDMI source input from the Target computer
+③ ![HDMI Input](images/shell-icons/input.svg#only-light){:style="height:18px"} ![HDMI Input](images/shell-icons/input_1.svg#only-dark){:style="height:18px"} - **Porta de Entrada HDMI** (Fêmea): Entrada de fonte HDMI do computador Alvo.
 
-④ ![USB-A Port](images/shell-icons/switchable-usb.svg#only-light){:style="height:26px"} ![USB-A Port](images/shell-icons/switchable-usb_1.svg#only-dark){:style="height:26px"} - **Switchable USB-A 2.0 Port** (Female): As a USB host port, utilized by either the host computer or the target computer at any given time, but not simultaneously.
+④ ![USB-A Port](images/shell-icons/switchable-usb.svg#only-light){:style="height:26px"} ![USB-A Port](images/shell-icons/switchable-usb_1.svg#only-dark){:style="height:26px"} - **Porta USB-A 2.0 Comutável** (Fêmea): Porta host USB, utilizada pelo computador host ou pelo computador alvo em um dado momento, mas não simultaneamente.
 
-!!! warning "Tight Fit"
-    Please note that this USB-A female port is designed with a locking mechanism, which requires a bit more force to plug in and unplug your USB devices.
+!!! aviso "Ajuste Apertado"
+    Observe que esta porta USB-A fêmea possui um mecanismo de travamento, que requer um pouco mais de força para conectar e desconectar seus dispositivos USB.
 
-⑤ ![Toggle Switch](images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Toggle Switch](images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} - **Toggle Switch**: For toggling the connection of the USB-A 2.0 port between the host and the target computer
+⑤ ![Toggle Switch](images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Toggle Switch](images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} - **Interruptor de Alternância**: Para alternar a conexão da porta USB-A 2.0 entre o computador host e o computador alvo.
 
-⑥ ![Extension Pins](images/shell-icons/pins.svg#only-light){:style="height:15px"} ![Extension Pins](images/shell-icons/pins_1.svg#only-dark){:style="height:15px"} - **Extension Pins**: For more information, please check [Extension Pins](/extension-pin) for developer use.
+⑥ ![Extension Pins](images/shell-icons/pins.svg#only-light){:style="height:15px"} ![Extension Pins](images/shell-icons/pins_1.svg#only-dark){:style="height:15px"} - **Pinos de Extensão**: Para mais informações, consulte [Pinos de Extensão](/extension-pin) para uso de desenvolvedores.
 
-## Connection Steps
+## Passos de Conexão
 
 ![to-host](images/product/to-host.svg#only-light){:style="height:260px"} ![to-host](images/product/to-host_1.svg#only-dark){:style="height:260px"}
 ![to-target](images/product/to-target.svg#only-light){:style="height:260px"} ![to-target](images/product/to-target_1.svg#only-dark){:style="height:260px"}
 
-To set up your Mini-KVM, follow these steps in order:
+Para configurar seu Mini-KVM, siga estes passos na ordem:
 
-1. **Host Computer Connection** (Orange Side):
-    - Connect the host computer to the mini-KVM using the orange 1.5m Type-C USB cable. Plug it into the Type-C female port on the orange side of the mini-KVM.
+1. **Conexão do Computador Host** (Lado Laranja):
+    - Conecte o computador host ao mini-KVM usando o cabo USB Tipo-C laranja de 1,5m. Conecte-o à porta USB-C fêmea no lado laranja do mini-KVM.
 
-    !!! note "Host App Required"
-        The host computer needs to have the host app installed. For more information and download links, please refer to the [App Documentation](/app).
+    !!! nota "Aplicativo do Host Necessário"
+        O computador host precisa ter o aplicativo do host instalado. Para mais informações e links de download, consulte a [Documentação do Aplicativo](/app).
 
-2. **Target Device Connection** (Black Side):
-    - Connect the target device to the mini-KVM using the black 0.3m Type-C USB cable. Plug it into the Type-C female port on the black side of the mini-KVM.
+2. **Conexão do Dispositivo Alvo** (Lado Preto):
+    - Conecte o dispositivo alvo ao mini-KVM usando o cabo USB Tipo-C preto de 0,3m. Conecte-o à porta USB-C fêmea no lado preto do mini-KVM.
 
-3. **Target Video Output Connection** (Black Side):
-    - Connect the target device's video output port to the HDMI female port on the black side of the mini-KVM. Use the black 0.3m HDMI cable, or any other appropriate video-source-to-HDMI cable, such as a VGA-to-HDMI converter cable.
+3. **Conexão de Saída de Vídeo do Alvo** (Lado Preto):
+    - Conecte a porta de saída de vídeo do dispositivo alvo à porta HDMI fêmea no lado preto do mini-KVM. Use o cabo HDMI preto de 0,3m, ou qualquer outro cabo de fonte de vídeo para HDMI apropriado, como um cabo conversor VGA para HDMI.
 
-    !!! note "No App Required for the Target"
-        No pre-installation or configuration is required on the target device. As long as the target device supports UI operations with video output (HDMI, VGA, e.g.) and has a USB port to receive emulated keyboard and mouse control (HID) signals, it can be used. Thus, supported target device platforms include Windows, macOS, Linux, Android, and iOS.
+    !!! nota "Nenhum Aplicativo Necessário para o Alvo"
+        Não é necessária pré-instalação ou configuração no dispositivo alvo. Desde que o dispositivo alvo suporte operações de interface de usuário com saída de vídeo (HDMI, VGA, etc.) e tenha uma porta USB para receber sinais emulados de controle de teclado e mouse (HID), ele pode ser usado. Assim, as plataformas de dispositivos alvo suportadas incluem Windows, macOS, Linux, Android e iOS.
 
-4. **Switchable USB-A 2.0 Port Connection** (Optional):
-    - If you want to connect a usb device to the Switchable USB-A 2.0 Port, it's recommended to do so after completing the above three connections and ensuring the host app is open.
+4. **Conexão da Porta USB-A 2.0 Comutável** (Opcional):
+    - Se você quiser conectar um dispositivo USB à Porta USB-A 2.0 Comutável, é recomendado fazê-lo após completar as três conexões acima e garantir que o aplicativo do host esteja aberto.
 

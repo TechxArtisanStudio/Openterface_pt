@@ -1,95 +1,89 @@
-# Test & Dev
+# Teste & Desenvolvimento
 
-## 💻 Compatibility
+## 💻 Compatibilidade
 
-- **OS Support**: Verify that different OS versions can use the corresponding host app.
-- **Performance Testing**: Evaluate performance on various host systems.
-- **OS Version Testing**: Ensure compatibility across different OS versions.
-- **Device-Specific Issues**: Identify and resolve issues specific to certain devices or OS versions.
+- **Suporte ao Sistema Operacional**: Verifique se diferentes versões do sistema operacional podem usar o aplicativo host correspondente.
+- **Teste de Desempenho**: Avalie o desempenho em vários sistemas host.
+- **Teste de Versão do SO**: Garanta a compatibilidade entre diferentes versões do sistema operacional.
+- **Problemas Específicos de Dispositivo**: Identifique e resolva problemas específicos de certos dispositivos ou versões do sistema operacional.
 
-## 🖱 Mouse Control
-
-<div class="annotate" markdown>
-
-- **Movement Latency**: Ensure smooth and responsive control.
-- **Mouse Buttons**: Test left, right, and middle mouse buttons; click & drag.
-- **Scrolling**: Evaluate scrolling speed and direction.
-- **Accuracy** of mouse position mapping in *Absolute* mode (1)
-- **Sensitivity** of mouse movement in *Relative* mode (2)
-
-</div>
-
-1. Ensure the target's mouse position is accurately mapped to the host's. This can be impacted by the target's resolution and changes in app window size.
-2. Ensure the mouse movement meets intuitive expectations.
-
-## ⌨️ Keyboard
+## 🖱 Controle do Mouse
 
 <div class="annotate" markdown>
 
-- **Typing Responsiveness**: Ensure it meets intuitive expectations.
-- **Full Keyboard Mapping**: Especially for various special symbols.
-- **Modifiers**: Keys like `Ctrl`, `Shift`, `Alt` and `Cmd`, or `Win`.
-- **Key Combinations**: Technically supports up to 8 modifier keys and 6 additional keys pressed simultaneously.
-- **Media & ACPI Keys**: Keys like `Volume-`, `Volume+`, `Mute`, `Wake-up`, `Sleep` and `Power`.
-- **Keyboard Layouts**: Ensure consistent pairing for various layouts. (1)
-
-!!! tip
-
-    - **Keyboard Tester**: You can utilize an online keyboard testing tool on both the host and target computers to verify whether their keystrokes are synchronized.
-    - **CH9329 Chip**: Check [the details](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/CH9329) to understand the limits of keyboard/mouse control in the Openterface Mini-KVM.
+- **Latência de Movimento**: Garanta um controle suave e responsivo.
+- **Botões do Mouse**: Teste os botões esquerdo, direito e do meio; clique e arraste.
+- **Rolagem**: Avalie a velocidade e a direção da rolagem.
+- **Precisão** do mapeamento da posição do mouse no modo *Absoluto* (1)
+- **Sensibilidade** do movimento do mouse no modo *Relativo* (2)
 
 </div>
 
-1. ⌨️ 🌏 Keyboard layouts vary globally across regions and languages, with popular types like QWERTY, AZERTY, QWERTZ, and Dvorak.
+1. Garanta que a posição do mouse do alvo seja mapeada com precisão para o host. Isso pode ser impactado pela resolução do alvo e mudanças no tamanho da janela do aplicativo.
+2. Garanta que o movimento do mouse atenda às expectativas intuitivas.
 
-## ⚙️ BIOS-Level Access
+## ⌨️ Teclado
 
-- **BIOS Entry**: Test entering BIOS during the boot sequence.
-- **Functionality**: Ensure full keyboard and mouse control within the BIOS.
-- **Compatibility**: Verify BIOS access across different motherboard brands and models.
+<div class="annotate" markdown>
 
-## 🔊 Sound
+- **Responsividade da Digitação**: Garanta que atenda às expectativas intuitivas.
+- **Mapeamento Completo do Teclado**: Especialmente para vários símbolos especiais.
+- **Modificadores**: Teclas como `Ctrl`, `Shift`, `Alt` e `Cmd`, ou `Win`.
+- **Combinações de Teclas**: Suporta tecnicamente até 8 teclas modificadoras e 6 teclas adicionais pressionadas simultaneamente.
+- **Teclas de Mídia e ACPI**: Teclas como `Volume-`, `Volume+`, `Mudo`, `Despertar`, `Dormir` e `Energia`.
+- **Layouts de Teclado**: Garanta um pareamento consistente para vários layouts. (1)
 
-- **Sound Quality**: Evaluate the clarity and synchronisation of audio playback.
-- **Latency**: Measure any delays between actions and their corresponding sound.
-- **Compatibility**: Test various audio outputs on different operating systems.
+!!! dica
 
-## 🎥 Video
+    - **Testador de Teclado**: Você pode utilizar uma ferramenta de teste de teclado online tanto no host quanto no computador alvo para verificar se as teclas estão sincronizadas.
+    - **Chip CH9329**: Verifique [os detalhes](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/CH9329) para entender os limites do controle de teclado/mouse no Openterface Mini-KVM.
 
-- **Resolution Support**: Test various screen resolutions and aspect ratios.
-- **Frame Rate**: Assess performance at different refresh rates.
-- **Display Quality**: Check for any visual artefacts or latency issues.
+</div>
 
-## 🔄 Switchable USB Port
+1. ⌨️ 🌏 Os layouts de teclado variam globalmente entre regiões e idiomas, com tipos populares como QWERTY, AZERTY, QWERTZ e Dvorak.
 
-- **Toggle Switch Testing**: Test the toggle switch under various scenarios for reliability.
-- **Port Compatibility**: Ensure the USB-A 2.0 port supports various USB devices like flash drives and webcams.
-- **Power Limitations**: Confirm the port’s power supply capacity and its adequacy for different devices.
+## ⚙️ Acesso ao Nível de BIOS
 
-## 🔌 Plug & Un-Plug
+- **Entrada no BIOS**: Teste a entrada no BIOS durante a sequência de inicialização.
+- **Funcionalidade**: Garanta o controle total do teclado e mouse dentro do BIOS.
+- **Compatibilidade**: Verifique o acesso ao BIOS em diferentes marcas e modelos de placas-mãe.
 
-- **Connection Testing**: Test scenarios with different connection and disconnection sequences.
-- **Error Handling**: Ensure device recognises and recovers from improper connections.
-- **Stability**: Verify stability when devices are plugged and unplugged repeatedly.
+## 🔊 Som
 
-## 📝 Text Transfer
+- **Qualidade do Som**: Avalie a clareza e a sincronização da reprodução de áudio.
+- **Latência**: Meça qualquer atraso entre ações e seus sons correspondentes.
+- **Compatibilidade**: Teste várias saídas de áudio em diferentes sistemas operacionais.
 
-- **Functionality Testing**: Verify that the host application can successfully transfer text from the host computer to the target device using ASCII codes.
+## 🎥 Vídeo
 
-- **Content Integrity**: Ensure the text content transferred from the host to the target device remains intact and is accurately reproduced.
+- **Suporte à Resolução**: Teste várias resoluções de tela e proporções.
+- **Taxa de Quadros**: Avalie o desempenho em diferentes taxas de atualização.
+- **Qualidade da Exibição**: Verifique se há artefatos visuais ou problemas de latência.
 
-- **Special Characters Handling**: Test the text transfer feature with various ASCII characters to ensure proper handling and reproduction on the target device.
+## 🔄 Porta USB Comutável
 
-- **Text Length Testing**: Test the text transfer feature with text of varying lengths to verify that it can accommodate different text sizes without issues.
+- **Teste do Interruptor de Alternância**: Teste o interruptor de alternância em vários cenários para garantir a confiabilidade.
+- **Compatibilidade da Porta**: Garanta que a porta USB-A 2.0 suporte vários dispositivos USB, como pen drives e webcams.
+- **Limitações de Energia**: Confirme a capacidade de fornecimento de energia da porta e sua adequação para diferentes dispositivos.
 
-- **Error Handling**: Test error scenarios, such as loss of connection or interruption during text transfer, to ensure the host application handles these situations gracefully and provides appropriate feedback to the user.
+## 🔌 Conectar e Desconectar
 
-- **Performance Testing**: Evaluate the performance of the text transfer feature under various conditions, including on older or slower computers, to identify any potential issues with mis-receiving HID input signals and ensure smooth operation.
+- **Teste de Conexão**: Teste cenários com diferentes sequências de conexão e desconexão.
+- **Manejo de Erros**: Garanta que o dispositivo reconheça e se recupere de conexões inadequadas.
+- **Estabilidade**: Verifique a estabilidade quando os dispositivos são conectados e desconectados repetidamente.
 
-- **User Interface Testing**: Ensure the user interface of the host application provides intuitive controls and feedback for initiating and monitoring text transfer operations, making it easy for users to understand and use this feature effectively.
+## 📝 Transferência de Texto
 
-## Additional
+- **Teste de Funcionalidade**: Verifique se o aplicativo host pode transferir texto com sucesso do computador host para o dispositivo alvo usando códigos ASCII.
+- **Integridade do Conteúdo**: Garanta que o conteúdo do texto transferido do host para o dispositivo alvo permaneça intacto e seja reproduzido com precisão.
+- **Manejo de Caracteres Especiais**: Teste a transferência de texto com vários caracteres ASCII para garantir o manejo e a reprodução adequados no dispositivo alvo.
+- **Teste de Comprimento do Texto**: Teste a transferência de texto com textos de diferentes comprimentos para verificar se pode acomodar diferentes tamanhos de texto sem problemas.
+- **Manejo de Erros**: Teste cenários de erro, como perda de conexão ou interrupção durante a transferência de texto, para garantir que o aplicativo host lide com essas situações de forma adequada e forneça feedback apropriado ao usuário.
+- **Teste de Desempenho**: Avalie o desempenho da transferência de texto em várias condições, incluindo em computadores mais antigos ou mais lentos, para identificar possíveis problemas com sinais de entrada HID mal recebidos e garantir uma operação suave.
+- **Teste da Interface do Usuário**: Garanta que a interface do usuário do aplicativo host forneça controles intuitivos e feedback para iniciar e monitorar operações de transferência de texto, facilitando o entendimento e uso dessa funcionalidade pelos usuários.
 
-- **Error Handling**: Test error handling mechanisms for graceful recovery from disruptions.
-- **Performance**: Assess the mini-KVM’s performance under various workload scenarios.
-- **Stability**: Conduct stress tests for long-term stability and reliability.
+## Adicional
+
+- **Manejo de Erros**: Teste os mecanismos de manejo de erros para recuperação adequada de interrupções.
+- **Desempenho**: Avalie o desempenho do mini-KVM em vários cenários de carga de trabalho.
+- **Estabilidade**: Conduza testes de estresse para estabilidade e confiabilidade a longo prazo.

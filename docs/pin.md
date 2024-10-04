@@ -1,39 +1,39 @@
-# Extension Pins Guideline
+# Guia dos Pinos de Extensão
 
 ![change-cap](images/product/change-cap.svg#only-light){:style="height:300px"}
 ![change-cap](images/product/change-cap_1.svg#only-dark){:style="height:300px"}
 
-The Openterface Mini-KVM features extension pins for advanced development and [Open Software](/app) experimentation. These pins are not exposed in the standard case configuration.
+O Openterface Mini-KVM possui pinos de extensão para desenvolvimento avançado e experimentação com [Software Aberto](/app). Esses pinos não são expostos na configuração padrão do case.
 
-### Accessing Extension Pins for Development
+### Acessando os Pinos de Extensão para Desenvolvimento
 
-To access the extension pins:
+Para acessar os pinos de extensão:
 
-1. Disassemble the device
-2. Replace the original case cover with a specialized Extension Pin Cap
-3. Download the 3D model for the Extension Pin Cap from our [GitHub repository](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware)
+1. Desmonte o dispositivo
+2. Substitua a tampa original do case por uma tampa especializada para Pinos de Extensão
+3. Baixe o modelo 3D da tampa para Pinos de Extensão do nosso [repositório no GitHub](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware)
 
-!!! warning "Warranty Void"
-    Removing the original case voids the product warranty. All modifications or disassembly are undertaken at the user's own risk.
+!!! aviso "Perda de Garantia"
+    Remover o case original anula a garantia do produto. Todas as modificações ou desmontagens são realizadas por conta e risco do usuário.
 
-!!! note "Experimental Features"
-    Features developed using these pins are experimental and have not been fully tested. Openterface is not liable for any damage, injury, or malfunction resulting from modifications, exposure of the extension pins, or other alterations to the device.
+!!! nota "Recursos Experimentais"
+    Os recursos desenvolvidos usando esses pinos são experimentais e não foram totalmente testados. A Openterface não se responsabiliza por qualquer dano, lesão ou mau funcionamento resultante de modificações, exposição dos pinos de extensão ou outras alterações no dispositivo.
 
-### Pin Layout
+### Layout dos Pinos
 
 ![target-side](images/product/extension-pins-1.svg#only-light){:style="height:200px"}
 ![host-side](images/product/extension-pins-2.svg#only-light){:style="height:200px"}
 ![target-side](images/product/extension-pins-1_1.svg#only-dark){:style="height:200px"}
 ![host-side](images/product/extension-pins-2_1.svg#only-dark){:style="height:200px"}
 
-The extension pins provide the following connections:
+Os pinos de extensão fornecem as seguintes conexões:
 
-1. USB 5V Power supply for external components
-2. Data positive to the USB hub of the host
-3. Data negative to the USB hub of the host
-4. Data positive to the USB hub of the target
-5. Data negative to the USB hub of the target
-6. Ground
+1. Alimentação USB 5V para componentes externos
+2. Dados positivos para o hub USB do host
+3. Dados negativos para o hub USB do host
+4. Dados positivos para o hub USB do alvo
+5. Dados negativos para o hub USB do alvo
+6. Terra
 
-!!! danger "Incorrect Connections"
-    Mixing up VCC and GND can cause severe damage to the device and connected components. Always double-check pin connections before powering the device.
+!!! perigo "Conexões Incorretas"
+    Trocar VCC e GND pode causar danos graves ao dispositivo e aos componentes conectados. Sempre verifique as conexões dos pinos antes de ligar o dispositivo.

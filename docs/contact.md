@@ -1,45 +1,45 @@
-# Contact Us
+# Contate-Nos
 
-We're delighted you're interested in reaching out to us. Whether you have questions, feedback, or just want to say hello, here are several ways to connect with us:
+Estamos muito felizes que você esteja interessado em entrar em contato conosco. Seja para perguntas, feedback ou apenas para dizer olá, aqui estão várias maneiras de se conectar conosco:
 
-## Official Contact Emails
+## E-mails Oficiais de Contato
 
-To ensure you're communicating with us securely and directly, please note our official contact email addresses. For any enquiries, support, or feedback, feel free to reach out to us at:
+Para garantir que você está se comunicando conosco de forma segura e direta, observe nossos endereços de e-mail oficiais. Para qualquer consulta, suporte ou feedback, sinta-se à vontade para nos contatar em:
 
-- **Primary Contact Email:** [info@techxartisan.com](mailto:info@techxartisan.com)
+- **E-mail de Contato Principal:** [info@techxartisan.com](mailto:info@techxartisan.com)
 
-Additionally, any email address ending with the following domains is recognized as an official communication channel for our members and customers:
+Além disso, qualquer endereço de e-mail que termine com os seguintes domínios é reconhecido como um canal de comunicação oficial para nossos membros e clientes:
 
-- **TechxArtisan Domain:** *@techxartisan.com
-- **Openterface Domain:** *@openterface.com
+- **Domínio TechxArtisan:** *@techxartisan.com
+- **Domínio Openterface:** *@openterface.com
 
-Emails from these addresses are from our team, dedicated to providing you with the support and information you need.
+E-mails desses endereços são da nossa equipe, dedicada a fornecer o suporte e as informações que você precisa.
 
-## Follow Us on Social Media
+## Siga-nos nas Redes Sociais
 
-Stay updated and engaged with us through our social media channels:
+Fique atualizado e engajado conosco através dos nossos canais de mídia social:
 
-- :fontawesome-brands-reddit-alien: [Join our subreddit](/reddit)
-- :fontawesome-brands-x-twitter: [Follow us on Twitter](https://twitter.com/TechxArtisan)
-- :fontawesome-brands-facebook-f: [Like us on Facebook](https://www.facebook.com/TechxArtisan)
-- :fontawesome-brands-discord: [Join our Discord community](/discord)
-- :fontawesome-brands-youtube: [Subscribe to our YouTube channel](https://youtube.com/@TechxArtisan)
-- :fontawesome-brands-linkedin-in: [Follow us on LinkedIn](https://www.linkedin.com/company/techxartisan/)
+- :fontawesome-brands-reddit-alien: [Participe do nosso subreddit](/reddit)
+- :fontawesome-brands-x-twitter: [Siga-nos no Twitter](https://twitter.com/TechxArtisan)
+- :fontawesome-brands-facebook-f: [Curta nossa página no Facebook](https://www.facebook.com/TechxArtisan)
+- :fontawesome-brands-discord: [Junte-se à nossa comunidade no Discord](/discord)
+- :fontawesome-brands-youtube: [Inscreva-se no nosso canal do YouTube](https://youtube.com/@TechxArtisan)
+- :fontawesome-brands-linkedin-in: [Siga-nos no LinkedIn](https://www.linkedin.com/company/techxartisan/)
 
-## Visit Our Studio Website
+## Visite Nosso Site
 
-For more information about us, our work and products, please visit our website:
+Para mais informações sobre nós, nosso trabalho e produtos, visite nosso site:
 
-- :fontawesome-solid-globe: [TechxArtisan Official Website](https://techxartisan.com/en/)
+- :fontawesome-solid-globe: [Site Oficial da TechxArtisan](https://techxartisan.com/en/)
 
-## Trademark and Domain Ownership
+## Marca Registrada e Propriedade de Domínio
 
-Openterface and TechxArtisan are trademarks of **Guangzhou Billio Technology Co., Ltd.** (Billio Tech), which serves as our official commercial entity. Billio Tech holds the final interpretative rights for both Openterface and TechxArtisan. 
+Openterface e TechxArtisan são marcas registradas da **Guangzhou Billio Technology Co., Ltd.** (Billio Tech), que atua como nossa entidade comercial oficial. A Billio Tech detém os direitos interpretativos finais para Openterface e TechxArtisan.
 
-The domain Openterface.com is registered under Billio Tech, affirming our ownership and management of all associated official communications and operations.
+O domínio Openterface.com está registrado sob a Billio Tech, afirmando nossa propriedade e gestão de todas as comunicações e operações oficiais associadas.
 
-## About Our Company
+## Sobre Nossa Empresa
 
-- **Company Name:** Guangzhou Billio Technology Co., Ltd.
-- **Address:** Room 11, No. 1, Longjing North Street, Haizhu District, Guangzhou City, Guangdong Province, 510320 China
-- **Contact Information:** [info@techxartisan.com](mailto:info@techxartisan.com)
+- **Nome da Empresa:** Guangzhou Billio Technology Co., Ltd.
+- **Endereço:** Sala 11, No. 1, Longjing North Street, Distrito de Haizhu, Cidade de Guangzhou, Província de Guangdong, 510320 China
+- **Informações de Contato:** [info@techxartisan.com](mailto:info@techxartisan.com)

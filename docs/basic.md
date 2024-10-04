@@ -1,51 +1,51 @@
-# Basic Control
+# Controle Básico
 
 ![use-case-pc-angled-view](images/product/use-case-pc-angled-view.jpg)
 
-## 💻 Compatibility
+## 💻 Compatibilidade
 
-- **Host Software**: Install our [host app](/app) for macOS, Windows, and Linux to control your target devices. Ensure your host system is compatible with the corresponding app version.
-- **Target Device Compatibility**: No pre-installation or configuration is required on the target device. As long as the target device supports UI operations with video output (e.g., HDMI, VGA) and has a USB port to receive emulated keyboard and mouse control (HID) signals, it can be used. Supported target platforms include Windows, macOS, Linux, Android, and iOS.
+- **Software do Host**: Instale nosso [aplicativo para host](/app) para macOS, Windows e Linux para controlar seus dispositivos alvo. Certifique-se de que seu sistema host seja compatível com a versão correspondente do aplicativo.
+- **Compatibilidade do Dispositivo Alvo**: Não é necessário pré-instalar ou configurar nada no dispositivo alvo. Desde que o dispositivo alvo suporte operações de interface gráfica com saída de vídeo (por exemplo, HDMI, VGA) e tenha uma porta USB para receber sinais de controle de teclado e mouse emulados (HID), ele pode ser usado. As plataformas alvo suportadas incluem Windows, macOS, Linux, Android e iOS.
 
-## 🖱 Mouse Control
+## 🖱 Controle do Mouse
 
-- **Absolute Mode**: The target's mouse cursor is mapped directly to a specific position on the host's screen via our app. This means that wherever you move the host's mouse within our app, the target's mouse will follow the same movement. Note that there might be a slight delay in the cursor movements. You can choose to hide or display the host's mouse cursor while it is on our app.
+- **Modo Absoluto**: O cursor do mouse do dispositivo alvo é mapeado diretamente para uma posição específica na tela do host através do nosso aplicativo. Isso significa que, onde quer que você mova o mouse do host dentro do nosso aplicativo, o mouse do alvo seguirá o mesmo movimento. Note que pode haver um pequeno atraso nos movimentos do cursor. Você pode escolher ocultar ou exibir o cursor do mouse do host enquanto ele estiver no nosso aplicativo.
 
-- **Relative Mode**: The target's mouse movement is relative to the current position of the host's mouse. This means that moving the host's mouse will shift the target's cursor by a certain distance in the same direction, without a fixed start or end point. You can exit this relative mode using a specific shortcut.
+- **Modo Relativo**: O movimento do mouse do alvo é relativo à posição atual do mouse do host. Isso significa que mover o mouse do host deslocará o cursor do alvo por uma certa distância na mesma direção, sem um ponto inicial ou final fixo. Você pode sair deste modo relativo usando um atalho específico.
 
-## ⌨️ Keyboard
+## ⌨️ Teclado
 
-When the app is focused, you can type anything directly, and these keystrokes will be passed to the target's computer.
+Quando o aplicativo está em foco, você pode digitar qualquer coisa diretamente, e essas teclas serão passadas para o computador alvo.
 
-## ⚙️ BIOS-Level Access
+## ⚙️ Acesso ao BIOS
 
-- **BIOS Access**: Use our app to access the BIOS of your target devices. This allows you to control and configure settings directly from the BIOS.
+- **Acesso ao BIOS**: Use nosso aplicativo para acessar o BIOS dos seus dispositivos alvo. Isso permite que você controle e configure as configurações diretamente do BIOS.
 
-??? tip "Key strokes to enter BIOS for different motherboards"
+??? dica "Teclas para entrar no BIOS para diferentes placas-mãe"
 
     - F2: Dell, Lenovo, ASUS, Acer, Toshiba, Samsung, Sony
     - F1: Lenovo
     - Del: ASUS, Acer, Gigabyte, MSI
     - F10: HP
-    - Assist button: Sony
-    - Option (⌥) key: Apple (to access the start manager)
+    - Botão Assist: Sony
+    - Tecla Option (⌥): Apple (para acessar o gerenciador de inicialização)
 
-## 🔊 Sound
+## 🔊 Som
 
-- **Audio Transmission**: The target computer's audio is transmitted via the HDMI input port of the mini-KVM. When using our app, the sound from the target computer will be played through the host computer, ensuring you hear everything seamlessly.
+- **Transmissão de Áudio**: O áudio do computador alvo é transmitido via a porta de entrada HDMI do mini-KVM. Ao usar nosso aplicativo, o som do computador alvo será reproduzido através do computador host, garantindo que você ouça tudo perfeitamente.
 
-## 🎥 Video
+## 🎥 Vídeo
 
-- **Video Display**: Our app allows you to view the target computer's screen seamlessly. It supports video resolutions up to 1920x1080 at 30Hz for display within the app. The maximum video input supported is up to 3840x2160 at 30Hz via HDMI. Additionally, with the use of an adapter, it can also accommodate VGA, Micro HDMI, DVI, and other video input sources.
+- **Exibição de Vídeo**: Nosso aplicativo permite que você visualize a tela do computador alvo sem problemas. Ele suporta resoluções de vídeo de até 1920x1080 a 30Hz para exibição dentro do aplicativo. A entrada máxima de vídeo suportada é de até 3840x2160 a 30Hz via HDMI. Além disso, com o uso de um adaptador, ele também pode acomodar VGA, Micro HDMI, DVI e outras fontes de entrada de vídeo.
 
-## 🔄 Switchable USB Port
+## 🔄 Porta USB Comutável
 
-- **Using the USB Port**: The mini-KVM features a switchable USB-A 2.0 port that can be toggled between the host and target computers, but not both simultaneously.
-- **Switching Methods**: 
-    - Hardware Switch: A physical toggle on the device
-    - Software Switch: A button in the host application
-- **Switch Logic**: For more detailed information on the logic of how the switchable USB port operates, including the interaction between hardware and software switches, initial setup, operational states, and state transitions, please refer to the [USB Switch documentation](usb-switch.md).
+- **Usando a Porta USB**: O mini-KVM possui uma porta USB-A 2.0 comutável que pode ser alternada entre os computadores host e alvo, mas não ambos simultaneamente.
+- **Métodos de Comutação**: 
+    - Comutação por Hardware: Um botão físico no dispositivo
+    - Comutação por Software: Um botão no aplicativo do host
+- **Lógica de Comutação**: Para mais informações detalhadas sobre a lógica de operação da porta USB comutável, incluindo a interação entre comutadores de hardware e software, configuração inicial, estados operacionais e transições de estado, consulte a [documentação da Comutação USB](usb-switch.md).
 
-!!! warning "Important"
-    - Remember to eject any connected USB drives before switching the port's connection.
-    - The USB port has power limitations. Do not connect devices that require a lot of power, as this may result in unstable operation or potential damage.
+!!! aviso "Importante"
+    - Lembre-se de ejetar qualquer unidade USB conectada antes de alternar a conexão da porta.
+    - A porta USB tem limitações de energia. Não conecte dispositivos que exijam muita energia, pois isso pode resultar em operação instável ou danos potenciais.

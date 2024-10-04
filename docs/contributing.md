@@ -1,88 +1,90 @@
-# Contributing
+# Contribuindo
 
-Hey there! So, you're interested in getting involved with Openterface mini-KVM's [community](/community) and contributing? Awesome! 🧡
+Olá! Está interessado em se envolver com a comunidade do Openterface mini-KVM e contribuir? Incrível! 🧡
 
-## Spreading the Word 📢
+## Espalhando a Palavra 📢
 
-If you've found our Openterface gadget being handy and boosting your workflow, how about helping to spread the word? Sharing your story of how you use the mini-KVM in daily tasks by pictures or videos will be super appreciated! Whether it's a quick fix event, a cool setup or a unique integration into your workflow, we want to see it all! You could even write a post to share in our vibrant community on our subreddit at [/r/Openterface_miniKVM/](/reddit) or our Discord Server [TechxArtisan](/discord). Let's create some buzz together! 🚀 Cheers!
+Se você achou nosso gadget Openterface útil e melhorou seu fluxo de trabalho, que tal ajudar a espalhar a palavra? Compartilhar sua história de como você usa o mini-KVM em tarefas diárias com fotos ou vídeos será super apreciado! Seja um evento de correção rápida, uma configuração legal ou uma integração única no seu fluxo de trabalho, queremos ver tudo! Você pode até escrever um post para compartilhar em nossa vibrante comunidade no nosso subreddit em [/r/Openterface_miniKVM/](/reddit) ou no nosso servidor Discord [TechxArtisan](/discord). Vamos criar um burburinho juntos! 🚀 Saúde!
 
-## How You Can Contribute 🌟
+## Como Você Pode Contribuir 🌟
 
-We're all about keeping this project fresh and funky for our diverse gang of users. We're constantly jazzing things up and fixing bugs to keep the party going!
+Estamos sempre atualizando este projeto para nossa diversa comunidade de usuários. Estamos constantemente melhorando e corrigindo bugs para manter tudo funcionando perfeitamente!
 
-Your time is precious, we get it, and diving into bug reports and change requests can feel like wading through treacle. That's why we've rolled up our sleeves and fine-tuned our issue templates and guidelines to make it easier. Yep, we've sweated the small stuff to make sure our issue tracker of its [softwares](/quick-start/#install-host-application) and [hardware](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware) and [discussion board](https://github.com/TechxArtisanStudio/Openterface/discussions) run like a well-oiled machine.
+Sabemos que seu tempo é valioso, e mergulhar em relatórios de bugs e solicitações de mudanças pode ser complicado. Por isso, ajustamos nossos templates de problemas e diretrizes para facilitar. Sim, cuidamos dos detalhes para garantir que nosso rastreador de problemas de [softwares](/quick-start/#install-host-application) e [hardware](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware) e [fórum de discussão](https://github.com/TechxArtisanStudio/Openterface/discussions) funcione como uma máquina bem lubrificada.
 
-Ready to dive in? Let's get started! 🏊‍♂️
+Pronto para começar? Vamos lá! 🏊‍♂️
 
-## Reporting A Bug 🐛
+## Reportando um Bug 🐛
 
-Encountered a bug? No worries, it happens! Since we're still in the early stages of development, bugs are to be expected, especially in the following softwares. When you come across one, please check if it falls into these [basic operation tests](/basic). The more details you provide about the conditions when the bug occurred, the better equipped we'll be to address it. Please report any bugs you encounter to the corresponding Github repositories.
+Encontrou um bug? Sem problemas, acontece! Como ainda estamos nos estágios iniciais de desenvolvimento, bugs são esperados, especialmente nos seguintes softwares. Quando encontrar um, verifique se ele se enquadra nesses [testes de operação básica](/basic). Quanto mais detalhes você fornecer sobre as condições em que o bug ocorreu, melhor estaremos equipados para resolvê-lo. Por favor, reporte qualquer bug que encontrar nos repositórios correspondentes do Github.
 
-- Navigate to: 
-    - [Openterface_MacOS](https://github.com/TechxArtisanStudio/Openterface_MacOS) (Work-in-progress): Host Applications for MacOS Support
-    - [Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT) (Work-in-progress): Host Applications for Win & Linux Support
-    - [Openterface_Mini-KVM_Hardware](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware
-    ) (Work-in-progress): Schematics & Components
+- Navegue para:
+    - [Openterface_MacOS](https://github.com/TechxArtisanStudio/Openterface_MacOS) (Em desenvolvimento): Aplicativos Host para Suporte MacOS
+    - [Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT) (Em desenvolvimento): Aplicativos Host para Suporte Win & Linux
+    - [Openterface_Mini-KVM_Hardware](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware) (Em desenvolvimento): Esquemas e Componentes
 
-- When reporting a bug, please:
-    - Specify the app version.
-    - Describe the environment of both the host computer and the target device.
-    - Provide detailed steps to reproduce the issue.
-    - Explain the expected outcome and the actual outcome.
-    - Including screenshots or video snippets would be highly appreciated! 📸🎥
+- Ao reportar um bug, por favor:
+    - Especifique a versão do aplicativo.
+    - Descreva o ambiente do computador host e do dispositivo alvo.
+    - Forneça passos detalhados para reproduzir o problema.
+    - Explique o resultado esperado e o resultado real.
+    - Incluir capturas de tela ou trechos de vídeo seria altamente apreciado! 📸🎥
 
-Moreover, you can also join the Development channel **#openterface-dev** on [our Discord server](/discord), or you may try searching for 'TechxArtisan'.
+Além disso, você também pode se juntar ao canal de Desenvolvimento **#openterface-dev** no [nosso servidor Discord](/discord), ou pode tentar procurar por 'TechxArtisan'.
 
-Feel free to bring up any issues. It’s a great place for all beta testers to discuss and share, which could really help us enhance the product.
+Sinta-se à vontade para levantar qualquer problema. É um ótimo lugar para todos os testadores beta discutirem e compartilharem, o que pode realmente nos ajudar a melhorar o produto.
 
-## Fixing A Bug 🛠️
-If you have coding skills and experience, consider diving into our repo to identify, fork, fix, and submit pull requests.
+## Corrigindo um Bug 🛠️
 
-## Reporting A Docs Issue 📝
+Se você tem habilidades de codificação e experiência, considere mergulhar em nosso repositório para identificar, fazer um fork, corrigir e enviar pull requests.
 
-If you notice anything that seems off or outdated, we'd love your help to make it better.
+## Reportando um Problema na Documentação 📝
 
-Here's how you can help:
+Se você notar algo que parece errado ou desatualizado, adoraríamos sua ajuda para melhorar.
 
-- Spot the Problem: If you see something that doesn't quite look right in our docs, let us know!
-- Provide Details: Let us know what's amiss. Whether it's a typo, outdated information, or a confusing explanation, every detail helps.
-- Suggest Improvements: If you've got ideas on how to make things better, don't hold back! Your insights are invaluable in enhancing the user experience.
-- How to Report: Simply head over to our corresponding GitHub repository and create an issue detailing the problem. Include as much information as possible to help us understand and address the issue swiftly.
+Aqui está como você pode ajudar:
 
-Your contributions to improving our documentation are truly appreciated. Together, we can ensure users have access to the best possible resources.
+- Identifique o Problema: Se você ver algo que não parece certo em nossa documentação, avise-nos!
+- Forneça Detalhes: Deixe-nos saber o que está errado. Seja um erro de digitação, informação desatualizada ou uma explicação confusa, cada detalhe ajuda.
+- Sugira Melhorias: Se você tiver ideias sobre como melhorar as coisas, não hesite! Seus insights são inestimáveis para melhorar a experiência do usuário.
+- Como Reportar: Basta ir ao nosso repositório correspondente no GitHub e criar um problema detalhando o problema. Inclua o máximo de informações possível para nos ajudar a entender e resolver o problema rapidamente.
 
-## Help Translate Our Docs 🌍
+Suas contribuições para melhorar nossa documentação são realmente apreciadas. Juntos, podemos garantir que os usuários tenham acesso aos melhores recursos possíveis.
 
-We believe everyone should have access to our solution, no matter what language they speak. That's why we're calling on bilingual superstars like you to help translate our website and documentation into different languages.
+## Ajude a Traduzir Nossa Documentação 🌍
 
-If you're fluent in multiple languages and passionate about making technology accessible to people worldwide, we'd love your help!
+Acreditamos que todos devem ter acesso à nossa solução, não importa o idioma que falem. É por isso que estamos chamando superestrelas bilíngues como você para ajudar a traduzir nosso site e documentação para diferentes idiomas.
 
-Reach out to us to find out how you can become a language ambassador for Openterface Mini-KVM and help us reach even more people with our solution.
+Se você é fluente em vários idiomas e apaixonado por tornar a tecnologia acessível para pessoas em todo o mundo, adoraríamos sua ajuda!
 
-## Help Improve Design 🎨
-First impressions matter, and the visual appeal of our product plays a crucial role in capturing users' attention and enhancing their overall experience. If you've got an eye for design and a knack for creating stunning visuals, we'd love your help in sprucing up our product graphics.
+Entre em contato conosco para descobrir como você pode se tornar um embaixador de idiomas para o Openterface Mini-KVM e nos ajudar a alcançar ainda mais pessoas com nossa solução.
 
-Whether it's crafting eye-catching logos, designing sleek user interfaces for our host applications, creating engaging marketing materials, 3D Design for various cool casings, your creative touch can take our product aesthetics to the next level.
+## Ajude a Melhorar o Design 🎨
 
-If you're up for the challenge and eager to make a visual impact, get in touch with us to explore how you can lend your design expertise to elevate our product's appeal!
+As primeiras impressões são importantes, e o apelo visual do nosso produto desempenha um papel crucial em capturar a atenção dos usuários e melhorar sua experiência geral. Se você tem um olho para o design e habilidade para criar visuais impressionantes, adoraríamos sua ajuda para melhorar nossos gráficos de produto.
 
-## Help Mod Our Community 🤝
+Seja criando logotipos atraentes, projetando interfaces de usuário elegantes para nossos aplicativos host, criando materiais de marketing envolventes, design 3D para vários cases legais, seu toque criativo pode levar a estética do nosso produto para o próximo nível.
 
-Our community is like a big, friendly family, and we're looking for awesome folks like you to help keep it that way! If you're keen on keeping the peace and spreading good vibes, we'd love to have you as a moderator.
+Se você está pronto para o desafio e ansioso para causar um impacto visual, entre em contato conosco para explorar como você pode emprestar sua expertise em design para elevar o apelo do nosso produto!
 
-As a moderator, you'll:
+## Ajude a Moderar Nossa Comunidade 🤝
 
-- Keep conversations positive and help sort out any squabbles.
-- Make sure everyone follows the rules so our community stays safe and welcoming.
-- Give a hand to users with questions and encourage folks to share their knowledge.
+Nossa comunidade é como uma grande família amigável, e estamos procurando pessoas incríveis como você para ajudar a mantê-la assim! Se você está interessado em manter a paz e espalhar boas vibrações, adoraríamos tê-lo como moderador.
 
-Sound like your cup of tea? Get in touch, and let's chat about how you can join our mod squad!
+Como moderador, você irá:
 
-## And More Help 🚀
-Feeling inspired to contribute but don't quite fit into the categories above? No worries – there are plenty of other ways you can lend a helping hand!
+- Manter as conversas positivas e ajudar a resolver qualquer desentendimento.
+- Garantir que todos sigam as regras para que nossa comunidade permaneça segura e acolhedora.
+- Ajudar os usuários com perguntas e encorajar as pessoas a compartilhar seu conhecimento.
 
-Whether it's testing new features, providing feedback on user experience, or brainstorming innovative ideas, your input is invaluable in driving the success of Openterface Mini-KVM.
+Parece algo que você gostaria de fazer? Entre em contato e vamos conversar sobre como você pode se juntar ao nosso time de moderadores!
 
-Reach out to us via [email](mailto:info@techxartisan.com) and let us know how you'd like to get involved. Together, we can make Openterface Mini-KVM the best it can be!
+## E Mais Ajuda 🚀
 
-Your support and contributions are what make Openterface Mini-KVM thrive. Thank you for being part of our journey towards excellence! 🚀
+Sentindo-se inspirado para contribuir, mas não se encaixa nas categorias acima? Sem problemas – há muitas outras maneiras de você ajudar!
+
+Seja testando novos recursos, fornecendo feedback sobre a experiência do usuário ou brainstormando ideias inovadoras, sua contribuição é inestimável para o sucesso do Openterface Mini-KVM.
+
+Entre em contato conosco via [email](mailto:info@techxartisan.com) e nos avise como você gostaria de se envolver. Juntos, podemos fazer do Openterface Mini-KVM o melhor que ele pode ser!
+
+Seu apoio e contribuições são o que fazem o Openterface Mini-KVM prosperar. Obrigado por fazer parte da nossa jornada rumo à excelência! 🚀

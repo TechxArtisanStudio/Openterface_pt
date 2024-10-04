@@ -1,24 +1,24 @@
-# What's In The Box
+# O Que Está na Caixa
 
-Explore our two purchase options designed to meet your needs, whether you're looking for the essentials or a complete set of tools.
+Descubra nossas duas opções de compra projetadas para atender às suas necessidades, seja você procurando o essencial ou um conjunto completo de ferramentas.
 
-## Package 1: Basic Pack
+## Pacote 1: Pacote Básico
 
 ![basic-pack](images/product/basic-with-maunal.jpg){:style="width:680px"}
 
-1. Core Product: Openterface Mini-KVM
-2. Quick Start Guide
+1. Produto Principal: Openterface Mini-KVM
+2. Guia de Início Rápido
 
-## Package 2: Toolkit Pack
+## Pacote 2: Pacote de Ferramentas
 
 ![toolkit-open](images/product/toolkit-open.jpg){:style="width:680px"}
 
-1. Core Product: Openterface Mini-KVM
-2. Quick Start Guide
-3. Toolkit Bag (165 x 110 x 50mm)
-4. Extension Pin Cap
-5. HDMI Male-to-Male Cable (30cm)
-6. Type-C Male to USB-A Male Cable (0.3m) with USB-A Female to USB-C Male Adapter
-7. Type-C Male-to-Male Cable (1.5m) with USB-C Female to USB-A Male Adapte
+1. Produto Principal: Openterface Mini-KVM
+2. Guia de Início Rápido
+3. Bolsa de Ferramentas (165 x 110 x 50mm)
+4. Tampa de Extensão de Pino
+5. Cabo HDMI Macho para Macho (30cm)
+6. Cabo Tipo-C Macho para USB-A Macho (0,3m) com Adaptador USB-A Fêmea para USB-C Macho
+7. Cabo Tipo-C Macho para Macho (1,5m) com Adaptador USB-C Fêmea para USB-A Macho
 
 ![toolkit-parts-layout-2-numbers](images/product/toolkit-parts-layout-2-numbers.jpg){:style="width:680px"}

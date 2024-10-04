@@ -1,126 +1,126 @@
-# Switchable USB Port Mechanics
+# Mecânica da Porta USB Comutável
 
 ![switch-graphics](images/product/switch-graphics.svg#only-light){:style="width:460px"}
 ![switch-graphics](images/product/switch-graphics_1.svg#only-dark){:style="width:460px"}
 
-The mini-KVM device features a switchable USB-A 2.0 port that can be toggled between the host and target computers, but not both simultaneously. This functionality is controlled by both a physical toggle switch and a software switch in the host application. This document explains the mechanics and logic behind these switches.
+O dispositivo mini-KVM possui uma porta USB-A 2.0 comutável que pode ser alternada entre os computadores host e alvo, mas não ambos simultaneamente. Esta funcionalidade é controlada tanto por um interruptor físico quanto por um interruptor de software no aplicativo host. Este documento explica a mecânica e a lógica por trás desses interruptores.
 
-## Switch Types
+## Tipos de Interruptores
 
-- **Software Switch**: A toggle button in the host application.
-      - Toggles the USB port connection between host and target computers
+- **Interruptor de Software**: Um botão de alternância no aplicativo host.
+      - Alterna a conexão da porta USB entre os computadores host e alvo
 
-- ![Toggle Switch](images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Toggle Switch](images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} **Hardware Switch**: A physical two-position toggle switch on the device.
-      - Inward position: Connects to the host computer
-      - Outward position: Connects to the target computer
+- ![Interruptor de Alternância](images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Interruptor de Alternância](images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} **Interruptor de Hardware**: Um interruptor físico de duas posições no dispositivo.
+      - Posição interna: Conecta ao computador host
+      - Posição externa: Conecta ao computador alvo
 
-## Initial Setup and Synchronization
+## Configuração Inicial e Sincronização
 
-When the mini-KVM is properly connected and the host app is launched:
+Quando o mini-KVM está devidamente conectado e o aplicativo host é iniciado:
 
-1. The device's actual USB port connection (circuit) initially defaults to the host connection.
-2. The host app detects the current position of the hardware switch, which is set to either the Host or Target computer.
-3. The software switch synchronizes with the hardware switch position.
-4. The actual circuit connection is updated to match the switch positions.
+1. A conexão real da porta USB do dispositivo (circuito) inicialmente se conecta ao host.
+2. O aplicativo host detecta a posição atual do interruptor de hardware, que está configurado para o computador Host ou Alvo.
+3. O interruptor de software se sincroniza com a posição do interruptor de hardware.
+4. A conexão do circuito real é atualizada para corresponder às posições dos interruptores.
 
-!!! warning "Hardware Limitation"
-    If a USB drive is already plugged into the device before powering on or launching the host application, the host computer will issue a warning about unsafe USB device removal. This is a hardware limitation for v1.9. Thus, it is recommended not to connect any USB device before powering up the device or starting our host app.
+!!! aviso "Limitação de Hardware"
+    Se um drive USB já estiver conectado ao dispositivo antes de ligá-lo ou iniciar o aplicativo host, o computador host emitirá um aviso sobre a remoção insegura do dispositivo USB. Esta é uma limitação de hardware da versão 1.9. Portanto, é recomendável não conectar nenhum dispositivo USB antes de ligar o dispositivo ou iniciar nosso aplicativo host.
 
-## Operational States
+## Estados Operacionais
 
-Due to the presence of both hardware and software switches, four possible states can occur:
+Devido à presença de interruptores de hardware e software, quatro estados possíveis podem ocorrer:
 
-- **State 1** (Synchronized, Connected to Host):
-      - Hardware Switch: Points to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Software Switch: Points to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - USB Port Connection: Connected to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+- **Estado 1** (Sincronizado, Conectado ao Host):
+      - Interruptor de Hardware: Aponta para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Interruptor de Software: Aponta para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Conexão da Porta USB: Conectada ao Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
 
-- **State 2** (Synchronized, Connected to Target):
-      - Hardware Switch: Points to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Software Switch: Points to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - USB Port Connection: Connected to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+- **Estado 2** (Sincronizado, Conectado ao Alvo):
+      - Interruptor de Hardware: Aponta para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Interruptor de Software: Aponta para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Conexão da Porta USB: Conectada ao Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
 
-- **State 3** (Out of Sync, USB Connected to Host):
-      - Hardware Switch: Points to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Software Switch: Points to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - USB Port Connection: Connected to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+- **Estado 3** (Fora de Sincronização, USB Conectado ao Host):
+      - Interruptor de Hardware: Aponta para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Interruptor de Software: Aponta para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Conexão da Porta USB: Conectada ao Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
 
-- **State 4** (Out of Sync, USB Connected to Target):
-      - Hardware Switch: Points to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Software Switch: Points to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - USB Port Connection: Connected to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+- **Estado 4** (Fora de Sincronização, USB Conectado ao Alvo):
+      - Interruptor de Hardware: Aponta para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Interruptor de Software: Aponta para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Conexão da Porta USB: Conectada ao Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
 
-## State Transitions and Logic
+## Transições de Estado e Lógica
 
-### From **State 1** (Sync to Host)
+### Do **Estado 1** (Sincronizado com o Host)
 
-- ^^***Scenario 1a***^^: User Moves Hardware Switch to Target
-      - Update internal state variable to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Update host application display to show Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Switch actual circuit connection to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 2, sync
+- ^^***Cenário 1a***^^: Usuário Move o Interruptor de Hardware para o Alvo
+      - Atualizar a variável de estado interno para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Atualizar a exibição do aplicativo host para mostrar Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Alternar a conexão do circuito real para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 2, sincronizado
 
-- ***Scenario 1b***: User Clicks Software Switch to Target
-      - Update internal state variable to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Hardware switch position remains unchanged (pointing to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"})
-      - Switch actual circuit connection to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 3, out of sync
+- ***Cenário 1b***: Usuário Clica no Interruptor de Software para Alvo
+      - Atualizar a variável de estado interno para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - A posição do interruptor de hardware permanece inalterada (apontando para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"})
+      - Alternar a conexão do circuito real para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 3, fora de sincronização
 
-### From **State 2** (Sync to Target)
+### Do **Estado 2** (Sincronizado com o Alvo)
 
-- ^^***Scenario 2a***^^: User Moves Hardware Switch to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
-      - Update internal state variable to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Update software switch display to show Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Switch actual circuit connection to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 1, sync
+- ^^***Cenário 2a***^^: Usuário Move o Interruptor de Hardware para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
+      - Atualizar a variável de estado interno para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Atualizar a exibição do interruptor de software para mostrar Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Alternar a conexão do circuito real para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 1, sincronizado
 
-- ***Scenario 2b***: User Clicks Software Switch to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
-      - Update internal state variable to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Hardware switch position remains unchanged (pointing to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"})
-      - Switch actual circuit connection to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 4, out of sync
+- ***Cenário 2b***: Usuário Clica no Interruptor de Software para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
+      - Atualizar a variável de estado interno para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - A posição do interruptor de hardware permanece inalterada (apontando para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"})
+      - Alternar a conexão do circuito real para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 4, fora de sincronização
 
-### From **State 3** (Out of Sync, USB Connected to Host)
+### Do **Estado 3** (Fora de Sincronização, USB Conectado ao Host)
 
-- ^^***Scenario 3a***^^: User Moves Hardware Switch to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}:
-      - No changes to variables
-      - Transition to State 2, sync
+- ^^***Cenário 3a***^^: Usuário Move o Interruptor de Hardware para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}:
+      - Sem alterações nas variáveis
+      - Transição para o Estado 2, sincronizado
 
-- ***Scenario 3b***: User Clicks Software Switch to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
-      - Update internal state variable to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Hardware switch position remains unchanged (pointing to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"})
-      - Switch actual circuit connection to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 1, sync
+- ***Cenário 3b***: Usuário Clica no Interruptor de Software para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
+      - Atualizar a variável de estado interno para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - A posição do interruptor de hardware permanece inalterada (apontando para o Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"})
+      - Alternar a conexão do circuito real para Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 1, sincronizado
 
-### From **State 4** (Out of Sync, USB Connected to Target)
+### Do **Estado 4** (Fora de Sincronização, USB Conectado ao Alvo)
 
-- ^^***Scenario 4a***^^: User Moves Hardware Switch to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
-      - No changes to variables
-      - Transition to State 1, sync
+- ^^***Cenário 4a***^^: Usuário Move o Interruptor de Hardware para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"}:
+      - Sem alterações nas variáveis
+      - Transição para o Estado 1, sincronizado
 
-- ***Scenario 4b***: User Clicks Software Switch to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}:
-      - Update internal state variable to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Hardware switch position remains unchanged (pointing to Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"})
-      - Switch actual circuit connection to Target ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
-      - Transition to State 2, sync
+- ***Cenário 4b***: Usuário Clica no Interruptor de Software para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}:
+      - Atualizar a variável de estado interno para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - A posição do interruptor de hardware permanece inalterada (apontando para o Host ![host-computer](images/shell-icons/host-computer.svg#only-light){:style="height:18px"} ![host-computer](images/shell-icons/host-computer_1.svg#only-dark){:style="height:18px"})
+      - Alternar a conexão do circuito real para Alvo ![target-computer](images/shell-icons/target-computer.svg#only-light){:style="height:18px"} ![target-computer](images/shell-icons/target-computer_1.svg#only-dark){:style="height:18px"}
+      - Transição para o Estado 2, sincronizado
 
-!!! warning "Remember to eject the flash drive before toggling the switch"
-    If the USB port is being used by a flash drive, ensure you eject the flash drive before toggling the switch to transfer the port's use to another computer.
+!!! aviso "Lembre-se de ejetar o pen drive antes de alternar o interruptor"
+    Se a porta USB estiver sendo usada por um pen drive, certifique-se de ejetar o pen drive antes de alternar o interruptor para transferir o uso da porta para outro computador.
 
-!!! warning "USB power limitations"
-    The power supplied by the USB port depends on the Host motherboard. It is not recommended to connect USB devices that require a lot of power. Typically, the power consumption should not exceed 1.5W. Connecting high-power devices may result in unstable operation or potential damage.
+!!! aviso "Limitações de energia USB"
+    A energia fornecida pela porta USB depende da placa-mãe do Host. Não é recomendável conectar dispositivos USB que exijam muita energia. Normalmente, o consumo de energia não deve exceder 1,5W. Conectar dispositivos de alta potência pode resultar em operação instável ou danos potenciais.
 
-!!! Note "User Guidance"
-    - **Software Switch Priority**: Regardless of the hardware switch position, clicking the software switch will immediately change the circuit direction.
+!!! Nota "Orientação ao Usuário"
+    - **Prioridade do Interruptor de Software**: Independentemente da posição do interruptor de hardware, clicar no interruptor de software mudará imediatamente a direção do circuito.
 
-    - **Hardware Switch Sync**: Any manual toggle of the Hardware Switch will align its state with the Software Switch, transitioning to either State 1 or State 2 from the out-of-sync State 3 or State 4. However, this synchronization does not necessarily alter the actual circuit connection.
+    - **Sincronização do Interruptor de Hardware**: Qualquer alternância manual do Interruptor de Hardware alinhará seu estado com o Interruptor de Software, fazendo a transição para o Estado 1 ou Estado 2 a partir do Estado 3 ou Estado 4 fora de sincronização. No entanto, essa sincronização não altera necessariamente a conexão real do circuito.
 
-    - **Hardware Switch Monitoring**: The Hardware Switch, despite being physical, is monitored by software and does not directly control the circuit direction. Instead, the software interprets the switch position and manages the actual circuit switching.
+    - **Monitoramento do Interruptor de Hardware**: O Interruptor de Hardware, apesar de ser físico, é monitorado por software e não controla diretamente a direção do circuito. Em vez disso, o software interpreta a posição do interruptor e gerencia a comutação real do circuito.
 
-## Why Software-Controlled USB Switching Matters
+## Por que a Comutação USB Controlada por Software é Importante
 
-The software-controlled USB switching enhancement introduced in v1.9 is a pivotal feature for our future development plans, particularly in supporting KVM-over-IP solutions like VNC (which we have not yet implemented). This capability allows users to remotely toggle and share the USB port between the target and host computers, which is especially crucial for facilitating file transfers in a remote setup.
+A melhoria da comutação USB controlada por software introduzida na versão 1.9 é um recurso fundamental para nossos planos de desenvolvimento futuro, especialmente no suporte a soluções KVM-over-IP como VNC (que ainda não implementamos). Essa capacidade permite que os usuários alternem e compartilhem remotamente a porta USB entre os computadores alvo e host, o que é especialmente crucial para facilitar transferências de arquivos em um ambiente remoto.
 
-This feature opens up a world of possibilities for remote management and control. For instance, it enables file transfers between devices without physical intervention, enhancing the efficiency of remote troubleshooting and system management.
+Este recurso abre um mundo de possibilidades para gerenciamento e controle remoto. Por exemplo, permite transferências de arquivos entre dispositivos sem intervenção física, aumentando a eficiência da solução de problemas remotos e do gerenciamento de sistemas.
 
-Do you have creative ideas on how to leverage this feature? We'd love to chat with you! Join Openterface [community](/community/) and share your thoughts 😃
+Você tem ideias criativas sobre como aproveitar esse recurso? Adoraríamos conversar com você! Junte-se à comunidade Openterface [comunidade](/community/) e compartilhe seus pensamentos 😃
