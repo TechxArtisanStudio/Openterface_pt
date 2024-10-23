@@ -25,6 +25,7 @@ Atenção a todos os inventores, criadores e sonhadores! Estamos entusiasmados e
 **Categorias:** Prêmios para os melhores desempenhos incluem prêmios tanto para habilidade técnica quanto para criatividade, então todos têm uma chance!
 
 **Prêmios Incríveis:**
+
 - Um Openterface Mini-KVM de edição limitada com um estojo transparente e prateado.
 - O futurístico Pi-Cast KVM da HackerGadgets.
 - O GameShell inspirado no retro da Clockwork.
