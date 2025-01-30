@@ -16,7 +16,7 @@ Para usar este mini-KVM, o computador host deve instalar um dos aplicativos abai
 
     Baixe o aplicativo Openterface QT para Windows
 
-    [:octicons-download-24: Baixar v0.0.3](https://github.com/TechxArtisanStudio/Openterface_QT/releases/download/v0.0.3/openterfaceQT.windows.amd64.exe)  <br>
+    [:octicons-download-24: Baixar {{qt_version}}](https://github.com/TechxArtisanStudio/Openterface_QT/releases/download/{{qt_version}}/openterfaceQT.windows.amd64.exe)  <br>
     [:octicons-mark-github-16: Openterface_QT](https://github.com/TechxArtisanStudio/Openterface_QT)  <br>
     [:octicons-play-24: Assista ao Demo](https://youtu.be/ERzpGtRvP2o?si=e9k402f0nxsD8o2j)
 
@@ -42,10 +42,11 @@ Para usar este mini-KVM, o computador host deve instalar um dos aplicativos abai
 -   :fontawesome-brands-android:{ .lg .middle } __Android__
 
     ---
+    
+    Baixe o APK para seu telefone ou tablet Android
 
-    Versão para Android está em desenvolvimento
-
-    [:octicons-clock-24: Em Breve](https://github.com/TechxArtisanStudio/Openterface_Android)  <br>
+    [:octicons-download-24: Baixar {{android_version}}](https://github.com/TechxArtisanStudio/Openterface_Android/releases/download/{{android_version}}/OpenterfaceAndroid.apk)  <br>
+    [:octicons-mark-github-16: Openterface_Android](https://github.com/TechxArtisanStudio/Openterface_Android)  <br>
     [:octicons-play-24: Assista ao Demo](https://x.com/TechxArtisan/status/1825460088922071398)
 
 </div>
