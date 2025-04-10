@@ -1,0 +1,9 @@
+title: FAQs
+nav:
+    - index.md
+    - Fundamentos do KVM-over-USB:
+        - O que é KVM USB?: usbkvm/kvm-over-usb.md
+        - Por que escolher o KVM USB Openterface?: usbkvm/openterface.md
+    - Série Mini-KVM: 
+        - Openterface Mini-KVM: minikvm/op-minikvm.md
+    - FAQs para Empresas e Mídia: business.md

@@ -62,14 +62,14 @@
       {% endif %}
     {% endif %}
   
-    <!-- Further information -->
+    <!-- Informações adicionais -->
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid footer-flex-container">
 
-        <!-- Signup form -->
+        <!-- Formulário de inscrição -->
         <div class="signup-form-container footer-flex-item">
           <div id="google_form_signup">
-            <!-- Formulário modificado para enviar para o Google Form -->
+            <!-- Formulário modificado para enviar ao Google Form -->
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFc5YUQN74mQpFj6U4NkpNH4TGZGgxur7wVADWSWEsmNezdg/formResponse" 
                   method="post" 
                   id="google-form-subscribe-form" 
@@ -81,23 +81,23 @@
                 </div>
                 <div class="gf-field-group">
                   <input type="email" name="emailAddress" class="required email" id="google-form-email" required="" placeholder="Seu Endereço de Email *">
-                  <input type="hidden" name="entry.22394832" value="Openterface-pt">
+                  <input type="hidden" name="entry.22394832" value="Openterface-eng">
                 </div>
                 <div class="clear">
-                  <input type="submit" name="submit" id="google-form-submit" class="button" value="✉️ Inscreva-se para o Último Buzz! 🐝">
-                  <p class="footnote">Não mais de um email por mês. Desinscreva-se a qualquer momento.</p>
+                  <input type="submit" name="submit" id="google-form-submit" class="button" value="✉️ Inscreva-se para as Últimas Novidades! 🐝">
+                  <p class="footnote">Não mais do que um e-mail por mês. Cancele a inscrição a qualquer momento.</p>
                 </div>
               </div>
             </form>
           </div>
         </div>
 
-        <!-- Copyright info -->
+        <!-- Informações de copyright -->
         <div class="footer-flex-item footer-copyright">
           {% include "partials/copyright.html" %}
         </div>
 
-        <!-- Social links -->
+        <!-- Links sociais -->
         {% if config.extra.social %}
           <div class="footer-flex-item footer-social">
             {% include "partials/social.html" %}

@@ -1,23 +1,22 @@
 # Project information
 site_name: Openterface | Conectando Interfaces a Novas Possibilidades
 site_url: https://pt.openterface.com/
-site_author: Billy Wang
+site_author: Openterface
 site_description: Uma solução KVM-over-USB rica em recursos, de código aberto e impulsionada pela comunidade
 
 # Repository
-repo_name: Openterface
-repo_url: https://github.com/TechxArtisanStudio/Openterface
+repo_name: Openterface_pt
+repo_url: https://github.com/TechxArtisanStudio/Openterface.pt
 
 # Copyright
 copyright: >-
-  Direitos autorais &copy; Todos os direitos reservados. 2023 <a href="https://www.openterface.com">Openterface</a> | <a href="https://www.techxartisan.com">TechxArtisan</a> | Guangzhou Billio Tech. Co., Ltd. <br>
-  <a href="">Início</a> |
-  <a href="/terms-of-service">Termos de Serviço</a> |
-  <a href="/privacy-policy">Política de Privacidade</a> | 
+  Copyright &copy; Todos os direitos reservados. 2023 <a href="https://www.openterface.com">Openterface</a> | <a href="https://www.techxartisan.com">TechxArtisan</a><br>
+  <a href="/">Início</a> |
+  <a href="/policy/terms-of-service">Termos de Serviço</a> |
+  <a href="/policy/privacy">Política de Privacidade</a> | 
   <a href="#__consent">Configurações de Cookies</a> | 
-  <a href="/contact">Fale Conosco</a>
-
-
+  <a href="/about">Sobre</a>
+  
 extra_css:
   - assets/stylesheets/extra.css
   - assets/stylesheets/signup_form.css
@@ -35,19 +34,27 @@ theme:
     code: Roboto Mono
   logo: assets/app-logo.png
   favicon: images/favicon.png
+  icon:
+    annotation: material/arrow-right-circle-outline
   features:
-   - navigation.tabs
-   - navigation.sections
-   - navigation.top
-   - navigation.footer
-   - navigation.indexes
-   - toc.integrate
-   - search.suggest
-   - search.highlight
-   - content.tabs
-   - content.code.annotation
-   - content.code.copy
-   - content.tabs.link
+    - toc.integrate
+    - toc.follow
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.tabs
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - last_updated
 
   palette:
     # Light mode
@@ -157,9 +164,11 @@ markdown_extensions:
   # Enables tables
   - tables
   # Enables admonitions
+  - def_list
   - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -167,9 +176,18 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.betterem
   # Enables emoji shortcodes like :+1: or :sunglasses:
   - attr_list
   - md_in_html
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      pygments_lang_class: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+      line_spans: __span
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -177,17 +195,57 @@ markdown_extensions:
               custom_icons:
                 - overrides/.icons
   - toc:
-      permalink: ¶
       toc_depth: 3
 
 plugins:
   - glightbox
+  - awesome-nav
   - search
+  - macros
+  - tags
+  - meta
+  # - git-committers:
+  #     repository: TechxArtisanStudio/Openterface
+  #     token: !ENV ['MK_SECRET_TOKEN']
+  #     branch: main
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago  # or date
+  - ultralytics:  # to enhance SEO by adding metadata
+      verbose: True
+      enabled: True
+      default_author: "Openterface"
+      add_desc: True
+      add_image: True
+      add_keywords: True
+      add_share_buttons: False
+      add_authors: False
+      add_json_ld: False
+      add_css: True
   - markdownextradata
   - redirects:
       redirect_maps:
-        'basic-testing.md': 'basic.md'
-        'community.md': 'https://www.reddit.com/r/Openterface_miniKVM/'
+        'buy-mini-kvm.md': 'https://www.crowdsupply.com/techxartisan/openterface-mini-kvm'
+        'shop.md': 'https://shop.techxartisan.com'
+        'reviews.md': 'product/minikvm/reviews.md'
+        'features.md': 'product/minikvm/features.md'
+        'why-openterface.md': 'faq/usbkvm/openterface.md'
+        'webapp.md': 'https://openterface-viewer.pages.dev/'
+        'faq/minikvm.md': 'faq/usbkvm/kvm-over-usb.md'
+        'basic-testing.md': 'faq/usbkvm/kvm-over-usb.md'
+        'dicord.md': 'https://discord.gg/sFTJD6a3R8'
+        'usb-kvm.md': 'faq/usbkvm/kvm-over-usb.md'
+        'usb-switch.md': 'product/minikvm/usb-switch.md'
+        'product/minikvm/how-it-works.md': 'faq/usbkvm/kvm-over-usb.md'
+        'how-it-works.md': 'faq/usbkvm/kvm-over-usb.md'
+        'product.md': 'product/minikvm/index.md'
+        'whats-in-the-box.md': 'product/minikvm/whats-in-the-box.md'
+        'quick-start.md': 'product/minikvm/index.md'
+        'open-hardware.md': 'https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware'
+        'basic/usb-switch.md': 'product/minikvm/usb-switch.md'
+        'acknowledgements.md': 'contributing.md'
+        'contact.md': 'about.md'
+        'community.md': 'https://discord.gg/sFTJD6a3R8'
         'discord.md': 'https://discord.gg/sFTJD6a3R8'
         'reddit.md': 'https://www.reddit.com/r/Openterface_miniKVM/'
         'macos.md': 'https://github.com/TechxArtisanStudio/Openterface_MacOS'
@@ -199,52 +257,12 @@ plugins:
         'feedback.md': 'https://forms.gle/YJLrCKwro8tbi6ar7'
         'oshw.md': 'https://certification.oshwa.org/cn000015.html'
         'x.md': 'https://x.com/TechxArtisan'
-  - tags:
-      tags_file: tags.md
+        'appstore.md': 'https://apps.apple.com/us/app/openterface-mini-kvm/id6478481082'
   - blog:
-      post_url_format: "{slug}"
       authors_file: "{blog}/.authors.yml"
       blog_toc: true
       post_excerpt_separator: <!-- more -->
-      categories_name: Categories
-      categories_toc: true
       pagination: true
       pagination_per_page: 10
       draft: true
       archive: false
-
-nav:
-  - Início: index.md
-  - Documentação:
-    - Início Rápido: quick-start.md
-    - Funcionalidades: features.md
-    - Como Conectar: how-to-connect.md
-    - Software Aberto: app.md
-    - Hardware Aberto: open-hardware.md
-    - Controle Básico: basic.md
-    - Porta USB Comutável: usb-switch.md
-    - Pinos de Extensão: pin.md
-    - Casos de Uso: use-cases.md
-    - Especificações: specifications.md
-    - O Que Vem na Caixa: whats-in-the-box.md
-    - Acessórios: accessories.md
-    - Como Funciona: how-it-works.md
-    - Por Que Openterface: why-openterface.md
-    - Comparação: comparison.md
-    - Perguntas Frequentes: faq.md
-    - Desenvolvimento:
-      - Teste e Desenvolvimento: test.md
-      - Roteiro: roadmap.md
-      - Contribuindo: contributing.md
-  - Perguntas Frequentes: /faq
-  - Casos de Uso: /use-cases
-  - Blog:
-    - blog/index.md
-  - Reddit: /reddit
-  - Discord: /discord
-  - Sobre:
-    - Contato: contact.md
-    - Políticas:
-      - Política de Privacidade: privacy-policy.md
-      - Termos de Serviço: terms-of-service.md
-      - Devoluções, Reembolsos e Garantia: return-refunds-warranty.md

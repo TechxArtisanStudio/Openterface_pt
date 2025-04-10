@@ -1,0 +1,24 @@
+title: Produto
+nav:
+    - index.md
+    - Mini-KVM:
+        - minikvm/index.md
+        - minikvm/whats-in-the-box.md
+        - minikvm/features.md
+        - ../app/basic.md
+        - minikvm/how-to-connect.md
+        - Como Funciona: /faq/usbkvm/kvm-over-usb/
+        - Avaliações & Imprensa: minikvm/reviews.md
+        - minikvm/specifications.md
+        - minikvm/usb-switch.md
+        - minikvm/extension-pins.md
+        - FAQs & Solução de Problemas: /faq/minikvm/op-minikvm/
+        - Por que Openterface: /faq/usbkvm/openterface/
+    - Acessórios:
+        - accessories/index.md
+        - Cabo VGA para HDMI 1m: accessories/vga-to-hdmi-cable.md
+        - Cabo Tipo-C para C Nylon 1.5m: accessories/nylong-c-to-c-150.md
+        - Cabo Tipo-C para C Laranja 1.5m: accessories/type-c-to-c-cable-with-adapter.md
+        - Cabo Tipo-C para A Preto 30cm: accessories/black-c-to-a-30.md
+        - Cabo HDMI 30cm: accessories/hdmi-male-to-male-cable.md
+        - Bolsa de Ferramentas: accessories/openterface-toolkit-bag.md

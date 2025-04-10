@@ -3,4 +3,11 @@ Pipfile
 Pipfile.lock
 site
 .vscode/settings.json
-.ipynb_checkpoints/
+.ipynb_checkpoints
+mkdocs_env/
+venv
+Openterface/
+.venv
+.cache
+.ipynb_checkpoints
+mkdocs-venv
