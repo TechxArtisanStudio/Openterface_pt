@@ -1,4 +1,3 @@
-# Start of Selection
 ---
 template: home.html
 title: Home
@@ -8,4 +7,3 @@ social:
 ---
 
 Bem-vindo ao Openterface mini-KVM.
-# End of Selection
