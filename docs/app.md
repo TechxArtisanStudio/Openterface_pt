@@ -3,7 +3,7 @@
 ## Aplicativos para Host
 
 <div class="container">
-    <img src="/images/product/win_qt_app.webp" alt="Imagem do Poster" class="poster-image-shadow">
+    <img src="/images/product/win_qt_app.webp" alt="Imagem do Poster" class="poster-image-shadow" loading="lazy">
 </div>
 
 Para usar este mini-KVM, o computador host deve instalar um dos aplicativos abaixo.
