@@ -15,7 +15,7 @@ Estamos comprometidos com hardware aberto e software de código aberto, licencia
 -   Transmite a saída de vídeo do dispositivo conectado para a tela Android em tempo real.
 -   Suporta ajustes de imagem para visualização ideal.
 
-![image](../../images/android/videoConnect.jpg)
+![image](https://assets.openterface.com/images/android/videoConnect.jpg)
 
 #### Descrição da Interface do Usuário
 
@@ -29,13 +29,13 @@ Estamos comprometidos com hardware aberto e software de código aberto, licencia
 3. Inicie o aplicativo; o feed de vídeo aparece automaticamente.
 4. Use os controles deslizantes da barra de ferramentas para ajustar brilho, contraste ou matiz conforme necessário.
 
-![image](../../images/android/colorSetting.jpg)
+![image](https://assets.openterface.com/images/android/colorSetting.webp)
 
 #### Recursos Especiais
 
 -   O zoom com dois dedos melhora a visualização do display
 
-![image](../../images/android/enlargeAndSideBar.jpg)
+![image](https://assets.openterface.com/images/android/enlargeAndSideBar.webp)
 
 ---
 
@@ -63,7 +63,7 @@ Estamos comprometidos com hardware aberto e software de código aberto, licencia
 
 -   Controle relativo do mouse (em desenvolvimento, alterne via configurações quando disponível).
 
-## ![image](../../images/android/mouseThouchMode.jpg)
+## ![image](https://assets.openterface.com/images/android/mouseThouchMode.jpg)
 
 ### 3. Entrada de Teclado
 
@@ -88,9 +88,9 @@ Estamos comprometidos com hardware aberto e software de código aberto, licencia
 -   **Teclas de Função**: F1-F12、Teclas de Símbolos.
 -   **Teclas Padrão**: 0-9、A-Z、Enter、Espaço、delete.
 
-![image](../../images/android/enlargeAndKeyBoard.jpg)
-![image](../../images/android/keyBoardFunction.jpg)
-![image](../../images/android/keyBoardSystem.jpg)
+![image](https://assets.openterface.com/images/android/enlargeAndKeyBoard.webp)
+![image](https://assets.openterface.com/images/android/keyBoardFunction.jpg)
+![image](https://assets.openterface.com/images/android/keyBoardSystem.jpg)
 
 ---
 
