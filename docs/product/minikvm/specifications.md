@@ -6,10 +6,10 @@ keywords: "especificações Mini-KVM, detalhes técnicos KVM, especificações K
 
 # **Especificações Técnicas** | Openterface Mini-KVM
 
-![lig-front](/images/product/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
-![lig-back](/images/product/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
-![lig-front](/images/product/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
-![lig-back](/images/product/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front.svg#only-light){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back.svg#only-light){:style="max-height:260px"}
+![lig-front](https://assets.openterface.com/images/product/minikvm-v1-9-front_1.svg#only-dark){:style="max-height:260px"}
+![lig-back](https://assets.openterface.com/images/product/minikvm-v1-9-back_1.svg#only-dark){:style="max-height:260px"}
 
 ## Informações do Produto
 - Nome do Produto: Openterface Mini-KVM Basic / Toolkit

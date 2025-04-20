@@ -55,7 +55,7 @@ Para colocar seus gadgets Openterface™ KVM em funcionamento, você precisará 
     Como todos os nossos aplicativos são de código aberto, você pode encontrar versões alternativas de aplicativos host para dispositivos Openterface criadas por outras pessoas. Elas podem ser bem legais e oferecer recursos extras, mas aqui está um lembrete amigável: revise cuidadosamente suas práticas de segurança e privacidade—especialmente porque o controle KVM envolve eventos da sua tela, teclado e mouse. A equipe Openterface não pode garantir a segurança desses aplicativos de terceiros, então prossiga com cautela!
 
 <div class="container">
-    <img src="/images/product/win_qt_app.jpg" alt="Poster Image" class="poster-image-shadow">
+    <img src="https://assets.openterface.com/images/product/win_qt_app.jpg" alt="Poster Image" class="poster-image-shadow">
 </div>
 
 ## Junte-se ao Nosso Desenvolvimento

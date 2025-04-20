@@ -6,7 +6,7 @@ keywords: "pinos de extensão Mini-KVM, desenvolvimento personalizado, modifica�
 
 # **Pinos de Extensão** | Modo Desenvolvedor | Mini-KVM Openterface
 
-![mini-kvm-pins-port](/images/product/mini-kvm-pins-port.png){:style="height:360px"}
+![mini-kvm-pins-port](https://assets.openterface.com/images/product/mini-kvm-pins-port.png){:style="height:360px"}
 ![pin-cap](https://assets.openterface.com/images/product/part/pin-cap.jpg){:style="height:300px"}
 
 O Mini-KVM Openterface possui pinos de extensão para desenvolvimento avançado e experimentação com [Software Aberto](/app). Esses pinos não estão expostos na configuração padrão do case.
@@ -18,8 +18,8 @@ O Mini-KVM Openterface possui pinos de extensão para desenvolvimento avançado 
 3. Baixe o [modelo 3D](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware/tree/main/models) para a Tampa de Pino de Extensão.
 4. Confira nosso [repositório GitHub de Hardware](https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware).
 
-![change-cap](/images/product/change-cap.svg#only-light){:style="height:300px"}
-![change-cap](/images/product/change-cap_1.svg#only-dark){:style="height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap.svg#only-light){:style="height:300px"}
+![change-cap](https://assets.openterface.com/images/product/change-cap_1.svg#only-dark){:style="height:300px"}
 
 !!! warning "Garantia Anulada"
     Remover o case original pode anular a garantia do produto. Todas as modificações ou desmontagens são realizadas por conta e risco do usuário.
@@ -29,10 +29,10 @@ O Mini-KVM Openterface possui pinos de extensão para desenvolvimento avançado 
 
 ## Configuração dos Pinos
 
-![target-side](/images/product/extension-pins-1.svg#only-light){:style="height:200px"}
-![host-side](/images/product/extension-pins-2.svg#only-light){:style="height:200px"}
-![target-side](/images/product/extension-pins-1_1.svg#only-dark){:style="height:200px"}
-![host-side](/images/product/extension-pins-2_1.svg#only-dark){:style="height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1.svg#only-light){:style="height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2.svg#only-light){:style="height:200px"}
+![target-side](https://assets.openterface.com/images/product/extension-pins-1_1.svg#only-dark){:style="height:200px"}
+![host-side](https://assets.openterface.com/images/product/extension-pins-2_1.svg#only-dark){:style="height:200px"}
 
 Os pinos de extensão fornecem as seguintes conexões:
 
