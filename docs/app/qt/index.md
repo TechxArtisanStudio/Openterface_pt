@@ -7,7 +7,7 @@ Este documento fornece uma visão geral de um software KVM (Teclado, Vídeo, Mou
 ### Preferências
 
 O menu Preferências permite aos usuários personalizar configurações através de um diálogo com quatro páginas:<br>
-![Preferences Gernal](/images/qt/preferenceGernal.png)
+![Preferences Gernal](https://assets.openterface.com/images/qt/preferenceGernal.png)
 
 -   **Geral** Esta página configura o filtro de logs de depuração e a inibição ou não do protetor de tela quando o aplicativo está em execução. As categorias de log incluem:
 
@@ -18,7 +18,7 @@ O menu Preferências permite aos usuários personalizar configurações através
 
     Os usuários podem escolher salvar logs em um arquivo .txt e inibir ou não o protetor de tela.<br>
 
-![Preferences Video](/images/qt/preferenceVideo.png)
+![Preferences Video](https://assets.openterface.com/images/qt/preferenceVideo.png)
 
 -   **Vídeo** Esta página permite aos usuários:
 
@@ -28,7 +28,7 @@ O menu Preferências permite aos usuários personalizar configurações através
 
 -   **Áudio** Esta página está atualmente em desenvolvimento.<br>
 
-![Preferences TargetControl](/images/qt/preferenceTargetControl.png)
+![Preferences TargetControl](https://assets.openterface.com/images/qt/preferenceTargetControl.png)
 
 -   **Controle do Alvo** Esta página fornece opções para configurar modos de controle para o dispositivo alvo:
 
@@ -58,15 +58,15 @@ Este menu fornece opções para:<br>
 ### Avançado
 
 O menu Avançado inclui as seguintes opções:<br>
-![Advance menu](/images/qt/menuAdvance.png)
+![Advance menu](https://assets.openterface.com/images/qt/menuAdvance.png)
 
 -   **Verificação de Ambiente:** Verifica se os drivers necessários para o software estão instalados.
 -   **Redefinir Porta Serial:** Reinicia a porta serial.
 -   **Redefinir Teclado e Mouse:** Redefine as configurações do teclado e mouse.
 -   **Redefinição de Fábrica do Chip HID:** Restaura o chip HID para suas configurações de fábrica.<br>
-    ![Advance SerialConsole](/images/qt/advanceSerialConsole.png)
+    ![Advance SerialConsole](https://assets.openterface.com/images/qt/advanceSerialConsole.png)
 -   **Console Serial:** Abre uma nova janela para monitorar todas as mensagens enviadas para a porta serial, com filtros para mensagens enviadas/recebidas.<br>
-    ![Advance ScriptTool](/images/qt/advanceScriptTool.png)
+    ![Advance ScriptTool](https://assets.openterface.com/images/qt/advanceScriptTool.png)
 -   **Ferramenta de Script:** Executa scripts AutoHotkey (AHK). Este recurso imita o AutoHotkey mas suporta apenas um subconjunto de funções de mouse/teclado e capacidades de captura de tela. Os scripts afetam o dispositivo alvo.
 -   **Servidor TCP:** Recebe comandos AutoHotkey via TCP para executá-los no dispositivo alvo.
 -   **Atualização de Firmware:** Obtém o firmware mais recente de um servidor remoto, permitindo que os usuários escolham se desejam gravá-lo no dispositivo.
@@ -85,7 +85,7 @@ A interface pode ser configurada para:
 ### Ajuda
 
 O menu Ajuda fornece: <br>
-![Help menu](/images/qt/menuHelp.png)
+![Help menu](https://assets.openterface.com/images/qt/menuHelp.png)
 
 -   Links para o site oficial e formulários de feedback para problemas de software/hardware.
 -   Informações sobre compra de hardware.
@@ -97,7 +97,7 @@ O menu Ajuda fornece: <br>
 
 A barra de menu, da esquerda para a direita, inclui as seguintes funcionalidades:<br>
 
-![MenuBar](/images/qt/menubar.png)
+![MenuBar](https://assets.openterface.com/images/qt/menubar.png)
 
 -   Seleção de Layout do Teclado: Escolha o layout do teclado.
 -   Controles de Zoom: Aumentar, diminuir ou redefinir a exibição do stream de vídeo capturado.
