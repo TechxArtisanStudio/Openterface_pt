@@ -40,7 +40,7 @@ O **Openterface Mini-KVM** eleva os fluxos de trabalho de TI e transforma o gere
     ---
 
     Perfeito para projetos que necessitam de isolamento de rede (por exemplo, gerenciamento de criptomoedas). Aproveite operações locais seguras sem dependência da internet.
-    <img src="/images/product/use-case-demo-industrial-pc.webp" alt="Operações seguras com PC industrial" style="max-width: 100%;"/>
+    <img src="https://assets.openterface.com/images/product/use-case-demo-industrial-pc.webp" alt="Operações seguras com PC industrial" style="max-width: 100%;"/>
 
 -   :material-school:{ .lg } __Integração Eficiente para Fluxos de Trabalho Mistos__
 
