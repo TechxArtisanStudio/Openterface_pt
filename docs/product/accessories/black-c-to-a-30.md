@@ -15,4 +15,4 @@ Este versátil cabo do tipo Type-C macho para USB-A macho, emparelhado com um ad
 - **Adaptador**: USB-A fêmea para USB-C macho
 - **Uso**: Facilita o controle e a transferência de dados para o dispositivo-alvo.
 
-<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/type-c-to-usb-a-cable-with-adapter'"> Fazer Pedido <img src="/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>
+<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/type-c-to-usb-a-cable-with-adapter'"> Fazer Pedido <img src="https://assets.openterface.com/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>

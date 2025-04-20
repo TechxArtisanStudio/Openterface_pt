@@ -14,4 +14,4 @@ Mantenha seu Mini-KVM Openterface e seus acessórios organizados e portáteis co
 - **Cor**: Preto com zíper laranja
 - **Uso**: Ideal para armazenar e organizar seu Mini-KVM e seus cabos.
 
-<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/openterface-toolkit-bag'"> Fazer Pedido <img src="/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>
+<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/openterface-toolkit-bag'"> Fazer Pedido <img src="https://assets.openterface.com/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>

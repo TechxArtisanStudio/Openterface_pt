@@ -42,13 +42,13 @@ Para configurar seu Mini-KVM, siga estas etapas na ordem:
 
 ![target-side](https://assets.openterface.com/images/product/target-htc_1.svg#only-dark){:style="width:360px"}
 
-① ![Type-C to Host](/images/shell-icons/host.svg#only-light){:style="height:15px"} ![Type-C to Host](/images/shell-icons/host_1.svg#only-dark){:style="height:15px"} - **Porta USB-C do Host** (Fêmea): Como uma porta de dispositivo USB, conectando ao computador Host para transferência de dados via hub USB integrado
+① ![Type-C to Host](https://assets.openterface.com/images/shell-icons/host.svg#only-light){:style="height:15px"} ![Type-C to Host](https://assets.openterface.com/images/shell-icons/host_1.svg#only-dark){:style="height:15px"} - **Porta USB-C do Host** (Fêmea): Como uma porta de dispositivo USB, conectando ao computador Host para transferência de dados via hub USB integrado
 
-② ![Type-C to Target](/images/shell-icons/target.svg#only-light){:style="height:18px"} ![Type-C to Target](/images/shell-icons/target_1.svg#only-dark){:style="height:18px"} - **Porta USB-C do Alvo** (Fêmea): Como uma porta de dispositivo USB, conectando ao computador Host para emular a saída HID de teclado e mouse via hub USB integrado
+② ![Type-C to Target](https://assets.openterface.com/images/shell-icons/target.svg#only-light){:style="height:18px"} ![Type-C to Target](https://assets.openterface.com/images/shell-icons/target_1.svg#only-dark){:style="height:18px"} - **Porta USB-C do Alvo** (Fêmea): Como uma porta de dispositivo USB, conectando ao computador Host para emular a saída HID de teclado e mouse via hub USB integrado
 
-③ ![HDMI Input](/images/shell-icons/input.svg#only-light){:style="height:18px"} ![HDMI Input](/images/shell-icons/input_1.svg#only-dark){:style="height:18px"} - **Porta de Entrada HDMI** (Fêmea): Entrada de fonte HDMI do computador Alvo
+③ ![HDMI Input](https://assets.openterface.com/images/shell-icons/input.svg#only-light){:style="height:18px"} ![HDMI Input](https://assets.openterface.com/images/shell-icons/input_1.svg#only-dark){:style="height:18px"} - **Porta de Entrada HDMI** (Fêmea): Entrada de fonte HDMI do computador Alvo
 
-④ ![USB-A Port](/images/shell-icons/switchable-usb.svg#only-light){:style="height:26px"} ![USB-A Port](/images/shell-icons/switchable-usb_1.svg#only-dark){:style="height:26px"} - **Porta USB-A 2.0 Alternável** (Fêmea): Como uma porta host USB, utilizada pelo computador host ou pelo computador alvo a qualquer momento, mas não simultaneamente. Consulte o [Guia de Alternância da Porta USB](../usb-switch) para mais informações.
+④ ![USB-A Port](https://assets.openterface.com/images/shell-icons/switchable-usb.svg#only-light){:style="height:26px"} ![USB-A Port](https://assets.openterface.com/images/shell-icons/switchable-usb_1.svg#only-dark){:style="height:26px"} - **Porta USB-A 2.0 Alternável** (Fêmea): Como uma porta host USB, utilizada pelo computador host ou pelo computador alvo a qualquer momento, mas não simultaneamente. Consulte o [Guia de Alternância da Porta USB](../usb-switch) para mais informações.
 
 !!! warning "Limitações de Potência USB"
     A potência fornecida pela porta USB depende da placa-mãe do Host. Não é recomendável conectar dispositivos USB que exigem muita potência. Normalmente, o consumo de energia não deve exceder 1,5W. Conectar dispositivos de alta potência pode resultar em operação instável ou danos potenciais.
@@ -61,6 +61,6 @@ Para configurar seu Mini-KVM, siga estas etapas na ordem:
 
     Além disso, certifique-se de que qualquer hub USB conectado seja alimentado externamente. Hubs não alimentados podem causar instabilidade ou mau funcionamento de toda a configuração do mini-KVM.
 
-⑤ ![Toggle Switch](/images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Toggle Switch](/images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} - **Interruptor de Alternância**: Para alternar a conexão da porta USB-A 2.0 entre o computador host e o computador alvo
+⑤ ![Toggle Switch](https://assets.openterface.com/images/shell-icons/toggle-h-t.svg#only-light){:style="height:20px"} ![Toggle Switch](https://assets.openterface.com/images/shell-icons/toggle-h-t_1.svg#only-dark){:style="height:20px"} - **Interruptor de Alternância**: Para alternar a conexão da porta USB-A 2.0 entre o computador host e o computador alvo
 
-⑥ ![Extension Pins](/images/shell-icons/pins.svg#only-light){:style="height:15px"} ![Extension Pins](/images/shell-icons/pins_1.svg#only-dark){:style="height:15px"} - **Pinos de Extensão**: Ocultos por padrão e acessíveis apenas substituindo a tampa superior por uma tampa alternativa. Para mais informações, consulte [Pinos de Extensão](../extension-pins) para uso de desenvolvedor.
+⑥ ![Extension Pins](https://assets.openterface.com/images/shell-icons/pins.svg#only-light){:style="height:15px"} ![Extension Pins](https://assets.openterface.com/images/shell-icons/pins_1.svg#only-dark){:style="height:15px"} - **Pinos de Extensão**: Ocultos por padrão e acessíveis apenas substituindo a tampa superior por uma tampa alternativa. Para mais informações, consulte [Pinos de Extensão](../extension-pins) para uso de desenvolvedor.

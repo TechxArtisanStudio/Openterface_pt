@@ -15,4 +15,4 @@ Este cabo Type-C macho para macho, estiloso e com toque suave, na vibrante cor l
 - **Adaptador**: USB-C fêmea para USB-A macho
 - **Uso**: Para transferência de dados em alta velocidade entre o computador host e o Mini-KVM, e para carregamento rápido de celulares ou laptops.
 
-<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/type-c-cable-with-usb-a-adapter-1-5m-4-11ft-240w-fast-charging-data-transfer-usb2-0'"> Fazer Pedido <img src="/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>
+<button class="md-button" onclick="window.location.href='https://shop.techxartisan.com/products/type-c-cable-with-usb-a-adapter-1-5m-4-11ft-240w-fast-charging-data-transfer-usb2-0'"> Fazer Pedido <img src="https://assets.openterface.com/images/trademark/txa.svg" alt="TxA Shop" style="vertical-align: middle; height: 20px;"></button>
