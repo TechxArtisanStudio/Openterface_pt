@@ -19,21 +19,21 @@ O **Openterface Mini-KVM** eleva os fluxos de trabalho de TI e transforma o gere
     ---
 
     Ideal para profissionais de TI em data centers. O Mini-KVM controla vários servidores a partir de um único laptop, aumentando a eficiência e reduzindo o tempo de inatividade.
-    <img src="https://assets.openterface.com/images/product/use-case-demo-pc-bios-1.jpg" alt="Demonstração de gerenciamento de servidores BIOS" style="max-width: 100%;"/>
+    <img src="https://assets.openterface.com/images/product/use-case-demo-pc-bios-1.webp" alt="Demonstração de gerenciamento de servidores BIOS" style="max-width: 100%;"/>
 
 -   :material-tools:{ .lg } __Configuração Simplificada para Entusiastas de Tecnologia__
 
     ---
 
     Para desenvolvedores embarcados usando Raspberry Pi ou Jetson Nano, o Mini-KVM permite controle direto sem monitores ou periféricos extras.
-    <img src="https://assets.openterface.com/images/product/use-case-demo-respberry-pi.jpg" alt="Demonstração de configuração de Raspberry Pi" style="max-width: 100%;"/>
+    <img src="https://assets.openterface.com/images/product/use-case-demo-respberry-pi.webp" alt="Demonstração de configuração de Raspberry Pi" style="max-width: 100%;"/>
 
 -   :material-devices:{ .lg } __Controle Unificado para Dispositivos Diversos__
 
     ---
 
     Gerencie máquinas pessoais/trabalho ou hardware especializado (caixas eletrônicos, quiosques, VLTs) de uma única interface—sem mais troca de cabos ou teclados.
-    <img src="https://assets.openterface.com/images/product/use-case-demo-macmini2009-3.jpg" alt="Controle unificado de múltiplos dispositivos" style="max-width: 100%;"/>
+    <img src="https://assets.openterface.com/images/product/use-case-demo-macmini2009-3.webp" alt="Controle unificado de múltiplos dispositivos" style="max-width: 100%;"/>
 
 -   :material-hospital-building:{ .lg } __Operações Seguras para Tarefas Sensíveis__
 
@@ -47,7 +47,7 @@ O **Openterface Mini-KVM** eleva os fluxos de trabalho de TI e transforma o gere
     ---
 
     Troque facilmente entre configurações pessoais, de trabalho ou de computação de borda através de um único fluxo de controle simplificado.
-    <img src="https://assets.openterface.com/images/product/use-case-demo-macbookpro2010.jpg" alt="Integração de fluxo de trabalho misto" style="max-width: 100%;"/>
+    <img src="https://assets.openterface.com/images/product/use-case-demo-macbookpro2010.webp" alt="Integração de fluxo de trabalho misto" style="max-width: 100%;"/>
 
 -   :material-pencil:{ .lg } __Controle Sem Costura: Mini-KVM + Lápis Android__
 

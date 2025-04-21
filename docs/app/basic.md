@@ -5,7 +5,7 @@ keywords: "Controles Mini-KVM, modos de controle do mouse, entrada de teclado, a
 
 # Controle Básico para Aplicativos Host
 
-![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.jpg){ width=600 }
+![use-case-pc-angled-view](https://assets.openterface.com/images/product/use-case-pc-angled-view.webp){ width=600 }
 
 ## 💻 Compatibilidade
 
