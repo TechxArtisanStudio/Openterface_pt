@@ -1,55 +1,55 @@
-# Lite Series Pre-Launch & Waiting List
+# Série Lite Pré-Lançamento & Lista de Espera
 
-Hey there, tech enthusiasts!
+Olá, entusiastas de tecnologia!
 
-Time flies, right? Over the past half year, we've been deep in the trenches refining our [host apps](/app) for Windows, Linux, macOS, and Android. We thought it would be a smooth ride, but oh boy... software development had other ideas. One feature turned into another, then came the endless testing loops. But hey, we’re still in the game and making steady progress.
+O tempo voa, não é? Nos últimos seis meses, estivemos profundamente envolvidos no refinamento dos nossos [aplicativos host](/app) para Windows, Linux, macOS e Android. Pensamos que seria um caminho tranquilo, mas nossa... o desenvolvimento de software tinha outros planos. Uma funcionalidade levou a outra, depois vieram os infinitos ciclos de testes. Mas ei, ainda estamos no jogo e progredindo constantemente.
 
-Now let’s switch gears and talk about something new. While we’ve been busy with the apps, we took a moment to zoom out and look at the bigger picture. Our goal is still the same: to help IT pros, makers, and tech lovers like you get the job done fast, especially when you're working with headless devices in unpredictable setups, where time is tight and network access might be shaky.
+Agora vamos mudar de assunto e falar sobre algo novo. Enquanto estávamos ocupados com os aplicativos, tiramos um momento para dar um passo atrás e olhar o quadro maior. Nosso objetivo continua o mesmo: ajudar profissionais de TI, makers e amantes de tecnologia como você a realizar o trabalho rapidamente, especialmente quando você está trabalhando com dispositivos headless em configurações imprevisíveis, onde o tempo é curto e o acesso à rede pode ser instável.
 
-So, what’s next?
+Então, o que vem a seguir?
 
-## Meet the Openterface Lite Series
+## Conheça a Série Openterface Lite
 
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p1.webp" loading="lazy" alt="Openterface Lite HDMI Image 1" style="max-width: 100%; height: auto; max-height: 260px;">
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p5.webp" loading="lazy" alt="Openterface Lite HDMI Image 5" style="max-width: 100%; height: auto; max-height: 260px;">
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p4.webp" loading="lazy" alt="Openterface Lite HDMI Image 4" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p1.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 1" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p5.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 5" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p4.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 4" style="max-width: 100%; height: auto; max-height: 260px;">
 
-**Just drop your email in this** [Google Form](https://forms.gle/yaS1F5E5MSo8DWNZ6) and you’ll get updates, sneak peeks, and early access of this new gadget.
+**Basta deixar seu email neste** [Formulário Google](https://forms.gle/yaS1F5E5MSo8DWNZ6) e você receberá atualizações, prévias e acesso antecipado a este novo gadget.
 
-The Openterface Mini-KVM is already a handy, portable KVM-over-USB tool. But we kept asking ourselves: how can we make it even smaller and easier to carry?
+O Openterface Mini-KVM já é uma ferramenta KVM-over-USB portátil e útil. Mas continuamos nos perguntando: como podemos torná-lo ainda menor e mais fácil de carregar?
 
-Simple answer: **drop the extra video cable.**
+Resposta simples: **eliminar o cabo de vídeo extra.**
 
-Let’s be real. When you're in a fire-fighting situation and can't find the right cable, it's annoying. That’s why we decided to trade a bit of flexibility for even more portability. And boom, the **Openterface Lite Series** was born. It’s all about saving space and getting you connected faster.
+Vamos ser realistas. Quando você está em uma situação de emergência e não consegue encontrar o cabo certo, é irritante. Por isso decidimos trocar um pouco de flexibilidade por ainda mais portabilidade. E boom, nasceu a **Série Openterface Lite**. É tudo sobre economizar espaço e conectá-lo mais rapidamente.
 
-## What We’re Cooking Up
+## O Que Estamos Preparando
 
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p6.webp" loading="lazy" alt="Openterface Lite HDMI Image 6" style="max-width: 100%; height: auto; max-height: 260px;">
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p7.webp" loading="lazy" alt="Openterface Lite HDMI Image 7" style="max-width: 100%; height: auto; max-height: 260px;">
-<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p8.webp" loading="lazy" alt="Openterface Lite HDMI Image 8" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p6.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 6" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p7.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 7" style="max-width: 100%; height: auto; max-height: 260px;">
+<img src="https://assets.openterface.com/images/minikvm-lite/hdmi-p8.webp" loading="lazy" alt="Openterface Lite HDMI Imagem 8" style="max-width: 100%; height: auto; max-height: 260px;">
 
-We’re super excited to show you the first member of the Lite family:
+Estamos super animados para mostrar o primeiro membro da família Lite:
 
-- **Openterface Lite HDMI Male** — A compact, all-in-one HDMI solution you can plug straight in.
+- **Openterface Lite HDMI Macho** — Uma solução HDMI compacta e tudo-em-um que você pode conectar diretamente.
 
-And we're not stopping there. Coming up next:
+E não vamos parar por aí. Em breve:
 
-- **Openterface Lite VGA Male** — For those of you still dealing with trusty old legacy systems.
+- **Openterface Lite VGA Macho** — Para aqueles que ainda lidam com sistemas legados confiáveis.
 
-We might also explore micro-HDMI, mini-HDMI, and even DisplayPort versions. Not top priority right now, but if you need a specific version, let us know. Seriously, we’re listening.
+Também podemos explorar versões micro-HDMI, mini-HDMI e até DisplayPort. Não é prioridade agora, mas se você precisar de uma versão específica, nos avise. Sério, estamos ouvindo.
 
-## Stay in the Loop & Your Thoughts
+## Mantenha-se Informado & Suas Opiniões
 
-Right now we’re in the pre-launch phase. Things are still moving around. We’re working on refining the PCB and finalizing the case design. If you want to follow along and help shape this project, join our waiting list.
+Agora estamos na fase de pré-lançamento. As coisas ainda estão em movimento. Estamos trabalhando no refinamento da PCB e finalizando o design do case. Se você quiser acompanhar e ajudar a moldar este projeto, junte-se à nossa lista de espera.
 
-**Just drop your email in this** [Google Form](https://forms.gle/yaS1F5E5MSo8DWNZ6) and you’ll get updates, sneak peeks, and early access.
+**Basta deixar seu email neste** [Formulário Google](https://forms.gle/yaS1F5E5MSo8DWNZ6) e você receberá atualizações, prévias e acesso antecipado.
 
-As always, we love hearing your thoughts. What do you think? What features would you like to see? Your feedback helps us build something better.
+Como sempre, adoramos ouvir suas opiniões. O que você acha? Quais recursos você gostaria de ver? Seu feedback nos ajuda a construir algo melhor.
 
-And if your ideas stand out, once our prototype is ready for beta testing, we’ll invite some of you awesome folks to join our beta team and **become our bug hunters or early previewers**.
+E se suas ideias se destacarem, quando nosso protótipo estiver pronto para testes beta, convidaremos alguns de vocês, pessoas incríveis, para se juntarem à nossa equipe beta e **se tornarem nossos caçadores de bugs ou visualizadores antecipados**.
 
-## Cost & Price
+## Custo & Preço
 
-To be honest, we don’t have a clear price yet. With today’s crazy tariff and shipping situations, it’s hard to pin things down. But here’s the deal: **the more people who get on board early, the easier it is for us to plan production and keep costs under control.** So if you want the price to be wallet-friendly, help us spread the word and making it a reality!
+Para ser honesto, ainda não temos um preço definido. Com as situações loucas de tarifas e envios de hoje, é difícil definir as coisas. Mas aqui está o acordo: **quanto mais pessoas entrarem cedo, mais fácil será para nós planejar a produção e manter os custos sob controle.** Então, se você quer que o preço seja amigável ao bolso, ajude-nos a espalhar a palavra e a tornar isso realidade!
 
-Thanks for being awesome!
+Obrigado por serem incríveis! 
