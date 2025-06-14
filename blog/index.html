@@ -1,0 +1,3308 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Uma solução KVM-over-USB rica em recursos, de código aberto e impulsionada pela comunidade">
+      
+      
+        <meta name="author" content="Openterface">
+      
+      
+        <link rel="canonical" href="https://pt.openterface.com/blog/">
+      
+      
+        <link rel="prev" href="../compliance/">
+      
+      
+        <link rel="next" href="../tags/">
+      
+      
+      <link rel="icon" href="../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Blog - Openterface | Conectando Interfaces a Novas Possibilidades</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096v320c0%2035.3%2028.7%2064%2064%2064h224V368c0-26.5%2021.5-48%2048-48h112V96c0-35.3-28.7-64-64-64zm384%20320H336c-8.8%200-16%207.2-16%2016v112l32-32%2064-64z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M96%200C43%200%200%2043%200%2096v320c0%2053%2043%2096%2096%2096h320c17.7%200%2032-14.3%2032-32s-14.3-32-32-32v-64c17.7%200%2032-14.3%2032-32V32c0-17.7-14.3-32-32-32H96m0%20384h256v64H96c-17.7%200-32-14.3-32-32s14.3-32%2032-32m32-240c0-8.8%207.2-16%2016-16h192c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H144c-8.8%200-16-7.2-16-16m16%2048h192c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H144c-8.8%200-16-7.2-16-16s7.2-16%2016-16%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-40-176h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24m40-208a32%2032%200%201%201%200%2064%2032%2032%200%201%201%200-64%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M480%2032c0-12.9-7.8-24.6-19.8-29.6S434.5.2%20425.3%209.3L381.7%2053c-48%2048-113.1%2075-181%2075H64c-35.3%200-64%2028.7-64%2064v96c0%2035.3%2028.7%2064%2064%2064v128c0%2017.7%2014.3%2032%2032%2032h64c17.7%200%2032-14.3%2032-32V352h8.7c67.9%200%20133%2027%20181%2075l43.6%2043.6c9.2%209.2%2022.9%2011.9%2034.9%206.9s19.8-16.6%2019.8-29.6V300.3c18.6-8.8%2032-32.5%2032-60.4s-13.4-51.6-32-60.4zm-64%2076.7v262.6C357.2%20317.8%20280.5%20288%20200.7%20288H192v-96h8.7c79.8%200%20156.5-29.8%20215.3-83.3%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M438.6%20105.4c12.5%2012.5%2012.5%2032.8%200%2045.3l-256%20256c-12.5%2012.5-32.8%2012.5-45.3%200l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200L160%20338.7l233.4-233.3c12.5-12.5%2032.8-12.5%2045.3%200z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-86.2-346.7c7.9-22.3%2029.1-37.3%2052.8-37.3h58.3c34.9%200%2063.1%2028.3%2063.1%2063.1%200%2022.6-12.1%2043.5-31.7%2054.8L280%20264.4c-.2%2013-10.9%2023.6-24%2023.6-13.3%200-24-10.7-24-24v-13.5c0-8.6%204.6-16.5%2012.1-20.8l44.3-25.4c4.7-2.7%207.6-7.7%207.6-13.1%200-8.4-6.8-15.1-15.1-15.1h-58.3c-3.4%200-6.4%202.1-7.5%205.3l-.4%201.2c-4.4%2012.5-18.2%2019-30.6%2014.6s-19-18.2-14.6-30.6l.4-1.2zM224%20352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%2032c14.2%200%2027.3%207.5%2034.5%2019.8l216%20368c7.3%2012.4%207.3%2027.7.2%2040.1S486.3%20480%20472%20480H40c-14.3%200-27.6-7.7-34.7-20.1s-7-27.8.2-40.1l216-368C228.7%2039.5%20241.8%2032%20256%2032m0%20128c-13.3%200-24%2010.7-24%2024v112c0%2013.3%2010.7%2024%2024%2024s24-10.7%2024-24V184c0-13.3-10.7-24-24-24m32%20224a32%2032%200%201%200-64%200%2032%2032%200%201%200%2064%200%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M459.1%2052.4%20442.6%206.5c-1.9-3.9-6.1-6.5-10.5-6.5s-8.5%202.6-10.4%206.5l-16.5%2045.9-46%2016.8c-4.3%201.6-7.3%205.9-7.2%2010.4%200%204.5%203%208.7%207.2%2010.2l45.7%2016.8%2016.8%2045.8c1.5%204.4%205.8%207.5%2010.4%207.5s8.9-3.1%2010.4-7.5l16.5-45.8%2045.7-16.8c4.2-1.5%207.2-5.7%207.2-10.2%200-4.6-3-8.9-7.2-10.4zm-132.4%2053c-12.5-12.5-32.8-12.5-45.3%200l-2.9%202.9c-22-8-45.8-12.3-70.5-12.3C93.1%2096%200%20189.1%200%20304s93.1%20208%20208%20208%20208-93.1%20208-208c0-24.7-4.3-48.5-12.2-70.5l2.9-2.9c12.5-12.5%2012.5-32.8%200-45.3l-80-80zM200%20192c-57.4%200-104%2046.6-104%20104v8c0%208.8-7.2%2016-16%2016s-16-7.2-16-16v-8c0-75.1%2060.9-136%20136-136h8c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016z%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M416%20398.9c58.5-41.1%2096-104.1%2096-174.9C512%20100.3%20397.4%200%20256%200S0%20100.3%200%20224c0%2070.7%2037.5%20133.8%2096%20174.9V464c0%2026.5%2021.5%2048%2048%2048h48v-48c0-8.8%207.2-16%2016-16s16%207.2%2016%2016v48h64v-48c0-8.8%207.2-16%2016-16s16%207.2%2016%2016v48h48c26.5%200%2048-21.5%2048-48v-65.1M96%20256a64%2064%200%201%201%20128%200%2064%2064%200%201%201-128%200m256-64a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M320%200c17.7%200%2032%2014.3%2032%2032v64h120c39.8%200%2072%2032.2%2072%2072v272c0%2039.8-32.2%2072-72%2072H168c-39.8%200-72-32.2-72-72V168c0-39.8%2032.2-72%2072-72h120V32c0-17.7%2014.3-32%2032-32M208%20384c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016h32c8.8%200%2016-7.2%2016-16s-7.2-16-16-16zm96%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016h32c8.8%200%2016-7.2%2016-16s-7.2-16-16-16zm96%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016h32c8.8%200%2016-7.2%2016-16s-7.2-16-16-16zM264%20256a40%2040%200%201%200-80%200%2040%2040%200%201%200%2080%200m152%2040a40%2040%200%201%200%200-80%2040%2040%200%201%200%200%2080M48%20224h16v192H48c-26.5%200-48-21.5-48-48v-96c0-26.5%2021.5-48%2048-48m544%200c26.5%200%2048%2021.5%2048%2048v96c0%2026.5-21.5%2048-48%2048h-16V224z%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v132.8c0%2011.8-3.3%2023.5-9.5%2033.5L10.3%20406.2C3.6%20417.2%200%20429.7%200%20442.6%200%20480.9%2031.1%20512%2069.4%20512h309.2c38.3%200%2069.4-31.1%2069.4-69.4%200-12.8-3.6-25.4-10.3-36.4L329.5%20230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20196.8V64h64v132.8c0%2023.7%206.6%2046.9%2019%2067.1l34.5%2056.1h-171l34.5-56.1c12.4-20.2%2019-43.4%2019-67.1%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%20216C0%20149.7%2053.7%2096%20120%2096h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064H64c-35.3%200-64-28.7-64-64V216m256%200c0-66.3%2053.7-120%20120-120h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064h-64c-35.3%200-64-28.7-64-64V216%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/signup_form.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-EKZEH6QYWT"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-EKZEH6QYWT",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-EKZEH6QYWT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  <link href="../assets/stylesheets/custom.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/signup_form.css" rel="stylesheet"/>
+<!-- Gibby Avatar and Dialogue Box -->
+<div class="gibby-container">
+<a class="gibby-link" href="#form_signup"><img alt="Gibby Mascot" aria-label="Gibby Mascot" class="gibby-avatar" draggable="false" src="https://assets.openterface.com/images/op-avatar.webp"/></a>
+<div class="gibby-dialogue">
+<p>
+<a class="gibby-link" data-i18n="main.subscribenow-link" href="#form_signup">Inscreva-se AGORA!</a>
+</p>
+</div>
+</div>
+
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blog" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Openterface | Conectando Interfaces a Novas Possibilidades" class="md-header__button md-logo" aria-label="Openterface | Conectando Interfaces a Novas Possibilidades" data-md-component="logo">
+      
+  <img src="../assets/app-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Openterface | Conectando Interfaces a Novas Possibilidades
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="https://openterface.com/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://cn.openterface.com/" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://jp.openterface.com/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://kr.openterface.com/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://fr.openterface.com/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://de.openterface.com/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://it.openterface.com/" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://es.openterface.com/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://pt.openterface.com/" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://ro.openterface.com/" hreflang="ro" class="md-select__link">
+              Română
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TechxArtisanStudio/Openterface_pt" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Openterface_pt
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Perguntas Frequentes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../product/minikvm/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Produto
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../app/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Aplicativo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../use-cases/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Casos de Uso
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/product/minikvm/reviews/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Avaliações
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../compliance/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conformidade
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://shop.techxartisan.com" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Loja
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/discord" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Discord
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Openterface | Conectando Interfaces a Novas Possibilidades" class="md-nav__button md-logo" aria-label="Openterface | Conectando Interfaces a Novas Possibilidades" data-md-component="logo">
+      
+  <img src="../assets/app-logo.png" alt="logo">
+
+    </a>
+    Openterface | Conectando Interfaces a Novas Possibilidades
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TechxArtisanStudio/Openterface_pt" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Openterface_pt
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Início
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../faq/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Perguntas Frequentes
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Perguntas Frequentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos do KVM-over-USB
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fundamentos do KVM-over-USB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/usbkvm/kvm-over-usb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O que é KVM USB?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/usbkvm/openterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Por que escolher o KVM USB Openterface?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Série Mini-KVM
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Série Mini-KVM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/minikvm/op-minikvm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Openterface Mini-KVM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/business/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQs para Empresas e Mídia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Produto
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Produto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../product/minikvm/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Mini-KVM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Mini-KVM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/whats-in-the-box/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    O Que Tem na Caixa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Recursos e Capacidades
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/how-to-connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como Conectar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/faq/usbkvm/kvm-over-usb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como Funciona
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/reviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliações & Imprensa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/specifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/usb-switch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Porta USB Alternável
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm/extension-pins/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pinos de Extensão
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/faq/minikvm/op-minikvm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQs & Solução de Problemas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/faq/usbkvm/openterface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Por que Openterface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mini-KVM Lite (Pré-Lançamento)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mini-KVM Lite (Pré-Lançamento)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/minikvm-lite/pre-launch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Série Lite Pré-Lançamento & Lista de Espera
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../product/accessories/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Acessórios
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Acessórios
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/vga-to-hdmi-cable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cabo VGA para HDMI 1m
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/nylong-c-to-c-150/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cabo Tipo-C para C Nylon 1.5m
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/type-c-to-c-cable-with-adapter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cabo Tipo-C para C Laranja 1.5m
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/black-c-to-a-30/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cabo Tipo-C para A Preto 30cm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/hdmi-male-to-male-cable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cabo HDMI 30cm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product/accessories/openterface-toolkit-bag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bolsa de Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../app/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Aplicativo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../app/qt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Openterface QT para Windows e Linux
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../app/macos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Openterface MacOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../app/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Openterface Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/product/minikvm/reviews/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conformidade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://shop.techxartisan.com" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Loja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/discord" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Discord
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_10" id="__nav_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tag
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Categorias
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            Categorias
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="category/atualiza%C3%A7%C3%B5es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Atualizações
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sobre
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content" data-md-component="content">
+    <div class="md-content__inner">
+      <header class="md-typeset">
+        <h1 id="blog">Blog</h1>
+
+
+  <h2 id="tag:atualizações">
+
+
+<span class="md-tag">Atualizações</span></h2>
+  <ul>
+    
+      <li>
+        <a href="2025/05/19/Korean-tinyrack-review/">
+          2025-06-14 | Uma análise altamente perspicaz e valiosa da Coreia do Sul.
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/11/27/50-de-desconto-em-todos-os-produtos---somente-este-sextas-feira-negro-mostre-seu-apoio-ao-software-de-c%C3%B3digo-aberto/">
+          50% DE DESCONTO EM TODOS OS PRODUTOS - SOMENTE ESTE SEXTAS-FEIRA NEGRO! MOSTRE SEU APOIO AO SOFTWARE DE CÓDIGO ABERTO!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/06/08/atualiza%C3%A7%C3%B5es-%C3%A9picas--%C3%BAltima-semana--%C3%BAltima-chance-de-apoiar-o-mini-kvm/">
+          Atualizações Épicas & Última Semana – Última Chance de Apoiar o Mini-KVM!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/05/31/bate-papo-descontra%C3%ADdo-com-david-groom-da-make-magazine-a-hist%C3%B3ria-do-openterface-mini-kvm/">
+          Bate-papo Descontraído com David Groom da MAKE: Magazine: A História do Openterface Mini-KVM
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/04/30/campanha-de-financiamento-coletivo-do-openterface-mini-kvm-est%C3%A1-no-ar-agora/">
+          Campanha de Financiamento Coletivo do Openterface Mini-KVM Está no Ar AGORA!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/">
+          Da Desmontagem à Produção: Estamos Avançando!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/">
+          Desafio DIY, Prêmios Legais e Produção Quase Concluída!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/05/28/do-desenvolvimento-%C3%A0s-suas-m%C3%A3os-por-tr%C3%A1s-das-cenas/">
+          Do Desenvolvimento às Suas Mãos: Por Trás das Cenas
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/">
+          Encontre-me em Portland Neste Fim de Semana e Ganhe um Mini-KVM no Meu Desafio de Jogo!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/12/24/feliz-natal--feliz-ano-novo--um-pequeno-presente-da-equipe-openterface/">
+          Feliz Natal & Feliz Ano Novo & Um Pequeno Presente da Equipe Openterface!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/">
+          Limpa Backlog, Novo Equipamento e Mais Tempo para Construir USB KVM!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/">
+          O Envio Foi Realizado! Cabos Extras Adicionados ao Kit. O Que Vem a Seguir?
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/10/01/pronto-para-um-desafio-diy-junte-se-a-n%C3%B3s-no-show--tell-da-oshwa/">
+          Pronto para um Desafio DIY? Junte-se a nós no Show & Tell da OSHWA!
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/">
+          Superando Obstáculos: Atualização de Progresso e Novo Cronograma
+        </a>
+      </li>
+    
+      <li>
+        <a href="2024/06/12/%C3%BAltimas-horas-para-apoiar--mini-kvms-na-vanguarda-da-tecnologia/">
+          Últimas Horas para Apoiar & Mini-KVMs na Vanguarda da Tecnologia
+        </a>
+      </li>
+    
+    
+  </ul>
+
+      </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-05-19 00:00:00+00:00">19 de maio de 2025</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="2025-06-14-uma-analise-altamente-perspicaz-e-valiosa-da-coreia-do-sul"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/">2025-06-14 | Uma análise altamente perspicaz e valiosa da Coreia do Sul.</a></h2>
+<h3 id="uma-analise-reflexiva-da-coreia-e-nossos-pensamentos-em-retorno"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#uma-analise-reflexiva-da-coreia-e-nossos-pensamentos-em-retorno">Uma Análise Reflexiva da Coreia e Nossos Pensamentos em Retorno</a></h3>
+<p>Adoramos surpresas, pelo menos as boas. Algumas semanas atrás, entramos em contato com um YouTuber baseado na Coreia do Sul conhecido por suas análises honestas e tecnicamente detalhadas. Enviamos um pequeno pacote: um <a href="https://shop.techxartisan.com/products/openterface-kvm-ext-for-uconsole">Openterface KVM Ext. for uConsole</a>, mais nosso kit de ferramentas mini-KVM para testes. Então, esperamos.</p>
+<p>O que veio depois superou nossas expectativas.</p>
+<p>Ele não apenas testou o mini-KVM extensivamente, mas também dedicou tempo para escrever um artigo detalhado repleto de insights:
+👉 <a href="https://tinyrack.net/openterface-mini-kvm">Leia a análise completa aqui</a></p>
+<p>Seu feedback foi preciso, construtivo e baseado em uso real. Isso é ouro para nós. Embora não concordássemos com todos os pontos, foi exatamente por isso que foi valioso. Isso nos fez repensar algumas suposições de design e confirmou onde acertamos. Se você estiver curioso, role para baixo para ver a conversa completa.</p>
+<p>E se você ainda não o segue:
+- 🎥 <a href="https://youtube.com/@tinyrack">Canal no YouTube</a>
+- 💬 <a href="https://forum.tinyrack.net">Fórum da Comunidade</a></p>
+<p>Este tipo de diálogo é exatamente o que ajuda ferramentas como a nossa a evoluir. Então, obrigado, TinyRack - nós ouvimos você.</p>
+<h2 id="algumas-palavras-do-coracao-nossos-objetivos-e-compromissos"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#algumas-palavras-do-coracao-nossos-objetivos-e-compromissos">Algumas Palavras do Coração: Nossos Objetivos e Compromissos</a></h2>
+<h3 id="1-canais-de-varejo"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#1-canais-de-varejo">1. Canais de Varejo</a></h3>
+<p>Nosso canal de vendas atual e exclusivo para o Openterface Mini‑KVM é o Crowd Supply, e esta parceria continuará até meados de 2026. Somos genuinamente gratos pelo seu apoio. O Crowd Supply é especializado em projetos de hardware aberto, e sua plataforma e comunidade desempenharam um papel crucial em ajudar nossa pequena equipe a crescer e entregar o Mini‑KVM com sucesso.</p>
+<p>Graças ao Crowd Supply gerenciar o cumprimento e a distribuição com tanta eficiência, pudemos focar totalmente nossas energias no design do produto, produção e desenvolvimento de software. É por isso que ainda não conseguimos lançar em marketplaces maiores como Amazon ou AliExpress. No entanto, ampliar nossa distribuição continua sendo uma prioridade máxima, e estamos planejando explorar esses canais assim que nosso compromisso atual terminar em meados de 2026.</p>
+<p>Acreditamos em ser transparentes em vez de fazer promessas que ainda não podemos cumprir. Sua paciência e apoio contínuo nos permitem construir uma base mais forte antes de expandir para marketplaces adicionais.</p>
+<h3 id="2-preco"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#2-preco">2. Preço</a></h3>
+<p>Entendemos que alguns usuários consideram o preço mais alto que o esperado. Grande parte do custo reflete nosso investimento no desenvolvimento de software nativo para Windows, macOS, Linux, Android (e, em breve, iPad/iOS). Estamos construindo aplicativos completos e seguros, muito além de um aplicativo web básico (embora sejamos gratos ao colaborador da comunidade Kashall por ajudar a construir nossa versão web!). Consideramos os desafios e nos comparamos com ferramentas confiadas por profissionais de TI e empresas, e insistimos em padrões de desenvolvimento e segurança alinhados com as melhores práticas da indústria.</p>
+<h3 id="3-compromisso-com-codigo-aberto"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#3-compromisso-com-codigo-aberto">3. Compromisso com Código Aberto</a></h3>
+<p>Agradecemos por apontar que o código aberto às vezes pode ser uma maneira de repassar trabalhos incompletos. Não somos assim. Nossa equipe de desenvolvimento está totalmente comprometida com o código aberto, e temos recursos emocionantes no roteiro. Sabemos que este caminho não é fácil, mas continuaremos avançando e esperamos que nossa comunidade continue nos apoiando.</p>
+<h3 id="4-aviso-do-windows-smartscreen"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#4-aviso-do-windows-smartscreen">4. Aviso do Windows SmartScreen</a></h3>
+<p>Seu feedback sobre o aviso do instalador do Windows foi preciso. Já estamos usando um certificado de código aberto (SignPath), mas os avisos ainda aparecem. Estamos buscando certificados de Validação Estendida (EV), embora eles continuem difíceis para empresas mais novas. Por favor, tenha paciência enquanto navegamos pela papelada e melhoramos sua experiência inicial de instalação.</p>
+<h3 id="5-elogio-a-experiencia-de-trabalho"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#5-elogio-a-experiencia-de-trabalho">5. Elogio à Experiência de Trabalho</a></h3>
+<p>Obrigado por realizar testes de estresse plug-and-play tão rigorosos, reconectando cabos, inicializando a partir da BIOS e afins. Esse tipo de validação do mundo real significa muito.</p>
+<h3 id="6-problemas-no-linux"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#6-problemas-no-linux">6. Problemas no Linux</a></h3>
+<p>Lamentamos muito as frustrações que você encontrou no Linux. Erros de permissão, monitores ausentes, problemas de firmware e travamentos são inaceitáveis. Estamos priorizando melhorias, incluindo: Upload para a Ubuntu Software Store para instalação fácil; Fornecimento de flatpak e instaladores de um clique; Aprimoramento de regras udev, tratamento de dependências e resiliência a travamentos. Estamos comprometidos em entregar uma experiência Linux que corresponda à nossa qualidade Windows e macOS.</p>
+<h3 id="7-caminho-a-seguir"><a class="toclink" href="2025/05/19/Korean-tinyrack-review/#7-caminho-a-seguir">7. Caminho a Seguir</a></h3>
+<p>Seu feedback, especialmente sobre o preço, ajudou a catalisar discussões internas sobre otimização de custos e escalabilidade. Estamos avaliando ajustes em todas as frentes, canais de vendas, gastos com marketing e operações, para melhor equilibrar valor e qualidade à medida que crescemos.</p>
+<p>Somos verdadeiramente gratos pelo feedback e apoio atenciosos do <a href="https://www.youtube.com/@tinyrack">tinyrack</a> e de tantos membros da comunidade de código aberto. É o cuidado, as contribuições e o incentivo de pessoas como você que nos lembram por que estamos construindo o Openterface como mais do que apenas um produto. É uma jornada compartilhada moldada pela colaboração, curiosidade e uma crença comum em fazer as coisas melhor juntos. Obrigado por fazer parte deste caminho. Estamos ansiosos pelo que está por vir e continuaremos aprendendo e crescendo com todos vocês.</p>
+<p>Com gratidão,<br />
+Billy Wang<br />
+Gerente de Produto<br />
+Equipe Openterface | TechxArtisan</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-02-19 00:00:00+00:00">19 de fevereiro de 2025</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/">Limpa Backlog, Novo Equipamento e Mais Tempo para Construir USB KVM!</a></h2>
+<p><strong>Olá, família Openterface!</strong></p>
+<p>Já faz um tempo, e temos algumas notícias emocionantes para compartilhar! Vamos mergulhar!</p>
+<h4 id="suas-unboxings-nossa-maior-motivacao"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#suas-unboxings-nossa-maior-motivacao">Suas Unboxings, Nossa Maior Motivação</a></h4>
+<p>Mais e mais apoiadores estão recebendo seus kits e compartilhando suas experiências com unboxings, configurações e casos de uso criativos. Já vimos incríveis posts de unboxing em plataformas populares como Discord, Reddit, Mastodon, Bluesky, Threads, X - você nomeia!</p>
+<p><img alt="Compartilhamentos da comunidade" src="pic/250219-sharing.gif" /></p>
+<p>Sinceramente, sabemos que mencionamos isso em posts anteriores, mas nunca podemos dizer o suficiente - nossa gratidão é profunda. Ver sua entusiasmo e como nosso gadget ajuda você na linha de frente da tecnologia é exatamente para o que construímos isso e lutamos por isso, e é verdadeiramente uma honra. Suas compartilhas e feedback são a maior validação do nosso trabalho árduo.</p>
+<p>Obrigado, família Openterface! 🚀💙</p>
+<h4 id="backlog-limpo-totalmente-estocado"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#backlog-limpo-totalmente-estocado"><strong>Backlog Limpo &amp; Totalmente Estocado</strong></a></h4>
+<p>De acordo com a Crowd Supply, a maioria dos pedidos já foi enviada! Se você ainda não recebeu o seu, verifique novamente as informações de envio do pedido e é provável que esteja sendo processado e deve estar a caminho em breve. Sinta-se à vontade para <a href="https://www.crowdsupply.com/contact">contatar a Crowd Supply</a> para obter atualizações sobre o status do seu pedido.</p>
+<p>Além disso, recentemente enviamos outra remessa de unidades Mini-KVM Openterface, e o armazém da Crowd Supply no Texas agora está totalmente estocado! Então, se o seu Mini-KVM atual está provando ser inestimável para gerenciar seus dispositivos sem cabeça na sua linha de frente da tecnologia, considere <a href="https://www.crowdsupply.com/techxartisan/openterface-mini-kvm">pegar outro via Crowd Supply</a> - ou espalhe a palavra para seus amigos que amam tecnologia!</p>
+<h4 id="erros-sem-problema-equipe-de-dev-em-acao"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#erros-sem-problema-equipe-de-dev-em-acao"><strong>Erros? Sem Problema! Equipe de Dev em Ação</strong></a></h4>
+<p>O buzz em nosso Reddit, Discord e GitHub tem sido incrível! Seu feedback, perguntas e relatórios de problemas têm sido reportados - e estamos tão gratos por isso.</p>
+<p>Aqui está o que a nossa equipe de dev está se concentrando agora:</p>
+<ul>
+<li><strong>Corrigindo Erros:</strong> Esmagando esses problemas irritantes que você relatou.  </li>
+<li><strong>Apoio a Você:</strong> Atualizando nossos docs e FAQs para tornar sua experiência mais suave.  </li>
+</ul>
+<p>Estamos revisando cada problema, realizando check-ins regulares e esmagando erros um a um. Tornar o aplicativo mais sólido e confiável é nossa prioridade número um - e sua entrada é fundamental para fazer isso acontecer.  </p>
+<p>Tem um erro para relatar ou encontrou uma maneira legal de usar seu Mini-KVM para salvar o dia? Nós <strong>amamos</strong> ouvir sobre isso! Seja uma configuração criativa, uma ideia de recurso essencial ou apenas pura emoção - estamos todos ouvidos.  </p>
+<p>Para ajudar a nossa equipe de dev a rastrear erros sistematicamente (e manter sua sanidade intacta), nós <strong>fortemente recomendamos</strong> relatar erros em nossos repositórios GitHub primeiro:</p>
+<ul>
+<li><a href="https://github.com/TechxArtisanStudio/Openterface_QT">Openterface QT</a> para Windows &amp; Linux</li>
+<li><a href="https://github.com/TechxArtisanStudio/Openterface_MacOS">Openterface MacOS</a></li>
+<li><a href="https://github.com/TechxArtisanStudio/Openterface_Android">Openterface Android</a></li>
+<li><a href="https://github.com/TechxArtisanStudio/Openterface_Mini-KVM_Hardware">Openterface Mini-KVM Hardware</a></li>
+</ul>
+<p>Preferem discussões em tempo real com a equipe de dev e fãs da Openterface? Junte-se à nossa incrível comunidade:</p>
+<ul>
+<li><strong>Reddit:</strong> <a href="https://openterface.com/reddit">r/Openterface_miniKVM</a>  </li>
+<li><strong>Discord:</strong> <a href="https://openterface.com/discord">Openterface</a>  </li>
+</ul>
+<p>Ah, e se você gosta de manter as coisas antigas, você sempre pode <strong>nos enviar um email</strong> em info@techxartisan.com ou nos enviar uma mensagem via nosso <strong>Formulário Google</strong>: <a href="https://forms.gle/enVJYFGn6gghEFaJ9">Enviar Feedback</a>.  </p>
+<p>Sua paciência e apoio significam o mundo para nós enquanto trabalhamos através de qualquer obstáculo ao longo do caminho. Agradecimentos enormes a todos que relataram problemas, compartilharam ideias e até mesmo pularam para contribuir com código! O dispositivo Openterface não é perfeito (ainda!), mas confie em nós - com a energia dessa comunidade, está ficando melhor todos os dias. 🚀💙  </p>
+<h4 id="desafio-diy-kvm-premios-aumentados-e-extensao"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#desafio-diy-kvm-premios-aumentados-e-extensao"><strong>Desafio DIY KVM: Prêmios Aumentados e Extensão!</strong></a></h4>
+<p>Desde que nossos kits foram enviados mais tarde do que o esperado, estamos estendendo o Desafio DIY KVM por <strong>dois meses</strong>! Além disso, estamos atualizando os prêmios - fique atento para detalhes na página do concurso da Crowd Supply. Isso significa mais tempo para brincar, experimentar e mostrar seus projetos. Junte-se à diversão e envie seus projetos via página do concurso DIY USB da Crowd Supply: <a href="https://www.crowdsupply.com/techxartisan/usb-kvm-diy-challenge-2024">Desafio DIY KVM 2024</a></p>
+<p><img alt="Desafio DIY KVM 2024" src="pic/250219-usb-kvm-diy-2024.svg" /></p>
+<p><img alt="Participantes do concurso" src="pic/250214-contest-parties.png" /></p>
+<h4 id="novo-cabo-nylon-laranja-brilhante"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#novo-cabo-nylon-laranja-brilhante"><strong>Novo Cabo Nylon Laranja Brilhante</strong></a></h4>
+<p>Com nossa última remessa de unidades Mini-KVM, oficialmente atualizamos o cabo Type-C em nossa versão toolkit para o novo cabo nylon laranja brilhante. Esse novo cabo não é apenas visualmente impressionante - é construído para performance, com resistência EMI superior, transferência de dados estável e durabilidade excepcional.</p>
+<p><img alt="Novo Toolkit" src="pic/250214-toolkit-open.jpg" /></p>
+<p>Mas se você prefere o toque mais suave e mais flexível do cabo Type-C original de silicone, sem problemas! Você ainda pode pegá-los em nossa <a href="https://shop.techxartisan.com/products/type-c-cable-with-usb-a-adapter-1-5m-4-11ft-240w-fast-charging-data-transfer-usb2-0">Loja TxA</a>. Ambos os cabos têm suas forças, e estamos confiantes de que a nova versão nylon será uma sólida adição ao seu toolkit de tecnologia.</p>
+<h4 id="controle-sem-fio-mini-kvm-caneta-android-puro-magico"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#controle-sem-fio-mini-kvm-caneta-android-puro-magico"><strong>Controle Sem Fio: Mini-KVM + Caneta Android = Puro Mágico</strong></a></h4>
+<p>Já se perguntou o que acontece quando você <a href="https://www.reddit.com/r/Openterface_miniKVM/comments/1hnh79n/kicad_is_the_fisrt_software_we_tried_first_with/">combina o Mini-KVM com uma Caneta Android</a>? Puro mágico! Desde desenhar designs até navegar no macOS ou Window, a experiência do nosso <a href="https://github.com/TechxArtisanStudio/Openterface_Android">aplicativo hospedeiro Android Openterface</a> é suave, intuitiva e satisfatória. Confira nosso vídeo demo para ver em ação!</p>
+<h4 id="casos-de-uso-incriveis-da-comunidade"><a class="toclink" href="2025/02/19/limpa-backlog-novo-equipamento-e-mais-tempo-para-construir-usb-kvm/#casos-de-uso-incriveis-da-comunidade"><strong>Casos de Uso Incríveis da Comunidade:</strong></a></h4>
+<p>Aqui estão apenas mais algumas ideias de como você pode usar o Openterface Mini-KVM:</p>
+<ul>
+<li><strong>Controle Sem Cabeça com Android Phone:</strong> <a href="https://www.reddit.com/r/Openterface_miniKVM/comments/1hrx1j5/my_pi_5_setup_ups_aluminium_case_openterface_magic/">My Pi 5 setup: UPS, Aluminium Case, &amp; Openterface Magic</a></li>
+<li><strong>Revivendo um MacBook Quebrado:</strong> <a href="https://www.reddit.com/r/macbookpro/comments/1hwkh64/uh_a_way_to_save_the_day_of_this_pink_screen/">Uh... A way to save the day of this pink screen!</a></li>
+<li><strong>Explore mais casos de uso</strong> em nosso <a href="https://openterface.com/use-cases/">site</a>.</li>
+</ul>
+<p>Sua criatividade e paixão são o coração da comunidade Openterface. </p>
+<p>Enquanto isso, certifique-se de explorar nossa <a href="http://shop.techxartisan.com/">Loja TechxArtisan</a> para mercadorias Openterface e cabos de alta qualidade projetados para funcionar em harmonia com seus dispositivos Openterface. </p>
+<p>Até então… feliz brincadeira!</p>
+<p>Com gratidão,<br />
+Billy Wang<br />
+Gerente de Produto<br />
+Equipe Openterface | TechxArtisan</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-12-24 00:00:00+00:00">24 de dezembro de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="feliz-natal-feliz-ano-novo-um-pequeno-presente-da-equipe-openterface"><a class="toclink" href="2024/12/24/feliz-natal--feliz-ano-novo--um-pequeno-presente-da-equipe-openterface/">Feliz Natal &amp; Feliz Ano Novo &amp; Um Pequeno Presente da Equipe Openterface!</a></h2>
+<iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/wEWAhXCXQ1E?si=RU4QVXxP_Fi6WAu_" title="Player de vídeo do YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>Olá,</p>
+<p>Esperamos que esta mensagem encontre você bem enquanto encerramos o ano! Para celebrar o Ano Novo e mostrar nossa apreciação pelo seu apoio, preparamos um pequeno presente especial para você.</p>
+<p>Mas antes, queremos tomar um momento para dizer um grande obrigado a todos que fizeram parte de nossa jornada este ano. Seja você um desenvolvedor que nos ajudou a trazer nossas ideias à vida, um dos nossos testadores beta que nos deu feedback inestimável no início, um apoiador que ofereceu orientação e encorajamento, ou um dos nossos incríveis apoiadores que acreditou em nós desde o início — você fez deste ano inesquecível. Não poderíamos ter feito isso sem você.</p>
+<p>Aqui está o negócio:
+Entre <strong>24 de dezembro de 2024</strong>, e <strong>10 de janeiro de 2025</strong>, se você comprar dois Conjuntos de Ferramentas Mini-KVM na Crowd Supply, nós lhe enviaremos <strong>um crédito de loja de $20 para nossa loja TxA</strong>.</p>
+<p>É super fácil — basta tirar uma screenshot da confirmação de sua ordem da Crowd Supply e enviar um email para <a href="mailto:info@techxartisan.com">info@techxartisan.com</a>. Nós verificaremos sua compra e responderemos com o código do seu crédito de loja de $20.</p>
+<p>Também preparamos uma surpresa especial de feriado para você. Aproveite um momento para se relaxar e desfrutar do nosso vídeo de Natal acolhedor — confira as belas luzes e ouça <a href="https://www.youtube.com/watch?v=wEWAhXCXQ1E">músicas de Natal tranquilas</a>. Esperamos que isso traga um pouco de alegria ao seu dia!</p>
+<p>Esta é nossa maneira de dizer obrigado e de começar 2025 com um pequeno presente de nós para você.</p>
+<p>Ao refletir sobre o ano passado, estamos verdadeiramente agradecidos pelo incrível apoio de nossa comunidade. Sua crença em nossa visão foi a força motriz por trás de tudo o que fazemos. Aos nossos desenvolvedores que transformaram ideias em realidade, nossos testadores beta que ajudaram a refinar nosso produto, e nossos apoiadores iniciais que forneceram feedback, encorajamento e orientação — obrigado por fazerem parte de nossa jornada. E aos nossos apoiadores, sua confiança significa o mundo para nós, e estamos eternamente agradecidos pelo seu papel em tornar tudo isso possível.</p>
+<p>Tiveram dúvidas? Apenas nos envie uma linha — estamos sempre aqui para ajudar. Ao acolher 2025, desejamos a você e seus seres queridos um Ano Novo cheio de felicidade, sucesso e novas aventuras emocionantes.</p>
+<p>Obrigado por fazerem parte de nossa história. Estamos ansiosos para criar coisas incríveis juntos no ano que se aproxima!</p>
+<p>Atenciosamente,
+A Equipe Openterface</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-27 00:00:00+00:00">27 de novembro de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="50-de-desconto-em-todos-os-produtos-somente-este-sextas-feira-negro-mostre-seu-apoio-ao-software-de-codigo-aberto"><a class="toclink" href="2024/11/27/50-de-desconto-em-todos-os-produtos---somente-este-sextas-feira-negro-mostre-seu-apoio-ao-software-de-c%C3%B3digo-aberto/">50% DE DESCONTO EM TODOS OS PRODUTOS - SOMENTE ESTE SEXTAS-FEIRA NEGRO! MOSTRE SEU APOIO AO SOFTWARE DE CÓDIGO ABERTO!</a></h2>
+<style>
+  .heartbeat-label {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 25px;
+    animation: heartbeat 1.6s infinite;
+    text-align: center;
+  }
+
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.01); }
+    60% { transform: scale(1); }
+  }
+</style>
+
+<p><img alt="banner" src="pic/241120-Black-Firday-poster-50.jpg" /></p>
+<p>Olá queridos amigos do Openterface,</p>
+<p>Notícias emocionantes - lançamos uma nova linha de roupas na Openterface! Nossa coleção possui camisetas e macacões que representam o espírito de nossa comunidade. Eles não são apenas roupas; são uma celebração de nossos valores compartilhados e a ética Openterface.</p>
+<p>O que torna esses designs ainda mais especiais? Tanto a camiseta quanto o macacão destacam a arte de linha técnica do nosso mini-KVM Openterface, que parece incrivelmente legal. Além disso, destacamos o texto "Modo Desenvolvedor" do nosso mini-KVM no design - uma ideia que acreditamos ser absolutamente brilhante. Quando você veste nossa camiseta ou macacão, não é apenas para se manter quente neste inverno; é para entrar no super modo desenvolvedor para todas as suas sessões de codificação e hacking.</p>
+<p><img alt="OP-Hoodie-Zip-Up" src="pic/241120-OP-Hoodie-Zip-Up.jpg" /></p>
+<p>E se você estiver se perguntando como eles se parecem na vida real, confira como nossa equipe tem usado eles em ação! Da comodidade no <strong>Modo Desenvolvedor</strong> enquanto codifica (<a href="https://x.com/TechxArtisan/status/1861611266705379346">veja o tweet</a>), a uma divertida sessão de fotos com David Groom da <strong>MAKE: Magazine</strong> na Shenzhen Maker Faire (<a href="https://pbs.twimg.com/media/Gcp8E32agAAEnl-?format=jpg&amp;name=large">veja a foto</a>), temos orgulhosamente apresentado nossos equipamentos. Inclusive fomos inspirados por uma palestra do lendário Eric Migicovsky da Pebble (<a href="https://www.linkedin.com/posts/billy-wangrb_had-an-incredible-weekend-at-shenzhen-maker-activity-7264123680803233792-l7Mm?utm_source=share&amp;utm_medium=member_desktop">veja a postagem</a>) enquanto demonstrávamos o Openterface Mini-KVM e nos conectávamos com amigos da tecnologia (<a href="https://twitter.com/TechxArtisan/status/1858397377196965913">veja mais</a>, <a href="https://twitter.com/TechxArtisan/status/1858400923325726750">e aqui</a>). Essas não são apenas roupas - eles são iniciadores de conversa e uma maneira de celebrar nossa comunidade onde quer que vamos!</p>
+<p><img alt="david-billy-wearing-hoodie" src="pic/241120-david-billy-wearing-hoodie.webp" />
+<em>David e eu não podemos nos fartar de nossos macacões - praticamente vivemos neles! 😉 Um enorme agradecimento a David por compartilhar uma foto tão incrível - muito apreciado! 🎉</em></p>
+<p>E para este inverno chato, por que não dar uma chance ao nosso cabo de dados laranja vibrante? É uma maneira perfeita de iluminar seu ambiente de trabalho enquanto garante a transferência de dados rápida e confiável.</p>
+<p>Para fazer a oferta ainda mais atraente, estamos oferecendo um <a href="https://shop.techxartisan.com" style="text-decoration: none;"><span class="heartbeat-label">🔥 DESCONTO ESPECIAL DE 50% 🔥</span></a> em todos os itens pelos próximos cinco dias para este <strong>Black Friday 2024</strong>, começando do momento em que você vê esta mensagem até 1º de dezembro. É nossa maneira de agradecer por fazer parte de nossa jornada.</p>
+<p>Dê uma olhada em nossa loja aqui: <strong><a href="https://shop.techxartisan.com">https://shop.techxartisan.com</a></strong>. Veja nossa nova roupa e pegue um pedaço à metade do preço - não perca essa oferta limitada!</p>
+<h4 id="openterface-merch"><a class="toclink" href="2024/11/27/50-de-desconto-em-todos-os-produtos---somente-este-sextas-feira-negro-mostre-seu-apoio-ao-software-de-c%C3%B3digo-aberto/#openterface-merch">Openterface Merch</a></h4>
+<p><img alt="openterface merch" src="pic/241120-txa-shop-op-merch.jpg" /></p>
+<h4 id="openterface-accessories"><a class="toclink" href="2024/11/27/50-de-desconto-em-todos-os-produtos---somente-este-sextas-feira-negro-mostre-seu-apoio-ao-software-de-c%C3%B3digo-aberto/#openterface-accessories">Openterface Accessories</a></h4>
+<p><img alt="openterface accessories" src="pic/241120-txa-shop-op-accessories.jpg" /></p>
+<p>Obrigado por estar conosco nesta aventura. Seu apoio significa tudo para nós e estamos gratos por cada conversa, cada ideia e cada interação que tivemos.</p>
+<p>Cumprimentos quentes,</p>
+<p><strong>Billy Wang</strong><br />
+Gerente de Produtos<br />
+Equipe Openterface | TechxArtisan</p>
+<p><strong>P.S.</strong> Tem alguma ideia ou feedback? Estamos todos ouvidos! Participe da conversa no <a href="https://openterface.com/reddit">Reddit</a> ou <a href="https://openterface.com/discord">Discord</a>, ou sinta-se à vontade para nos enviar um e-mail em <strong>info@techxartisan.com</strong> ✉️.</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-11-13 00:00:00+00:00">13 de novembro de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/">O Envio Foi Realizado! Cabos Extras Adicionados ao Kit. O Que Vem a Seguir?</a></h2>
+<p>Olá, comunidade Openterface!</p>
+<p>Estamos empolgados em anunciar que nossos produtos Openterface foram oficialmente enviados. Eles estão atualmente no porto de Shenzhen, prontos para embarcar em um navio de carga com destino aos EUA!</p>
+<p><img alt="Caixas para a Crowd Supply" src="pic/241107-s.jpeg" /><br />
+<img alt="Embalagem dos produtos" src="pic/241107-p.jpg" /></p>
+<p>Aqui estão as novidades:</p>
+<h3 id="preparativos-para-envio-verificacoes-de-qualidade-e-embalagem"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#preparativos-para-envio-verificacoes-de-qualidade-e-embalagem">Preparativos para Envio: Verificações de Qualidade e Embalagem</a></h3>
+<p>Antes da embalagem e envio, testamos minuciosamente cada unidade para garantir a mais alta qualidade, como mencionado na atualização anterior: <a href="https://www.crowdsupply.com/techxartisan/openterface-mini-kvm/updates/diy-challenge-cool-prizes-and-production-nears-the-finish-line">Desafio DIY, Prêmios Incríveis e Produção Quase Concluída!</a>. Cada cabo foi examinado quanto à estabilidade da transmissão de sinal usando nosso Mini-KVM.</p>
+<p>Agora, vamos às notícias—tanto as boas quanto as ruins.</p>
+<h4 id="mas-noticias-alguns-cabos-laranja-nao-atenderam-as-expectativas-em-condicoes-dificeis"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#mas-noticias-alguns-cabos-laranja-nao-atenderam-as-expectativas-em-condicoes-dificeis">Más Notícias: Alguns Cabos Laranja Não Atenderam às Expectativas em Condições Difíceis</a></h4>
+<p>Nosso Mini-KVM transmite vídeo, áudio, controle de mouse/teclado e dados USB por meio de um único cabo Type-C. O desempenho do cabo é crucial para a estabilidade dos dados, especialmente em ambientes desafiadores.</p>
+<p>Para simular interferências do mundo real, enrolamos o cabo laranja Type-C em torno de um motor de ventilador elétrico enquanto vários computadores operavam nas proximidades. Isso criou um alto nível de interferência eletromagnética (EMI) para avaliar a estabilidade de transmissão dos dados dos cabos.</p>
+<p><img alt="Configuração do teste" src="pic/241107-0.jpg" /><br />
+<em>Uma solução econômica, mas eficaz para testes.</em></p>
+<p>Confira <a href="https://x.com/TechxArtisan/status/1856559677296816347">nosso vídeo no Twitter</a> mostrando um dos testes de desempenho para comparação.</p>
+<p>Sob essas condições, alguns cabos laranja apresentaram perda de sinal, levantando preocupações sobre sua confiabilidade em ambientes complexos, como data centers ou operações de TI críticas.</p>
+<p>Para resolver isso, Kevin Peng, nosso diretor técnico, desenvolveu um programa de teste personalizado. Esta ferramenta, que permitirá testar a qualidade de seus próprios cabos USB, será em breve disponibilizada como open source, com mais atualizações por vir.</p>
+<p><img alt="Interface do programa de teste" src="pic/241107-1.jpg" /><br />
+<em>Nosso programa facilita o teste de cabos.</em></p>
+<p>Embora os cabos laranja, com sua textura macia e aparência atraente, sejam ideais para uso diário, como carregamento rápido e transmissão regular de dados, eles não são adequados para trabalho de transmissão pesada em condições difíceis, como alta EMI.</p>
+<h4 id="boas-noticias-temos-uma-solucao"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#boas-noticias-temos-uma-solucao">Boas Notícias: Temos uma Solução</a></h4>
+<p>Imediatamente adquirimos cabos USB 3.2 de nylon de alta qualidade para incluir como um extra na versão do Kit—<strong>sem custo adicional</strong> para você. Estes cabos resistentes vêm em três comprimentos na cor cinza: <em>1M (3,2 pés)</em>, <em>1,5M (4,9 pés)</em> e <em>2M (6,5 pés)</em>. Você receberá um cabo escolhido aleatoriamente entre essas opções no Kit, garantindo uma conexão robusta e confiável para o seu Mini-KVM.</p>
+<p><img alt="Novos cabos Type-C de nylon cinza" src="pic/241107-2.jpg" /></p>
+<p>Nas futuras versões do Mini-KVM Kit, o cabo laranja usado para conexão ao lado do host será atualizado para o cabo Type-C 3.2 de nylon, combinando funcionalidade, estabilidade e estilo.</p>
+<p><img alt="Cabos Type-C de nylon personalizados" src="pic/241107-3.jpg" /></p>
+<p>Esperamos que você compreenda essa decisão e continue confiando no Openterface para momentos críticos na linha de frente da tecnologia.</p>
+<h3 id="cronograma-de-envio"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#cronograma-de-envio">Cronograma de Envio</a></h3>
+<p>Quando você receberá seu Mini-KVM?<br />
+Se tudo correr bem com nosso envio, os produtos deverão chegar ao <strong>armazém Mouser da Crowd Supply até meados de dezembro</strong>. Depois disso, serão enviados de acordo com os pedidos individuais.</p>
+<ul>
+<li><strong>Para apoiadores nos EUA</strong>: há uma pequena chance de entrega antes do Natal, mas isso não é garantido, pois tudo tende a desacelerar à medida que as festas se aproximam.  </li>
+<li><strong>Para apoiadores fora dos EUA</strong>: os prazos de entrega variam. Nossa melhor estimativa é meados de janeiro.</li>
+</ul>
+<p>Esperamos que os produtos Openterface tenham uma jornada tranquila—sem enjoo no mar, no carro ou jet lag! 😃</p>
+<h3 id="camisetas-e-moletons-incriveis-do-openterface"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#camisetas-e-moletons-incriveis-do-openterface">Camisetas e Moletons Incríveis do Openterface</a></h3>
+<p>Estaremos na Maker Faire de Shenzhen neste fim de semana (16–17 de novembro). Para nos prepararmos, criamos roupas para a equipe, incluindo camisetas, moletons com zíper e modelos tradicionais.</p>
+<p>Confira e diga o que acha:<br />
+<img alt="Camisetas e moletons Openterface" src="pic/241107-c.jpg" /></p>
+<h3 id="apoie-nosso-desenvolvimento"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#apoie-nosso-desenvolvimento">Apoie Nosso Desenvolvimento</a></h3>
+<p>Se você deseja apoiar ainda mais nosso desenvolvimento open-source, visite nossa <a href="https://shop.techxartisan.com/">Loja TechxArtisan</a>. Você pode adquirir cabos, camisetas e moletons—e ao mesmo tempo nos ajudar financeiramente a continuar inovando. Cada compra conta e apoia o espírito da comunidade open-source.</p>
+<h3 id="o-que-vem-a-seguir-atualizacoes-do-app-host"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#o-que-vem-a-seguir-atualizacoes-do-app-host">O Que Vem a Seguir: Atualizações do App Host</a></h3>
+<p>Agora que o envio está em andamento, nosso foco será aprimorar os aplicativos host. Estamos trabalhando para obter a verificação em várias lojas de aplicativos para garantir uma experiência perfeita ao começar a usar o Openterface.</p>
+<p><img alt="Lojas de aplicativos" src="pic/241107-4.png" /></p>
+<h3 id="o-que-vem-a-seguir-participe-do-nosso-desafio-diy-usb"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#o-que-vem-a-seguir-participe-do-nosso-desafio-diy-usb">O Que Vem a Seguir: Participe do Nosso Desafio DIY USB</a></h3>
+<p>Por que não participar do <strong>USB KVM DIY Challenge 2024</strong> assim que você tiver seu Mini-KVM em mãos? É uma ótima oportunidade de contribuir para nosso desenvolvimento open-source e ganhar prêmios, incluindo duas edições especiais do Mini-KVM e muito mais! Para mais detalhes, acesse <a href="https://www.crowdsupply.com/techxartisan/usb-kvm-diy-challenge-2024">a página do concurso na Crowd Supply</a>.</p>
+<p><img alt="Logo do USB KVM DIY Challenge" src="pic/usb-kvm-diy-2024-logo.svg" /><br />
+<img alt="Mini-KVM em ação" src="pic/openterface-241017-03_jpg_md-xl.jpg" /></p>
+<h3 id="concluindo"><a class="toclink" href="2024/11/13/o-envio-foi-realizado-cabos-extras-adicionados-ao-kit-o-que-vem-a-seguir/#concluindo">Concluindo</a></h3>
+<p>Obrigado por fazer parte essencial da nossa jornada. Seu apoio e feedback nos impulsionam adiante. Se você tiver perguntas ou ideias, adoraríamos ouvi-las! Participe da conversa na nossa comunidade no <a href="https://openterface.com/reddit">Reddit</a> e no <a href="https://openterface.com/discord">Discord</a>.</p>
+<p>Com gratidão,<br />
+<strong>Billy Wang</strong><br />
+Gerente de Produto<br />
+Equipe Openterface | TechxArtisan</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-22 00:00:00+00:00">22 de outubro de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="desafio-diy-premios-legais-e-producao-quase-concluida"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/">Desafio DIY, Prêmios Legais e Produção Quase Concluída!</a></h2>
+<p>Olá, entusiastas do Openterface!</p>
+<p>Temos algumas notícias emocionantes para compartilhar! De um novo e emocionante desafio DIY a marcos de produção e atualizações de software legais—coisas estão fervilhando aqui na Openterface. Pegue uma bebida, fique confortável e mergulhe nesta atualização conosco!</p>
+<h3 id="desafio-diy-usb-kvm-2024-hora-de-liberar-seu-mago-tecnologico-interior"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#desafio-diy-usb-kvm-2024-hora-de-liberar-seu-mago-tecnologico-interior">Desafio DIY USB KVM 2024: Hora de Liberar Seu Mago Tecnológico Interior!</a></h3>
+<p>Atenção a todos os inventores, criadores e sonhadores! Estamos entusiasmados em apresentar o Desafio DIY USB KVM 2024, uma colaboração com TechxArtisan, Make: Magazine, a Open Source Hardware Association (OSHWA) e Crowd Supply. Esta é sua chance de criar uma solução KVM personalizada—vamos ver que mágica você pode fazer com seu Openterface Mini-KVM!</p>
+<p><img alt="logotipos techxartisan, make magazine, oshwa, crowdsouce" src="pic/241022-1.webp" /></p>
+<h4 id="aqui-esta-o-resumo"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#aqui-esta-o-resumo">Aqui está o resumo:</a></h4>
+<p><strong>Missão:</strong> Crie sua própria solução KVM aberta usando o Openterface Mini-KVM, com seu toque pessoal para atender às suas necessidades específicas.</p>
+<p><strong>Categorias:</strong> Prêmios para os melhores desempenhos incluem prêmios tanto para habilidade técnica quanto para criatividade, então todos têm uma chance!</p>
+<p><strong>Prêmios Incríveis:</strong></p>
+<ul>
+<li>Um Openterface Mini-KVM de edição limitada com um estojo transparente e prateado.</li>
+<li>O futurístico Pi-Cast KVM da HackerGadgets.</li>
+<li>O GameShell inspirado no retro da Clockwork.</li>
+</ul>
+<p><strong>Cronograma:</strong> O desafio começa em 1º de outubro de 2024 e as submissões encerram em 28 de fevereiro de 2025.</p>
+<p><strong>Juízes:</strong> Especialistas da TechxArtisan, Make: Magazine, OSHWA e Crowd Supply avaliarão seus projetos.</p>
+<p>Seja você um mago tecnológico experiente ou apenas começando no mundo da hackeação de hardware, este concurso é seu playground. Quem sabe? Você pode criar a próxima grande novidade em tecnologia!</p>
+<p>Participe da ação na <a href="https://www.crowdsupply.com/techxartisan/usb-kvm-diy-challenge-2024">página oficial do concurso da Crowd Supply</a> e converse conosco no <a href="https://discord.com/invite/YhKVzDujkT">canal do Discord do concurso</a>. <strong>Que comecem os jogos de inovação!</strong></p>
+<p><img alt="Openterface Mini-KVM disponível em três estojos legais—transparente, prateado e preto" src="pic/241022-2.webp" /></p>
+<p style="text-align: center;"><small><em>Openterface Mini-KVM disponível em três estojos legais—transparente, prateado e preto</em></small></p>
+
+<p><img alt="Alguns dos prêmios incríveis: Pi-Cast KVM da HackerGadgets e GameShell da Clockwork" src="pic/241022-3.webp" /></p>
+<p style="text-align: center;"><small><em>Alguns dos prêmios incríveis: Pi-Cast KVM da HackerGadgets e GameShell da Clockwork</em></small></p>
+
+<h3 id="atualizacao-de-producao-quase-la"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#atualizacao-de-producao-quase-la">Atualização de Produção: Quase Lá!</a></h3>
+<p>Aqui está uma prévia do trabalho árduo que está acontecendo nos bastidores—nosso estúdio tem estado agitado como uma colmeia! Até agora, montamos 800 unidades do Openterface Mini-KVM.</p>
+<p><img alt="unidades montadas" src="pic/241022-4.webp" /></p>
+<p><img alt="Imagem do progresso da produção" src="pic/241022-5.webp" /></p>
+<p>Nosso controle de qualidade é de primeira linha. Cada unidade é verificada, re-verificada e mimada por nossa equipe para garantir que, quando chegar às suas mãos, não seja apenas boa—seja ótima! Nosso objetivo é a qualidade que faz outros dispositivos ficarem verdes de inveja.</p>
+<p>Sabemos que esperar pode ser difícil, mas estamos comprometidos em entregar a melhor experiência possível. Obrigado por sua paciência enquanto colocamos os toques finais!</p>
+<h3 id="atualizacao-de-software-aplicativo-android-recebe-uma-boa-atualizacao"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#atualizacao-de-software-aplicativo-android-recebe-uma-boa-atualizacao">Atualização de Software: Aplicativo Android Recebe uma Boa Atualização</a></h3>
+<p>Nosso aplicativo Android acabou de receber uma grande atualização. Agora, controlar seus dispositivos alvo através do seu telefone ou tablet nunca foi tão fácil ou divertido!</p>
+<p>Confira o vídeo de demonstração aqui: <a href="https://x.com/TechxArtisan/status/1840587612148699398">Vídeo de Demonstração do Aplicativo Android</a></p>
+<p><a href="https://x.com/TechxArtisan/status/1840587612148699398"><img alt="dedo tocando no aplicativo Android" src="pic/241022-6.webp" /></a></p>
+<h4 id="aqui-esta-o-que-ha-de-novo"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#aqui-esta-o-que-ha-de-novo">Aqui está o que há de novo:</a></h4>
+<ul>
+<li>Controles de toque suaves e responsivos</li>
+<li>Funcionalidade de arrastar e soltar fácil</li>
+<li>Toque preciso para uma experiência intuitiva</li>
+<li>Uma nova barra de teclas de função para maior conveniência</li>
+<li>Próxima funcionalidade: atalhos de teclado personalizáveis</li>
+<li>Compatível com tablets e telefones Android</li>
+</ul>
+<p>Este aplicativo torna o Openterface Mini-KVM ainda mais útil para profissionais de tecnologia em movimento. Também carregamos o APK mais recente e o código-fonte em nosso repositório GitHub, se você quiser explorar mais ou contribuir!</p>
+<h3 id="concluindo"><a class="toclink" href="2024/10/22/desafio-diy-pr%C3%AAmios-legais-e-produ%C3%A7%C3%A3o-quase-conclu%C3%ADda/#concluindo">Concluindo</a></h3>
+<p>Ufa! Essa foi uma atualização e tanto, não é?</p>
+<p>Se você tiver alguma ideia, feedback ou sonhos loucos de KVM, queremos ouvi-los! Envie-nos uma mensagem, mande um pombo-correio 🕊️, ou entre em um de nossos canais comunitários. Adoramos nos conectar com você!</p>
+<p>Obrigado novamente por sua paciência e por ser a melhor comunidade de tecnologia que existe. Temos mais notícias e atualizações emocionantes chegando em breve—fique ligado!</p>
+<p>Com gratidão,<br />
+Billy Wang<br />
+Gerente de Produto<br />
+Equipe Openterface | TechxArtisan</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-10-01 00:00:00+00:00">1 de outubro de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              1 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="pronto-para-um-desafio-diy-junte-se-a-nos-no-show-tell-da-oshwa"><a class="toclink" href="2024/10/01/pronto-para-um-desafio-diy-junte-se-a-n%C3%B3s-no-show--tell-da-oshwa/">Pronto para um Desafio DIY? Junte-se a nós no Show &amp; Tell da OSHWA!</a></h2>
+<p><img alt="poster-1" src="pic/241001-1.jpeg" style="width:380px" />
+<img alt="poster-2" src="pic/241001-2.jpg" style="width:380px" /></p>
+<p>Olá pessoal, estarei apresentando o Desafio DIY de USB KVM 2024 durante o Show &amp; Tell da OSHWA às 22:40 EST no dia 2 de outubro. Se você estiver interessado, não deixe de participar! Obrigado!</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-08-22 00:00:00+00:00">22 de agosto de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              7 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="superando-obstaculos-atualizacao-de-progresso-e-novo-cronograma"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/">Superando Obstáculos: Atualização de Progresso e Novo Cronograma</a></h2>
+<p>Olá pessoal,</p>
+<p>Espero que todos estejam bem. Faz um tempo desde nossa última atualização. Gostaria de dizer que tudo está indo perfeitamente para a Openterface, mas encontramos alguns obstáculos que atrasarão nosso cronograma de entrega. Embora isso não fosse o esperado, estamos enfrentando esses desafios de frente e fazendo progressos constantes com muitas boas notícias para compartilhar. Este post é uma leitura de aproximadamente <strong>7 minutos</strong>, então vamos aos detalhes para que você saiba exatamente onde estamos e o que vem a seguir.</p>
+<h3 id="regulamentacao-producao-e-qualidade"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#regulamentacao-producao-e-qualidade">Regulamentação, Produção e Qualidade</a></h3>
+<p>Antes de iniciarmos a produção, tivemos que passar por testes de qualidade necessários de acordo com as regulamentações, especialmente a certificação CE. Como nossa versão do kit inclui não apenas o Mini-KVM, mas também vários acessórios, cada parte precisou passar pelos testes CE. Esses testes demoraram mais do que esperávamos (descobrimos que cabos podem ser bem exigentes), mas a boa notícia é que <strong>passamos na certificação CE para nosso Mini-KVM e todos os seus componentes!</strong> Abaixo está uma visão geral das certificações de todas as nossas partes: Mini-KVM, cabo HDMI, cabo Type-C laranja, cabo Type-C preto curto e cabo VGA2HDMI. Com a certificação em mãos, nosso cronograma de produção agora está certo, e nossos fabricantes estão <strong>produzindo todas as partes</strong> enquanto falo.</p>
+<p><img alt="240823-0" src="pic/240823-0.jpg" />
+<em>Os requisitos do UKCA e CE são os mesmos para nossos produtos eletrônicos, com o CE também cobrindo a conformidade RoHS.</em></p>
+<p>Duas semanas atrás, visitamos um de nossos fabricantes para treinar seus gerentes de linha sobre controle de qualidade para os cabos laranja antes de enviá-los para nós. Agora, TODOS os cabos laranja foram produzidos e estão em um canto do nosso estúdio.
+<img alt="240823-1" src="pic/240823-1.jpg" />
+<em>Kevin e Shawn estavam explicando os métodos de teste para garantir que o cabo laranja funcione corretamente com nosso Openterface Mini-KVM.</em></p>
+<p>Faremos a mesma tarefa esta semana para treinar a equipe de QA na linha de produção para outras partes também. Aqui estão amostras de cabos adicionais.
+<img alt="240823-2" src="pic/240823-2.jpg" />
+<em>Orgulhosamente marcados com nosso logotipo TechxArtisan, estas são amostras do cabo HDMI, do cabo Type-C curto e do cabo VGA-para-HDMI.</em></p>
+<p>Estamos esperando que as outras partes e Mini-KVMs cheguem em breve de nossos fabricantes, momento em que verificaremos a qualidade de cada componente e os embalaremos adequadamente em nosso estúdio antes do envio. Em outras palavras, <strong>nossa equipe garantirá pessoalmente a qualidade</strong> antes de chegar às suas mãos.</p>
+<h3 id="envio-possiveis-atrasos-e-novo-eta"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#envio-possiveis-atrasos-e-novo-eta">Envio, Possíveis Atrasos e Novo ETA</a></h3>
+<p><strong>A incerteza atual está no processo de envio</strong>. Após investigar várias empresas de transporte, descobrimos que o envio levará mais tempo, pois provavelmente transferiremos os pacotes por um armazém antes de chegar ao armazém da Crowd Supply. Ainda estamos debatendo se escolhemos transporte marítimo ou aéreo—por favor, tenham paciência conosco por mais alguns dias enquanto resolvemos os arranjos.</p>
+<p>A liberação alfandegária é outro obstáculo potencial que pode causar atrasos inesperados. Uma vez que nossos produtos cheguem ao armazém da Crowd Supply nos EUA, levará de uma a duas semanas para serem enviados globalmente com base em cada pedido. Para apoiadores fora dos EUA, os pacotes individuais ainda precisarão passar pelo envio global e pela liberação alfandegária no país de destino.</p>
+<p>Levando em conta a situação atual e adicionando algum tempo de buffer, permaneço cautelosamente otimista de que completaremos a entrega antes do final deste ano, com <strong>um novo ETA para meados de janeiro</strong>. Sinto muito pelo inconveniente e agradeço seu apoio e paciência durante essa mudança.</p>
+<h3 id="hardware-v19-finalizado"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#hardware-v19-finalizado">Hardware V1.9 Finalizado</a></h3>
+<p>Como você deve saber do nosso <a href="https://www.reddit.com/r/Openterface_miniKVM/comments/1e25pco/openterface_minikvm_v19_with_pins_for_more/">post no Reddit</a>, decidimos <strong>atualizar nosso hardware para V1.9</strong>, incluindo um conjunto de pinos de expansão hackeáveis. Isso não fazia parte do plano original para a campanha de financiamento coletivo, mas acreditamos que melhora significativamente o <strong>potencial de uso mais amplo</strong> do hardware.</p>
+<p><img alt="240823-3" src="pic/240823-3.jpg" />
+<em>Os pinos VCC, GND, Target D+, Target D-, Host D+ e Host D-—onde 'D' significa dados USB.</em></p>
+<p>Uma motivação chave foi permitir que <strong>a chave USB fosse alternada no nível do software</strong>. Por que isso é importante? Em nosso roadmap, <strong>pretendemos suportar uma solução KVM-over-IP</strong>, como VNC, no futuro. A ideia é combinar o controle KVM local com o protocolo VNC, permitindo que os usuários controlem remotamente o computador alvo via computador host. Em um cenário remoto como esse, a capacidade dos usuários de alternar a porta USB é essencial, especialmente quando transferências de arquivos entre o host e o alvo são necessárias.</p>
+<p><strong>Os pinos de expansão também abrem possibilidades para mais</strong>, como integração com iPadOS, controle ATX, ponte de rede e bypass de áudio. Embora eu não vá entrar em todos os detalhes aqui, encorajo você a se juntar à nossa comunidade Openterface para discutir mais conosco.</p>
+<p>Esta atualização de hardware pode potencialmente estender nossa solução Openterface para operar via IP e incluir mais recursos avançados, mantendo sua força principal como uma ferramenta KVM-over-USB plug-and-play—perfeita para profissionais de TI navegando em ambientes de TI incertos, como data centers desconhecidos.</p>
+<p>Estou feliz em informar que o V1.9 passou em nossos testes básicos internos e será finalizado como a versão oficial para todos os nossos apoiadores. No entanto, essa atualização de hardware exigirá mais testes, e qualquer desenvolvimento baseado nesses pinos de expansão será experimental e provavelmente terá bugs. É aqui que você pode contribuir. Contamos com a comunidade open-source para nos ajudar a melhorar o Openterface juntos.</p>
+<h3 id="mais-atualizacoes-de-software"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#mais-atualizacoes-de-software">Mais Atualizações de Software</a></h3>
+<p>No front do software, estamos fazendo avanços empolgantes. Estamos mergulhando no <strong>aplicativo Openterface para Android</strong> agora! Confira este <a href="https://x.com/TechxArtisan/status/1825460088922071398">tweet</a> para um demo inicial mostrando controle KVM suave, movimento do mouse e cliques em ação. Mais recursos estão a caminho e, como sempre, assim que polirmos um pouco mais o código, <strong>este aplicativo também será open-source</strong> em nosso repositório GitHub <a href="https://github.com/TechxArtisanStudio/Openterface_Android">Openterface_Android</a>.
+<img alt="240823-4" src="pic/240823-4.jpg" />
+<em>Usando apenas nossos dedos para controlar um computador Linux a partir de um tablet Android. Legal!</em></p>
+<p>Nossa versão QT acabou de receber uma atualização útil—você pode agora <a href="https://x.com/TechxArtisan/status/1825919721960780131">transferir texto do host para o alvo</a>! Então agora esse recurso é suportado nos aplicativos host para macOS, Windows e Linux.</p>
+<p>Além disso, estamos planejando adicionar um recurso divertido — <a href="https://x.com/TechxArtisan/status/1825471186668847241">um movimento automático do mouse para evitar que seu computador alvo durma</a>. Devemos ir com a bola de ping-pong quicando pela tela ou o clássico efeito de protetor de tela do DVD? Vote e comente no <a href="https://x.com/TechxArtisan/status/1825470086800691459">tweet</a> 😃</p>
+<h3 id="design-de-embalagem-rotulagem-e-manual"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#design-de-embalagem-rotulagem-e-manual">Design de Embalagem, Rotulagem e Manual</a></h3>
+<p>Estamos <a href="https://www.reddit.com/r/Openterface_miniKVM/comments/1elm4vq/almost_ready_to_finalize_our_package_design/">experimentando com vários mock-ups e designs de embalagem</a> para encontrar o equilíbrio perfeito entre vários fatores chave:</p>
+<ul>
+<li>Selecionar materiais resistentes o suficiente para proteger o produto e suas partes durante o envio,</li>
+<li>Criar rótulos informativos que ajudem os usuários a entender o produto de relance,</li>
+<li>Garantir conformidade com as regulamentações,</li>
+<li>Tornar a embalagem visualmente atraente,</li>
+<li>E ser ecologicamente correto, minimizando o uso de plástico sempre que possível.</li>
+</ul>
+<p>Além disso, fizemos várias melhorias na antiga bolsa do kit, incluindo:</p>
+<ul>
+<li>Maior espaço de armazenamento,</li>
+<li>Um zíper laranja estiloso,</li>
+<li>Materiais externos e internos atualizados,</li>
+<li>E um bolso de malha super elástico.</li>
+</ul>
+<p>Escolhemos este material porque atinge o equilíbrio ideal entre ser econômico, agradável ao toque e durável o suficiente para proteger os itens dentro. <strong>Estamos confiantes de que você vai adorar</strong>.</p>
+<p><img alt="240823-5" src="pic/240823-5.jpg" /></p>
+<p>Também estamos atualizando os rótulos no estojo de alumínio para torná-los o mais informativos e visualmente atraentes possível. Esperamos que essas melhorias melhorem sua experiência de usuário e tornem mais fácil começar a usar o Openterface.</p>
+<p><img alt="240823-6" src="pic/240823-6.jpg" /></p>
+<p>Estamos finalizando o manual do Openterface, que estará disponível em inglês, alemão, francês, japonês e chinês. Pedimos desculpas se não incluímos seu idioma—nossa caixa não é do tamanho de uma TARDIS (a cabine policial do Doctor Who)! Mas faremos o nosso melhor para adicionar mais traduções em nosso site.</p>
+<p><img alt="240823-7" src="pic/240823-7.jpg" /></p>
+<h3 id="revisao-de-idiomas-pela-comunidade"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#revisao-de-idiomas-pela-comunidade">Revisão de Idiomas pela Comunidade</a></h3>
+<p>Tenho usado o ChatGPT para ajudar com as traduções, mas às vezes ele pode errar na formulação e na escolha das palavras. Se não for muito incômodo, eu agradeceria muito qualquer ajuda na revisão do conteúdo em outros idiomas, especialmente para os materiais impressos que estamos prestes a finalizar. Atualizei todo o conteúdo de texto para a embalagem em nossa pasta GitHub <a href="https://github.com/TechxArtisanStudio/Openterface/tree/main/product-printed-materials">product-printed-materials</a>, onde você pode revisar e enviar quaisquer melhorias. Você também pode me enviar uma mensagem diretamente. Obrigado!</p>
+<h3 id="consideracoes-finais-e-progresso-continuo"><a class="toclink" href="2024/08/22/superando-obst%C3%A1culos-atualiza%C3%A7%C3%A3o-de-progresso-e-novo-cronograma/#consideracoes-finais-e-progresso-continuo">Considerações Finais e Progresso Contínuo</a></h3>
+<p>Pedimos desculpas novamente pelos atrasos e pela mudança no ETA do nosso produto. Obrigado por sua paciência e por estar conosco—estamos trabalhando duro para entregar isso a você o mais rápido possível! Atualizarei você imediatamente assim que nosso envio for arranjado. Mais atualizações estão a caminho, então por favor, junte-se à nossa comunidade Openterface e fique ligado!</p>
+<p>Saudações,</p>
+<p>Billy Wang<br />
+Gerente de Produto<br />
+Equipe Openterface | TechxArtisan</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-07-16 00:00:00+00:00">16 de julho de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              4 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="da-desmontagem-a-producao-estamos-avancando"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/">Da Desmontagem à Produção: Estamos Avançando!</a></h2>
+<p>Olá a todos,</p>
+<p>Já faz um tempo desde que nossa campanha de financiamento coletivo terminou, e temos algumas atualizações fantásticas para compartilhar com vocês. Estamos empolgados em mergulhar de cabeça na fase de produção do nosso Openterface Mini-KVM e manter vocês informados sobre nosso progresso.</p>
+<h3 id="destaques-do-teardown-2024"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#destaques-do-teardown-2024">Destaques do Teardown 2024</a></h3>
+<p>Primeiramente, o <a href="https://x.com/TechxArtisan/status/1810619822948090092">Teardown 2024</a> do mês passado, organizado pela <a href="https://www.crowdsupply.com/teardown/portland-2024"><strong>Crowd Supply</strong></a> em Portland, foi simplesmente incrível. Foi fantástico conhecer tantos amigos da tecnologia e apoiadores pessoalmente em nossa mesa de demonstração! Suas palavras gentis são um grande incentivo e motivação para nós. Aqui estão algumas fotos do evento:</p>
+<p><img alt="openterface-billy-at-teardown2024-2" src="https://www.crowdsupply.com/img/f0a2/16c34150-c59a-40d0-ab77-7c5dada8f0a2/openterface-billy-at-teardown2024-2_jpg_gallery-lg.jpg" /></p>
+<p>Um grande agradecimento ao Electromaker por destacar nosso produto durante o evento! Confira nossa conversa neste vídeo:</p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/K0EuMSQEwKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h3 id="producao-a-todo-vapor"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#producao-a-todo-vapor">Produção a Todo Vapor</a></h3>
+<p>Atualmente, estamos ocupados <strong>encomendando peças e chips</strong> como o CH9329 e CH340 enquanto nos preparamos para a produção. Também estamos submetendo nosso Mini-KVM e cabos para testes de certificação CE, RoHS e UKCA. Se tudo correr bem, começaremos a produção nas fábricas em breve. Nossa equipe está garantindo que cada etapa da linha de produção funcione perfeitamente para entregar um produto de alta qualidade que seja divertido e confiável! Aqui estão algumas fotos dos relatórios de teste para RoHS e CE do nosso cabo Type-C laranja:</p>
+<p><img alt="openterface-test-report-typec" src="https://www.crowdsupply.com/img/8d57/cd1d5f8e-820b-40c2-b758-1f075e2e8d57/openterface-test-report-typec_jpg_gallery-lg.jpg" /></p>
+<p>Fiquem ligados, pois teremos mais relatórios semelhantes para nossos Mini-KVMs e outros cabos para garantir que todos atendam aos padrões de certificação necessários.</p>
+<h3 id="certificacao-oshwa"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#certificacao-oshwa">Certificação OSHWA</a></h3>
+<p>Estamos entusiasmados em anunciar que nosso Openterface Mini-KVM agora é oficialmente certificado como <strong>OSHWA</strong> totalmente open-source! 🥳 Você pode conferir nossa certificação aqui: <a href="https://certification.oshwa.org/cn000015.html">OSHWA UID CN000015</a>. Estamos comprometidos em manter tanto o software quanto o hardware open-source, permitindo que os amantes da tecnologia explorem o potencial do USB KVM, contribuam para seu desenvolvimento e construam uma comunidade vibrante juntos.</p>
+<p><img alt="openterface-oshw-cn000015" src="https://www.crowdsupply.com/img/925a/fbf33f8d-0c0d-405e-bb34-6e0038c9925a/openterface-oshw-cn000015_jpg_md-xl.jpg" /></p>
+<h3 id="atualizacao-de-hardware-v19"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#atualizacao-de-hardware-v19">Atualização de Hardware V1.9</a></h3>
+<p>Acabamos de lançar o <strong>hardware V1.9 com pinos extras: VCC, GND, Target D+, Target D-, Host D+, Host D-</strong> para ainda mais diversão hackeável! Esses pinos de dados estão conectados ao hub USB do Target e do Host. Agora você pode criar extensões DIY para o Openterface — pense em ATX, ponte de rede, bypass de áudio e muito mais. Que ideias criativas você tem para hackear nosso Mini-KVM com esses pinos? Junte-se ao nosso <a href="/reddit">Reddit</a> ou <a href="/discord">Discord</a>, compartilhe seus pensamentos e divirta-se programando conosco!</p>
+<p><img alt="openterface-v1-9-hackable" src="https://www.crowdsupply.com/img/caf8/7b5bb696-2342-487a-b0e8-aa137e6dcaf8/openterface-v1-9-hackable_jpg_md-xl.jpg" /></p>
+<h3 id="execute-o-openterface-no-pi-e-faca-parceria-com-o-uconsole"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#execute-o-openterface-no-pi-e-faca-parceria-com-o-uconsole">Execute o Openterface no Pi e Faça Parceria com o uConsole</a></h3>
+<p>Conseguimos <strong>executar nosso aplicativo host QT em um ambiente Pi</strong>! O que é ainda mais empolgante é como nosso Mini-KVM pode se unir ao <strong>uConsole</strong> da Clockwork para transformá-lo em uma ferramenta KVM portátil. É super prático para plug-and-play e solução rápida de problemas de qualquer dispositivo sem cabeça por perto.</p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/n7k_FwgM9kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h3 id="desenvolvimento-e-toques-finais"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#desenvolvimento-e-toques-finais">Desenvolvimento e Toques Finais</a></h3>
+<p>Nossa equipe de desenvolvimento, liderada por Kevin, está trabalhando incansavelmente para testar e refinar o código. Junte-se ao nosso <a href="/discord">Discord do Techxartisan</a> para interagir com nossa equipe de desenvolvimento e beta e ficar atualizado sobre nosso progresso. Enquanto isso, Billy está cuidando de toda a papelada e finalizando o design do nosso produto, embalagem e manual do produto.</p>
+<p>Aqui está uma prévia de nossas impressões e etiquetas atualizadas para o estojo de alumínio, exibidas no <a href="https://x.com/_kazubu/status/1803442407800971612">tweet de Kazubu</a> quando Billy compartilhou com ele em Tóquio, Japão:</p>
+<p><img alt="openterface-kazubu-tweet-new-look" src="https://www.crowdsupply.com/img/a680/71cdf2d7-27a3-4b93-8271-b3e82229a680/openterface-kazubu-tweet-new-look_jpg_md-xl.jpg" /></p>
+<h3 id="no-caminho-para-setembro"><a class="toclink" href="2024/07/16/da-desmontagem-%C3%A0-produ%C3%A7%C3%A3o-estamos-avan%C3%A7ando/#no-caminho-para-setembro">No Caminho para Setembro</a></h3>
+<p>Atualmente, estamos dentro do cronograma e trabalhando duro para colocar nossos Mini-KVMs em suas mãos até o final de setembro.</p>
+<p>Adoraríamos sua ajuda para divulgar nosso Mini-KVM. Esperamos que ele possa beneficiar mais entusiastas da tecnologia e tornar a vida tecnológica mais fácil para quem gerencia dispositivos sem cabeça.</p>
+<p>Muito obrigado por todo o seu apoio e entusiasmo. Não poderíamos ter feito isso sem vocês!</p>
+<p>Saudações,<br />
+Billy Wang<br />
+Equipe Openterface</p>
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="/images/op-avatar.jpg" alt="Openterface">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2024-06-18 00:00:00+00:00">18 de junho de 2024</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="category/atualiza%C3%A7%C3%B5es/" class="md-meta__link">Atualizações</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/">Encontre-me em Portland Neste Fim de Semana e Ganhe um Mini-KVM no Meu Desafio de Jogo!</a></h2>
+<p>Olá pessoal! Temos algumas notícias fantásticas para compartilhar!</p>
+<h4 id="muito-obrigado"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/#muito-obrigado">Muito Obrigado!</a></h4>
+<p>Primeiramente, não posso <a href="https://x.com/TechxArtisan/status/1801850068263178300">agradecer a todos vocês</a> o suficiente pelo incrível apoio. Nossa campanha de financiamento coletivo superou todas as expectativas no dia 14 de junho, atingindo <strong>$248k</strong> com o apoio incrível de mais de <strong>1110 apoiadores</strong> e <strong>Crowd Supply</strong>.</p>
+<p><img alt="crowdfunding_end_240614" src="https://www.crowdsupply.com/img/b812/9768a2ad-1b78-45dd-966c-942c170fb812/crowdfunding-end-240614_jpg_md-xl.jpg" /></p>
+<p>Esse sucesso nos deu a oportunidade de melhorar ainda mais o Mini-KVM! Não poderíamos ter feito isso sem vocês—sério, muito obrigado de coração! 🧡 Estaremos trabalhando a todo vapor na produção para garantir a entrega em breve!</p>
+<h4 id="aposta-divertida-e-meu-voo-para-portland"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/#aposta-divertida-e-meu-voo-para-portland">Aposta Divertida e Meu Voo para Portland!</a></h4>
+<p>Então, aqui vai uma história divertida: Como mencionei <a href="https://www.crowdsupply.com/techxartisan/openterface-mini-kvm/updates/last-hours-to-back-and-mini-kvms-at-tech-frontlines">neste post</a>, Kevin e eu fizemos uma aposta. Se conseguíssemos 100 novos apoiadores nas últimas 36 horas, eu <strong>voaria para os EUA</strong> para o <a href="https://www.crowdsupply.com/teardown/portland-2024">Teardown 2024 da Crowd Supply</a>. Bem, adivinhem? Não só conseguimos 100, como também ganhamos 165 novos apoiadores! Então, estou super animado para anunciar que estarei presente no Teardown 2024 pessoalmente nesta sexta-feira (21 de junho) e no fim de semana.</p>
+<h4 id="minha-mesa-de-demonstracao-e-transmissao-ao-vivo"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/#minha-mesa-de-demonstracao-e-transmissao-ao-vivo">Minha Mesa de Demonstração e Transmissão ao Vivo</a></h4>
+<p>O Teardown é o evento anual principal da Crowd Supply, focado em tudo relacionado a hardware - com palestras, demonstrações, workshops e muito mais.</p>
+<p>Teardown 2024 Lloyd Center Mall Portland, Oregon 21-23 de junho de 2024</p>
+<p><img alt="teardown-poster" src="https://www.crowdsupply.com/img/25ea/1d486985-1024-45ca-8b7d-0bdc388e25ea/twitter-1600-1900-td2024-wires_jpg_md-xl.jpg" /></p>
+<p>Terei uma mesa de demonstração no evento Teardown: <a href="https://www.crowdsupply.com/teardown/portland-2024/demo/openterface-mini-kvm-turn-your-laptop-as-a-kvm-console">Confira aqui!</a></p>
+<p>Alguma chance de você estar perto da área de Portland? Seria fantástico encontrá-lo no evento! Compre o <a href="https://www.crowdsupply.com/teardown/portland-2024">ingresso para o Teardown</a> agora e espero vê-lo lá—<strong>venha e diga oi</strong>!</p>
+<p>Se você não puder comparecer ao evento, não se preocupe. Você sempre pode me encontrar no nosso Discord e Subreddit durante a conferência. Você pode me enviar mensagens ou falar comigo em tempo real, pois estarei transmitindo ao vivo todos os três dias enquanto estiver na mesa de demonstração, então junte-se à nossa comunidade agora e você não perderá nada.</p>
+<h4 id="desafio-de-jogo-no-teardown"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/#desafio-de-jogo-no-teardown">Desafio de Jogo no Teardown</a></h4>
+<p>Agora, para um pouco de diversão: Estou organizando <strong>uma competição de videogame</strong> no Teardown 2024. Vou demonstrar como nosso Mini-KVM funciona com o computador portátil, uConsole, que basicamente é um Raspberry Pi. Confira meu tweet no X <a href="https://x.com/TechxArtisan/status/1802675690015424962">aqui</a> para ver como vou configurá-lo com o Mini-KVM.</p>
+<p><img alt="play-game-uconsole" src="https://www.crowdsupply.com/img/c4d2/d5fe66f3-4f3e-4398-bd11-494ae317c4d2/play-game-uconsole_png_md-xl.jpg" /></p>
+<p>Estou pensando em usar jogos como Pac-Man, The King of Fighters '97 e Tetris para o desafio de jogo. E aqui está o melhor—os vencedores podem ganhar um Mini-KVM diretamente de mim! Então, venha jogar comigo para ganhar!</p>
+<h4 id="mais-novidades"><a class="toclink" href="2024/06/18/encontre-me-em-portland-neste-fim-de-semana-e-ganhe-um-mini-kvm-no-meu-desafio-de-jogo/#mais-novidades">Mais Novidades</a></h4>
+<p>Como sempre, estamos preparando algumas coisas emocionantes, e terei um anúncio super empolgante no Teardown! Então, fique ligado para mais atualizações. Mal posso esperar para vê-lo no Teardown 2024!</p>
+<p>Saudações,<br />
+Billy Wang<br />
+Equipe Openterface | TechxArtisan Studio</p>
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  <span class="md-pagination__current">1</span> <a class="md-pagination__link" href="page/2/">2</a>
+</nav>
+        
+      
+    </div>
+  </div>
+
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <!-- Footer -->
+<footer class="md-footer">
+
+    <!-- Link to previous and/or next page -->
+    
+      
+        
+        <nav
+          class="md-footer__inner md-grid"
+          aria-label="Rodapé"
+          
+        >
+  
+          <!-- Link to previous page -->
+          
+            
+            <a
+              href="../compliance/"
+              class="md-footer__link md-footer__link--prev"
+              aria-label="Anterior: Conformidade"
+            >
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Anterior
+                </span>
+                <div class="md-ellipsis">
+                  Conformidade
+                </div>
+              </div>
+            </a>
+          
+  
+          <!-- Link to next page -->
+          
+            
+            <a
+              href="../tags/"
+              class="md-footer__link md-footer__link--next"
+              aria-label="Próximo: Tag"
+            >
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Próximo
+                </span>
+                <div class="md-ellipsis">
+                  Tag
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+  
+    <!-- Informações adicionais -->
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid footer-flex-container">
+
+        <!-- Formulário de inscrição -->
+        <div class="signup-form-container footer-flex-item">
+          <div id="google_form_signup">
+            <!-- Formulário modificado para enviar ao Google Form -->
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFc5YUQN74mQpFj6U4NkpNH4TGZGgxur7wVADWSWEsmNezdg/formResponse" 
+                  method="post" 
+                  id="google-form-subscribe-form" 
+                  name="google-form-subscribe-form" 
+                  target="_blank">
+              <div id="google_form_signup_scroll">
+                <div class="gf-field-group">
+                  <input type="text" name="entry.1988135673" class="required" id="google-form-first-name" required="" placeholder="Seu Nome">
+                </div>
+                <div class="gf-field-group">
+                  <input type="email" name="emailAddress" class="required email" id="google-form-email" required="" placeholder="Seu Endereço de Email *">
+                  <input type="hidden" name="entry.22394832" value="Openterface-eng">
+                </div>
+                <div class="clear">
+                  <input type="submit" name="submit" id="google-form-submit" class="button" value="✉️ Inscreva-se para as Últimas Novidades! 🐝">
+                  <p class="footnote">Não mais do que um e-mail por mês. Cancele a inscrição a qualquer momento.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Informações de copyright -->
+        <div class="footer-flex-item footer-copyright">
+          <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Todos os direitos reservados. 2023 <a href="https://www.openterface.com">Openterface</a> | <a href="https://www.techxartisan.com">TechxArtisan</a><br> <a href="/">Início</a> | <a href="/policy/terms-of-service">Termos de Serviço</a> | <a href="/policy/privacy">Política de Privacidade</a> |  <a href="#__consent">Configurações de Cookies</a> |  <a href="/about">Sobre</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+        </div>
+
+        <!-- Links sociais -->
+        
+          <div class="footer-flex-item footer-social">
+            <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.crowdsupply.com/techxartisan/openterface-mini-kvm" target="_blank" rel="noopener" title="www.crowdsupply.com" class="md-social__link">
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 140 140"><path d="M 68.3,9.7 8,70 68.3,130.3 Z" fill="#555" /><path d="M 71.7,9.7 V 130.3 L 132,70 Z" fill="#099" /><path d="m 90.7,91 c -6.6,0 -11.8,-3.6 -14,-12 l 8,-1.7 c 0.9,5.1 3.9,7 6.3,7 2.8,0 5,-1.9 5,-5.1 0,-8 -18.2,-8.2 -18.2,-20.1 0,-7.3 4.4,-12 12.8,-12 7.3,0 11.7,4.3 13.1,10.4 l -7.3,2.1 c -1.4,-4 -3.1,-5.7 -6,-5.7 -2.9,0 -4.5,1.8 -4.5,4.7 0,6.4 18.2,6.9 18.2,20.3 0.2,7.2 -4.9,12.1 -13.4,12.1 z" fill="#FFF" /><path d="m 60.7,63.9 h -8.2 v -3.6 c 0,-4.7 -2.1,-6 -5.3,-6 -3.2,0 -5.3,1.3 -5.3,6 v 17.4 c 0,4.7 2.1,6 5.3,6 3.2,0 5.3,-1.3 5.3,-6 v -3.8 h 8.2 v 2.7 c 0,10.5 -5.6,14.3 -13.5,14.3 -7.9,0 -13.5,-3.8 -13.5,-14.3 V 61.4 c 0,-10.5 5.6,-14.3 13.5,-14.3 7.9,0 13.5,3.8 13.5,14.3 z" fill="#FFF" /></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/reddit" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M373 138.6c-25.2 0-46.3-17.5-51.9-41-30.6 4.3-54.2 30.7-54.2 62.4v.2c47.4 1.8 90.6 15.1 124.9 36.3 12.6-9.7 28.4-15.5 45.5-15.5 41.3 0 74.7 33.4 74.7 74.7 0 29.8-17.4 55.5-42.7 67.5-2.4 86.8-97 156.6-213.2 156.6S45.5 410.1 43 323.4c-25.4-11.9-43-37.7-43-67.7C0 214.4 33.4 181 74.7 181c17.2 0 33 5.8 45.7 15.6 34-21.1 76.8-34.4 123.7-36.4v-.3c0-44.3 33.7-80.9 76.8-85.5C325.8 50.2 347.2 32 373 32c29.4 0 53.3 23.9 53.3 53.3s-23.9 53.3-53.3 53.3M157.5 255.3c-20.9 0-38.9 20.8-40.2 47.9s17.1 38.1 38 38.1 36.6-9.8 37.8-36.9-14.7-49.1-35.7-49.1zM395 303.1c-1.2-27.1-19.2-47.9-40.2-47.9s-36.9 22-35.7 49.1 16.9 36.9 37.8 36.9 39.3-11 38-38.1zm-60.1 70.8c1.5-3.6-1-7.7-4.9-8.1-23-2.3-47.9-3.6-73.8-3.6s-50.8 1.3-73.8 3.6c-3.9.4-6.4 4.5-4.9 8.1 12.9 30.8 43.3 52.4 78.7 52.4s65.8-21.6 78.7-52.4"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/discord" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/@TechxArtisan" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/TechxArtisan" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/TechxArtisan" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/techxartisan/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3M447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+    </a>
+  
+</div>
+          </div>
+        
+      </div>
+    </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine cookies -->
+
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+<!-- Determine actions -->
+
+
+
+<!-- Determine initial settings state -->
+
+  
+
+
+<!-- Consent title -->
+<h4>Consentimento de Cookies</h4>
+<p>Utilizamos cookies para melhorar a qualidade do conteúdo da documentação, analisar a eficácia do site e entender suas necessidades.  Ao consentir, você nos ajuda a aprimorar nosso site. Obrigado!</p>
+
+<!-- Consent settings -->
+<input
+  class="md-toggle"
+  type="checkbox"
+  id="__settings"
+  checked
+/>
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+
+<!-- Consent controls -->
+<div class="md-consent__controls">
+  
+
+    <!-- Button to accept cookies -->
+    
+      <button class="md-button md-button--primary">Aceitar</button>
+    
+
+    <!-- Button to reject cookies -->
+    
+
+    <!-- Button to manage settings -->
+    
+  
+
+    <!-- Button to accept cookies -->
+    
+
+    <!-- Button to reject cookies -->
+    
+      <button type="reset" class="md-button">Rejeitar</button>
+    
+
+    <!-- Button to manage settings -->
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "toc.follow", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.tracking", "navigation.expand", "search.suggest", "search.highlight", "content.tabs", "content.code.annotation", "content.code.copy", "content.tabs.link", "last_updated"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+  
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../assets/javascripts/extra.js"></script>
+      
+    
+  <script src="https://assets.openterface.com/js/custom.min.js"></script>
+
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
