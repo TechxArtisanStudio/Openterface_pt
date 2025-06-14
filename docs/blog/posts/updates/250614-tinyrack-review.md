@@ -14,13 +14,13 @@ Adoramos surpresas, pelo menos as boas. Algumas semanas atrás, entramos em cont
 O que veio depois superou nossas expectativas.
 
 Ele não apenas testou o mini-KVM extensivamente, mas também dedicou tempo para escrever um artigo detalhado repleto de insights:
-👉 [Leia a análise completa aqui](https://tinyrack.kr/review/openterface)
+👉 [Leia a análise completa aqui](https://tinyrack.net/openterface-mini-kvm)
 
 Seu feedback foi preciso, construtivo e baseado em uso real. Isso é ouro para nós. Embora não concordássemos com todos os pontos, foi exatamente por isso que foi valioso. Isso nos fez repensar algumas suposições de design e confirmou onde acertamos. Se você estiver curioso, role para baixo para ver a conversa completa.
 
 E se você ainda não o segue:
 - 🎥 [Canal no YouTube](https://youtube.com/@tinyrack)
-- 💬 [Fórum da Comunidade](https://forum.tinyrack.kr)
+- 💬 [Fórum da Comunidade](https://forum.tinyrack.net)
 
 Este tipo de diálogo é exatamente o que ajuda ferramentas como a nossa a evoluir. Então, obrigado, TinyRack - nós ouvimos você.
 
