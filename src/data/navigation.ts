@@ -8,23 +8,23 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
-  { label: 'Home', href: '/' },
+  { label: 'Início', href: '/' },
   {
-    label: 'Products',
+    label: 'Produtos',
     href: '#',
     children: [
-      { label: 'KeyMod Series', href: '/products/keymod/' },
-      { label: 'KVM-GO Series', href: '/products/kvm-go/' },
+      { label: 'Série KeyMod', href: '/products/keymod/' },
+      { label: 'Série KVM-GO', href: '/products/kvm-go/' },
       { label: 'Mini-KVM', href: '/products/minikvm/' },
       { label: 'uConsole KVM Extension', href: '/products/uconsole-kvm-extension/' },
-      { label: 'Accessories', href: '/products/accessories/' },
+      { label: 'Acessórios', href: '/products/accessories/' },
     ],
   },
-  { label: 'Videos', href: '/videos/' },
-  { label: 'Use Cases', href: '/use-cases/' },
+  { label: 'Vídeos', href: '/videos/' },
+  { label: 'Casos de Uso', href: '/use-cases/' },
   { label: 'FAQs', href: legacyPath('/faq/'), external: true },
   { label: 'App', href: legacyPath('/app/overview/'), external: true },
   { label: 'Tutorial', href: legacyPath('/tutorial/'), external: true },
-  { label: 'Support', href: legacyPath('/support/'), external: true },
-  { label: 'About', href: '/about/' },
+  { label: 'Suporte', href: legacyPath('/support/'), external: true },
+  { label: 'Sobre', href: '/about/' },
 ];
