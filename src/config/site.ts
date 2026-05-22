@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: 'Openterface',
+  locale: 'pt',
   url: 'https://pt.openterface.com',
   legacyUrl: 'https://openterface.com',
   description:
