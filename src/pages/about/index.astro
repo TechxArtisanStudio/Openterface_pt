@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import DocLinkBanner from '../../components/DocLinkBanner.astro';
-import { legacyPath } from '../../config/site';
+import { docsPath } from '../../config/site';
 ---
 
 <BaseLayout
@@ -18,13 +18,13 @@ import { legacyPath } from '../../config/site';
         O Openterface constrói ferramentas KVM-over-USB ultracompactas e de código aberto para profissionais de TI, desenvolvedores e makers. Do Mini-KVM financiado coletivamente ao KVM-GO em tamanho de chaveiro e à série programável KeyMod, nossa missão é simplificar o controle de computadores headless sem equipamentos volumosos ou redes complexas.
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href={legacyPath('/about/about-us/')} class="btn btn-secondary" target="_blank" rel="noopener">
+        <a href={docsPath('/about/about-us/')} class="btn btn-secondary" target="_blank" rel="noopener">
           Sobre Nós Completo →
         </a>
-        <a href={legacyPath('/about/compliance/')} class="btn btn-secondary" target="_blank" rel="noopener">
+        <a href={docsPath('/about/compliance/')} class="btn btn-secondary" target="_blank" rel="noopener">
           Conformidade →
         </a>
-        <a href={legacyPath('/about/community/')} class="btn btn-secondary" target="_blank" rel="noopener">
+        <a href={docsPath('/about/community/')} class="btn btn-secondary" target="_blank" rel="noopener">
           Comunidade →
         </a>
       </div>

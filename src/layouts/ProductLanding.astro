@@ -36,7 +36,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
             {product.buyLabel}
           </a>
           <a href={siteConfig.links.appOverview} class="btn btn-secondary" target="_blank" rel="noopener">
-            Baixar App
+            Download App
           </a>
         </div>
         {
@@ -46,7 +46,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
               <span>{product.funding.date}</span>
               <span>|</span>
               <span>
-                <strong>{product.funding.backers}</strong> Apoiadores
+                <strong>{product.funding.backers}</strong> Backers
               </span>
             </div>
           )
@@ -55,7 +55,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
     </div>
   </section>
 
-  <DocLinkBanner message="Especificações detalhadas, guias de configuração e FAQs estão em nosso site de documentação enquanto concluímos esta migração." />
+  <DocLinkBanner message="Detailed specs, setup guides, and FAQs are on docs.openterface.com." />
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
@@ -65,7 +65,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
 
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">O Problema</h2>
+      <h2 class="section-title text-center">The Problem</h2>
       <ul class="mx-auto mt-6 grid max-w-3xl gap-3">
         {
           product.painPoints.map((point) => (
@@ -81,7 +81,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">A Solução</h2>
+      <h2 class="section-title text-center">The Solution</h2>
       <ul class="mx-auto mt-6 grid max-w-3xl gap-3">
         {
           product.solutions.map((point) => (
@@ -98,7 +98,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
       <h2 class="section-title text-center">Hardware + Software</h2>
-      <p class="section-subtitle text-center">Os produtos Openterface funcionam melhor com nossos aplicativos host de código aberto.</p>
+      <p class="section-subtitle text-center">Openterface products work best with our open-source host apps.</p>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         <div class="card">
           <h3 class="text-lg font-semibold text-primary-dark">Hardware</h3>
@@ -125,7 +125,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
                   </li>
                 ))
               ) : (
-                <li class="text-muted">Consulte a TxA Shop para detalhes de compatibilidade de acessórios.</li>
+                <li class="text-muted">See TxA Shop for accessory compatibility details.</li>
               )
             }
           </ul>
@@ -138,7 +138,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
     product.specs.length > 0 && (
       <section class="py-12">
         <div class="mx-auto max-w-6xl px-4">
-          <h2 class="section-title text-center">Especificações Principais</h2>
+          <h2 class="section-title text-center">Key Specs</h2>
           <dl class="mx-auto mt-6 grid max-w-2xl gap-4">
             {product.specs.map((spec) => (
               <div class="flex justify-between border-b border-gray-200 pb-2">
@@ -154,7 +154,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
 
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">Casos de Uso</h2>
+      <h2 class="section-title text-center">Use Cases</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         {
           product.useCases.map((uc) => (
@@ -167,7 +167,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">Documentação</h2>
+      <h2 class="section-title text-center">Documentation</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         {
           product.docLinks.map((link) => (
@@ -182,8 +182,8 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
 
   <section class="bg-primary-dark py-12 text-white">
     <div class="mx-auto max-w-6xl px-4 text-center">
-      <h2 class="text-2xl font-bold">Pronto para começar?</h2>
-      <p class="mt-2 opacity-90">Peça o hardware e baixe o aplicativo Openterface para sua plataforma.</p>
+      <h2 class="text-2xl font-bold">Ready to get started?</h2>
+      <p class="mt-2 opacity-90">Order hardware and download the Openterface app for your platform.</p>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         <a
           href={product.buyHref}
@@ -197,7 +197,7 @@ const buyAnalyticsEvent = product.buyHref.includes('shop.techxartisan.com')
           {product.buyLabel}
         </a>
         <a href={siteConfig.links.appOverview} class="btn border border-white/40 hover:bg-white/10" target="_blank" rel="noopener">
-          Baixar App
+          Download App
         </a>
       </div>
     </div>
