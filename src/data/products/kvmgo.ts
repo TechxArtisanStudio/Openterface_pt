@@ -7,89 +7,53 @@ import type { Product } from '../products';
  */
 export const kvmgoProduct: Product = {
   slug: 'kvm-go',
-  title: 'Openterface KVM-GO Series',
-  slogan: 'Ultra-Compact KVM That Fits on Your Keychain',
-  subtitle: 'For Critical Tech Moments — Plug. Control. Go.',
+  title: "Openterface Série KVM-GO",
+  slogan: "KVM ultracompacto que cabe no seu chaveiro",
+  subtitle: "Para momentos tecnológicos críticos — Conecte. Controle. Vá.",
   status: 'pre-order',
   description:
-    'The next-generation KVM-over-USB solution with built-in video connectors (HDMI, DisplayPort, or VGA). Ultra-compact, keychain-sized, and built for rapid IT operations in data centers, server rooms, and the field — no loose video cables required.',
+    "A solução KVM-over-USB de próxima geração com conectores de vídeo integrados (HDMI, DisplayPort ou VGA). Ultracompacto, tamanho de chaveiro e construído para operações rápidas de TI em data centers e salas de servidores.",
   seoDescription:
-    'Control headless computers with Openterface KVM-GO. Built-in HDMI/DP/VGA connectors, keychain-sized, 4K-capable KVM-over-USB for IT professionals.',
+    "Controle computadores sem monitor com o Openterface KVM-Go. HDMI/DP/VGA integrados, tamanho de chaveiro, KVM-over-USB 4K para profissionais de TI.",
   keywords:
-    'KVM-GO, KVM over USB, ultra-compact KVM, keychain KVM, 4K KVM, built-in HDMI, MicroSD KVM, headless control',
+    "KVM-Go, KVM over USB, KVM ultracompacto, KVM de chaveiro, KVM 4K, controle headless",
   heroImage: 'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
   heroImages: [
     'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
     'https://assets.openterface.com/images/cover/kvm-go-triple-2.webp',
   ],
-  buyLabel: 'Pre-Order NOW',
+  buyLabel: "Reserve AGORA",
   buyHref: siteConfig.links.kvmgoPurchase,
-  funding: { amount: '$101,548', date: 'Funded on Dec 30, 2025', backers: '478' },
+  funding: { amount: "$101,548", date: "Financiado em 30 de dez de 2025", backers: "478" },
   painPoints: [
-    'Traditional KVM gear is bulky and requires separate video cables',
-    'Emergency server access in the field needs a pocket-sized tool',
-    'Headless troubleshooting without network access is slow',
+    "Equipamentos KVM tradicionais são volumosos e exigem cabos de vídeo separados",
+    "O acesso emergencial ao servidor em campo precisa de uma ferramenta de bolso",
+    "A solução de problemas sem monitor e sem acesso à rede é demorada",
   ],
   solutions: [
-    'Built-in male HDMI, DisplayPort, or VGA connectors — no loose cables',
-    'Keychain form factor (~25 g) always within reach',
-    'KVM-over-USB with sub-second startup — no network or target drivers',
+    "Conectores de vídeo integrados eliminam cabos extras",
+    "O formato de chaveiro está sempre ao alcance",
+    "KVM-over-USB — não requer rede ou drivers no alvo",
   ],
   hwFeatures: [
-    {
-      title: 'Keychain-sized design',
-      description: '18 × 18 × 55 mm aluminum body — fits in your pocket, not a crash cart.',
-    },
-    {
-      title: 'Built-in video connectors',
-      description: 'Direct plug-in HDMI, DisplayPort, or VGA male connectors — zero cable hunt.',
-    },
-    {
-      title: '4K video capture',
-      description: 'Up to 4096×2160 @ 60 Hz input; default 1080p@60 for stability (4K experimental).',
-    },
-    {
-      title: 'MicroSD slot',
-      description: 'Switchable storage for OS images, tools, and file transfer between host and target.',
-    },
-    {
-      title: 'BIOS-level access',
-      description: 'Reach firmware, boot menus, and recovery screens without network KVM.',
-    },
-    {
-      title: 'Sub-second startup',
-      description: 'Hardware ready in under 1 second — immediate troubleshooting in the field.',
-    },
+    { title: "Vídeo integrado", description: "Modelos HDMI, DisplayPort ou VGA — sem cabos soltos." },
+    { title: "Tamanho de chaveiro", description: "O menor KVM-over-USB na linha Openterface." },
+    { title: "Suporte 4K", description: "Captura de alta resolução para monitores modernos." },
   ],
   swFeatures: [
-    {
-      title: 'Cross-platform host apps',
-      description: 'macOS, Windows, Linux, Android, and Chrome web app support.',
-    },
-    {
-      title: 'Text transfer',
-      description: 'Send usernames, passwords, and code via simulated keystrokes (ASCII).',
-    },
-    {
-      title: 'Open source',
-      description: 'Fully open hardware and software — transparent, community-driven stack.',
-    },
+    { title: "App Openterface Qt", description: "Controle de host multiplataforma para Windows, macOS e Linux." },
+    { title: "Interruptor MicroSD", description: "Armazenamento alternável para imagens de SO e ferramentas portáteis." },
+    { title: "Pilha de código aberto", description: "Firmware e aplicativos host impulsionados pela comunidade." },
   ],
   specs: [
-    { label: 'Size', value: '18 × 18 × 55 mm (~25 g)' },
-    { label: 'Models', value: 'HDMI · DisplayPort · VGA (in development)' },
-    { label: 'Video input', value: 'Up to 4K @ 60 Hz (YUV420)' },
-    { label: 'Video output', value: 'Up to 4K @ 60 Hz (MJPEG)' },
-    { label: 'Storage', value: 'MicroSD slot for host/target file transfer' },
-    { label: 'Power', value: 'USB-C powered (no external supply)' },
+    { label: "Vídeo", value: "HDMI / DP / VGA (depende do modelo)" },
+    { label: "Resolução", value: "Até 4K" },
+    { label: "Conexão", value: "USB-C KVM-over-USB" },
   ],
   useCases: [
-    'Data center walk-throughs',
-    'Headless device setup',
-    'Field IT and homelab rescue',
-    'Travel EDC toolkit',
-    'Legacy VGA rack access',
-    'Maker faire & bench demos',
+    "Vistorias em data centers",
+    "Configuração de dispositivos headless",
+    "TI de campo e resgate de homelab",
   ],
   useCaseCards: [
     {
@@ -159,12 +123,11 @@ export const kvmgoProduct: Product = {
   latestNewsSubtitle: 'Production milestones, app releases, and community news.',
   latestNewsLabel: 'Read on Openterface News →',
   docLinks: [
-    { label: 'Features', href: docsPath('/products/kvmgo/features/') },
-    { label: 'Beta Quick Start', href: docsPath('/products/kvmgo/beta-quick-start/') },
-    { label: 'How to Connect', href: docsPath('/products/kvmgo/how-to-connect/') },
-    { label: 'MicroSD Switch', href: docsPath('/products/kvmgo/microsd-switch/') },
-    { label: 'Reviews & Media', href: docsPath('/products/kvmgo/reviews/') },
-    { label: 'FAQs', href: docsPath('/products/kvmgo/faq/') },
+    { label: "Recursos", href: docsPath("/product/kvm-go/features/") },
+    { label: "Início Rápido Beta", href: docsPath("/product/kvm-go/beta-quick-start/") },
+    { label: "Como conectar", href: docsPath("/product/kvm-go/how-to-connect/") },
+    { label: "FAQs", href: docsPath("/product/kvm-go/faq/") },
+    { label: "Baixar App", href: docsPath("/app/overview/") },
   ],
-  legacyBase: '/products/kvmgo/',
+  legacyBase: "/products/kvm-go/",
 };
