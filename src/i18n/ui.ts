@@ -17,6 +17,18 @@ export interface MarketingUi {
     emailPlaceholder: string;
     footnote: string;
   };
+  productSubscribe: {
+    kicker: string;
+    heading: string;
+    description: string;
+    benefitCrowdfunding: string;
+    benefitGuides: string;
+    benefitUnsubscribe: string;
+    submitLabel: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    footnote: string;
+  };
   siteFooter: {
     tagline: string;
     productsHeading: string;
@@ -29,6 +41,7 @@ export interface MarketingUi {
     faqs: string;
     apps: string;
     support: string;
+    newsletterLink: string;
     newsletterTitle: string;
     newsletterDescription: string;
     newsletterSubmit: string;
@@ -89,14 +102,15 @@ export const ui: MarketingUi = {
     "apps": "Apps",
     "support": "Suporte",
     "newsletterTitle": "Newsletter",
-    "newsletterDescription": "Atualizações mensais sobre produtos, firmware e dicas KVM.",
+    "newsletterDescription": "Acesso antecipado a lançamentos, atualizações mensais de produto e firmware e dicas KVM — no máximo um e-mail por mês.",
     "newsletterSubmit": "Subscrever",
     "newsletterNamePlaceholder": "Nome",
     "newsletterEmailPlaceholder": "E-mail *",
     "newsletterFootnote": "Cancele quando quiser.",
     "copyright": "Openterface. KVM-over-USB de código aberto.",
     "privacy": "Privacidade",
-    "terms": "Termos"
+    "terms": "Termos",
+    "newsletterLink": "Newsletter"
   },
   "productLanding": {
     "downloadApp": "Descarregar app",
@@ -113,5 +127,17 @@ export const ui: MarketingUi = {
     "documentation": "Documentação",
     "ctaTitle": "Pronto para começar?",
     "ctaSubtitle": "Encomende o hardware e descarregue a app Openterface para a sua plataforma."
+  },
+  "productSubscribe": {
+    "kicker": "Fique por dentro",
+    "heading": "Receba lançamentos e firmware do {product}",
+    "description": "Saiba primeiro sobre pré-vendas, firmware e dicas deste produto — no máximo um e-mail por mês.",
+    "benefitCrowdfunding": "Acesso antecipado a crowdfunding e pré-encomendas",
+    "benefitGuides": "Guias de configuração e notas de versão das apps",
+    "benefitUnsubscribe": "Cancele a subscrição a qualquer momento com um clique",
+    "submitLabel": "Subscrever atualizações",
+    "namePlaceholder": "Nome (opcional)",
+    "emailPlaceholder": "Endereço de e-mail *",
+    "footnote": "No máximo um e-mail por mês. Cancele quando quiser. Contacto: info@openterface.com"
   }
 };
